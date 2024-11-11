@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sou desenvolvedor full-stack, unindo performace,design e funcionalidade em um só codigo!</h1>
+        <menu id="vertical">
+            <ul>
+                <li class="vertical" id="home">
+                    <i class="material-icons">home</i>
+                    <button class="menu">Home</button> <br>
+                </li>
+                <li class="vertical">
+                    <i class="material-icons" id="projetos">description</i>
+                    <button class="menu">Meus Projetos</button> <br>
+                </li>
+                <li class="vertical">
+                    <i class="material-icons">face_6</i>
+                    <button class="menu">Sobre Mim</button> <br>
+                </li>
+            
+                <li class="vertical" id="bloco4">
+                    <i class="material-icons">question_mark</i>
+                    <button class="menu">como posso te ajudar?</button>
+                </li>
+            </ul>
+            <aside id="traduzir" onmouseenter="entrar()" onmouseout="sair()">
+                <div id="idioma">
+                    <abbr title="Ingles"><img src="imagens/inlges.jpg" alt="Ingles" class="tradução"></abbr>
+                    <abbr title="Espanhol"><img src="imagens/portugues.jpg" alt="portugues" class="tradução"></abbr>
+                </div>
+                <p id="idi">Idioma</p>
+            </aside>
+
+            <!--menu id="horizontal">
+                <ul>
+                    <li id="home">
+                        <i class="material-icons">home</i>
+                        <a href="#" style="margin-top: 50px;">Home</a> <br>
+                    </li>
+                    <li>
+                        <i class="material-icons" id="projetos">description</i>
+                        <a href="#">Meus Projetos</a> <br>
+                    </li>
+                    <li>
+                        <i class="material-icons">face_6</i>
+                        <a href="#">Sobre Mim</a> <br>
+                    </li>
+                
+                    <li id="bloco4">
+                        <i class="material-icons">question_mark</i>
+                        <a href="#">como posso te ajudar?</a>
+                    </li>
+                </ul>
+                <aside id="traduzir" onmouseenter="entrar()" onmouseout="sair()">
+                    <div id="idioma">
+                        <abbr title="Ingles"><img src="imagens/inlges.jpg" alt="Ingles" class="tradução"></abbr>
+                        <abbr title="Espanhol"><img src="imagens/portugues.jpg" alt="portugues" class="tradução"></abbr>
+                    </div>
+                    <p id="idi">Idioma</p>
+                </aside>
+        </menu-->
+        <p id="resumo">Olá! Sou <strong>Felippy Benicio</strong>, desenvolvedor full-stack com especialidades em <strong>PHP, JavaScript, HTML e CSS</strong>, posso ajudar você a transformar seus sonhos em códigos</p>
+        <img src="imagens/euu.jpg" alt="foto de mim" id="eu">
+    </header>
+    <main id="meusProjetos">
+        <h2>Meus Projetos</h2>
+        <aside id="seções">
+            <button class="areas"><strong>1</strong></button>
+            <button class="areas"><strong>2</strong></button>
+            <button class="areas"><strong>3</strong></button>
+        </aside>
+        <div id="pai">
+            <div class="projetos"></div>
+            <div class="projetos"></div>
+            <div class="projetos"></div>
+            <div class="projetos"></div>
+            <div class="projetos"></div>
+            <div class="projetos"></div>
+        </div>
+    </main>
+    <main id="sobreMim">
+        <h2>Sobre Mim</h2>
+        <p id="mim">
+            Olá, sou <strong>Felippy Benicio Joaquim Braga</strong>, um programador em início de carreira com uma    paixão por desenvolvimento de   software que começou há cerca de três anos, ainda na escola. Desde então, tenho me dedicado ao aprendizado de programação de forma autodidata, explorando conteúdos gratuitos no YouTube e cursos na Udemy. Ao longo dessa jornada, desenvolvi habilidades em <strong>algoritmos, HTML, CSS, JavaScript e PHP</strong>, e estou expandindo para linguagens como <strong>C, C++, C#, Java e Python</strong>.<br><br>
+
+            Atualmente, busco uma carreira no desenvolvimento de software, especialmente nas áreas de desenvolvimento web e programação backend, onde posso criar soluções inovadoras e eficientes. Além disso, em breve darei início à minha graduação em <strong>Análise e Desenvolvimento de Sistemas</strong>, onde aprofundarei conhecimentos em estruturas de dados e algoritmos, uma base essencial para evoluir na área.<br><br>
+            
+            Para mim, o aprendizado é uma jornada contínua. Tenho um nível avançado de inglês e estou estudando espanhol, com o objetivo de colaborar em projetos internacionais e me comunicar com desenvolvedores ao redor do mundo.<br><br>
+            
+            Se tiver interesse em conhecer alguns dos meus projetos práticos e acompanhar minha evolução, acesse meu GitHub. Vamos construir juntos o futuro da tecnologia!
+        </p>
+
+        <h3>Minhas habilidades</h3>
+        <h3>Meu curriculo</h3>
+    </main>
+    <main id="comoAjudar">
+        <h2>Como posso te a judar?</h2>
+
+        <aside id="melhorTexto01">
+            <button class="textos01" id="recrutador01" onclick="paraRecrutar()" ><strong>Sou um recrutador de um empresa</strong></button>
+            <button class="textos01" id="freelancer01" onclick="paraFreelancer()"><strong>Preciso de ajuda com meu prjeto?</strong></button>
+        </aside>
+
+        <aside id="melhorTexto02">
+            <button class="textos02" id="recrutador02" onclick="paraRecrutar()" ><strong>Sou um recrutador de um empresa</strong></button>
+            <button class="textos02" id="freelancer02" onclick="paraFreelancer()"><strong>Preciso de ajuda com meu prjeto?</strong></button>
+        </asiid>
+
+
+        <p class="ajudar" id="TextoRecrutador">
+            Olá, recrutador! Se você busca um desenvolvedor full-stack motivado e com uma grande vontade de evoluir, eu posso ser uma excelente escolha para a sua equipe. Sou um jovem dedicado, com grande disposição para aprender novas tecnologias e ouvir feedbacks. Acredito no poder da colaboração e estou sempre empenhado em me adaptar aos desafios e contribuir para o sucesso do time e da empresa.
+        </p>
+
+        <p class="ajudar" id="textoFreelancer">
+            Está buscando alguém para dar vida ao seu projeto? Eu posso ajudar! Sou desenvolvedor especializado na criação de sites responsivos e dinâmicos, com habilidades tanto em front-end quanto em back-end. Meu foco é entregar soluções personalizadas e funcionais, que atendam às suas necessidades e ofereçam uma ótima experiência ao usuário. Vamos conversar sobre como transformar suas ideias em realidade?
+        </p>
+    </main>
+
+
+    <!--footer>
+        <nav>
+            <h2>Acesse minhas redes:</h2>
+            <a href="">
+                <div class="links" id="whats">
+                    <img src="imagens/whatsapp.png" alt="whatsapp">
+                </div>
+            </a>
+            <a href="">
+                <div class="links" id="linke">
+                    <img src="imagens/linkedin.png" alt="linkedin">
+                </div>
+            </a>
+            <a href="">
+                <div class="links" id="mail">
+                    <img src="imagens/o-email.png" alt="E-mail">
+                </div>
+            </a>
+        </a>
+        <a href="">
+            <div class="links" id="git">
+                <img src="imagens/github.png" alt="GitHub">
+            </div>
+        </a>
+        </nav>
+    </footer-->
+
+    <script src="dinamica.js"></script>
+</body>
+</html>
