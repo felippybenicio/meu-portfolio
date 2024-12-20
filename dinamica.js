@@ -8,7 +8,7 @@ aside.addEventListener('mouseenter', entrar)
 function entrar() {
     idioma.style.display = 'flex'
     idioma.style.justifyContent = 'space-evenly'
-    idioma.style.animation = '.5s'
+    idioma.style.animation = '.5s' 
 }
 
 function sair() {

@@ -4,7 +4,7 @@
 
 :root {
     --pricipal: #002f6d;
-    --secundario: #4d88e0;
+    --secundario: #4d88e0; 
     --destaques: #3cced3;
     --discreto: #838383fd;
 }
@@ -35,21 +35,19 @@ p strong {
 header {
     height: 100vh;
     overflow: hidden;
-    position: relative;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 header h1 {
     font-family: 'Oxanium', Arial, Helvetica, sans-serif;
-    font-size: 6em;
-    color: white;
+    color: white;  
     width: 450px;
+    height: 0px;
     padding: 50px;
     padding-bottom: 0px;
     font-size: 2.2em;
-    text-shadow: 0px 0px 10px var(--destaques),
-                 0px 0px 20px var(--destaques),
-                 0px 0px 40px var(--destaques),
-                 0px 0px 800px var(--destaques);
+    
 }
 
 h2, h3 {
@@ -75,10 +73,6 @@ menu#vertical {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
-}
-
-menu#horizontal {
-    display: none;
 }
 
 menu#vertical li {
@@ -165,12 +159,30 @@ img.tradução {
     
 }
 
+/*
+menu#horizontal {
+    flex-flow: row nowrap;
+    position: absolute;
+    bottom: -20px;
+    left: -1200px;
+}
+
+menu#horizontal > ul {
+    flex-flow: row nowrap;
+    align-content: flex-start;
+}
+
+menu#horizontal > ul > li > a {
+    color: black;
+}
+
+*/
 img#eu {
     position: absolute;
     margin: auto ;
     border-radius: 20px;
     height: 415px;
-    right: 270px;
+    right: 327px;
     top: 80px;
     border-radius: 50px 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
@@ -184,13 +196,13 @@ img#eu:hover {
 p#resumo {
     width: 250px;
     padding: 50px;
-    margin-top: 13px;
+    padding-left: 0px;
+    margin-bottom: 80px;
+    margin-left: -497px;
     font-size: 1.2em;
     padding-bottom: 0px;
-    position: absolute;
-    top: 300px;
-    left: -1081px;
-
+    align-self: flex-end;
+    
 }
 
 main {
@@ -201,7 +213,6 @@ main {
 
 main#meusProjetos {
     height: 500px;
-
 }
 
 aside#seções {
@@ -218,6 +229,7 @@ button.areas {
     background-color: transparent;
     color: var(--secundario);
     border: 2px solid var(--secundario);
+    border-radius: 20px;
     padding: 7px 155px;
     transform: skewY(-3deg);
     box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.411);
@@ -227,6 +239,7 @@ button.areas {
 button.areas strong {
     position: relative;
     z-index: 2;
+    border-radius: 20px;
 }
 
 button.areas:hover {
@@ -235,11 +248,12 @@ button.areas:hover {
     transition: .5s;
     transform: skewY(0deg);
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
-    
+    border-radius: 20px;
 }
 
 button.areas::before {
     background-color: var(--secundario);
+    border-radius: 20px;
     content: '';
     position: absolute;
     top: 0px;
@@ -253,6 +267,7 @@ button.areas::before {
 button.areas:hover::before {
     width: 100%;
     color: var(--discreto);
+    border-radius: 20px;
 }
 
 div#pai {
