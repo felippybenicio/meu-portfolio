@@ -10,12 +10,17 @@
     }
 
     html, body {
-        background-color: var(--discreto);
+        background-color: #83838349;
     }
 
     header {
         background-color: var(--pricipal);
         width: 400px;
+        margin: auto;
+    }
+
+    menu#vertical {
+        display: none;
     }
 
     header h1 {
@@ -39,14 +44,65 @@
     main {
         background-color: var(--pricipal);
         width: 400px;
-        margin: 0px;
+        margin: auto;
     }
 
-    menu#vertical {
-        display: none;
+    h2, h3 {
+        margin: 0px;
+        padding: 25px;
+    }
+
+    main#meusProjetos {
+        height: 600px;
+    }
+
+    button.areas {
+        padding: 10px 40px;
+        margin: 0px 10px;
+        transform: skewY(0deg);
+    }
+
+    button.areas:hover {
+        pointer-events: none;
+    }
+
+    div#pai {
+        
+    }
+
+    div.projetos {
+        width: 325px;
     }
 
     div#pai2 {
         display: none;
+    }
+
+    main#sobreMim {
+        height: 1080px;
+    }
+    
+    p#mim {
+        margin: 25px;
+        columns: 1;
+    }
+
+
+    main#comoAjudar {
+        height: auto;
+    }
+
+    button.textos01 {
+        display: none;
+    }
+
+    button.textos02 {
+        display: block;
+        margin: 15px auto;
+    }
+
+    p.ajudar {
+        margin: 25px;
+        height: auto;
     }
 }
