@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1200px) and (orientation: landscape) { 
+
+    body {
+        
+    }
+
+    header img#eu {
+        margin: 74px;
+        margin-top: 274px;
+        height: 254px;
+        width: 200px;
+        transition: 1.5s;
+    }
+
+    main {
+        width: 870px;
+        height: 600px;
+        margin: 80px auto 170px auto;
+        transition: 1s;
+    }
+
+    button.areas {
+        padding: 7px 127px;
+    }
+
+
+}

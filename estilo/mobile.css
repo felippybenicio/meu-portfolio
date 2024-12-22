@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 930px)  {
+
+    :root {
+        --pricipal: #002f6d;
+        --secundario: #4d88e0; 
+        --destaques: #3cced3;
+        --discreto: #838383fd;
+    }
+
+    html, body {
+        background-color: var(--discreto);
+    }
+
+    header {
+        background-color: var(--pricipal);
+        width: 400px;
+    }
+
+    header h1 {
+        font-size: 2em;
+        text-align: center;
+        width: 316px;
+        padding: 42px 42px 0px 42px;
+    }
+
+    p#resumo {
+        text-align: justify;
+        margin: auto;
+        margin-top: 108px;
+        padding: 42px;
+    }
+
+    img#eu {
+        display: none;
+    }
+
+    main {
+        background-color: var(--pricipal);
+        width: 400px;
+        margin: 0px;
+    }
+
+    menu#vertical {
+        display: none;
+    }
+
+    div#pai2 {
+        display: none;
+    }
+}
