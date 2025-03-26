@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@200..800&family=Sora:wght@100..800&display=swap');
+
+:root {
+    --pricipal: #002f6d;
+    --secundario: #4d88e0; 
+    --destaques: #3cced3;
+    --discreto: #838383fd;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'arvo', 'Times New Roman', Times, serif;
+}
+
+html, body {
+    background-color: #83838349;
+    color: white;
+}
+
+div#barraMobile {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 380px;
+    background-color: var(--secundario);
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+}
+
+i#sanduiche {
+    font-size: 2em;
+    margin-left: 160px; 
+    height: auto;
+    cursor: pointer;
+    display: block;
+}
+
+header {
+    background-color: var(--pricipal);
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-evenly;
+    position: relative;
+}
+
+i#X {
+    display: block;
+    font-size: 2em;
+    font-weight: bolder;
+    cursor: pointer;
+}
+    div.fixado {
+    position: fixed;
+    background-color: var(--secundario);
+    height: 100vh;
+    padding: 25px;
+    }
+
+menu#vertical {
+    
+    position: absolute ;
+    right: 0px;
+    display: none;
+    z-index: 1000;
+    
+    
+}
+
+#vertical li {
+    font-size: 1.1em;
+    
+}
+
+header h1 {
+    font-family: 'Oxanium', Arial, Helvetica, sans-serif;;
+    font-size: 2em;
+    text-align: center;
+    width: 316px;
+    padding: 0px;
+    margin: 70px auto;
+    transition: 1s;
+}
+
+p#resumo {
+    margin: 35px 0px 0px 0px;
+    padding: 42px;
+    padding-right: 146px;
+    width: 207px;
+}
+
+img#eu {
+    margin: -173px;
+    margin-right: 32px;
+    border-radius: 5px 10px;
+    height: 126px;
+    width: 99px;
+    align-self: flex-end;
+}
+
+img#eu:hover {
+    pointer-events: none;
+}
+
+menu#horizontal {
+    display: none;
+    
+}
+
+main {
+    background-color: var(--pricipal);
+    width: 400px;
+    margin: auto;
+}
+
+h2, h3 {
+    
+}
+
+main#meusProjetos {
+    height: 950px;
+}
+
+button.areas {
+    padding: 10px 40px;
+    margin: 0px 10px;
+    transform: skewY(0deg);
+}
+
+button.areas:hover {
+    pointer-events: none;
+}
+
+div#pai {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.projetos {
+    width: 325px;
+    height: 0px;
+    padding-top: 80px;
+}
+
+main#sobreMim {
+    height: auto;
+}
+
+p#mim {
+    margin: 30px;
+    columns: 1;
+}
+
+section#habilidades h3 {
+    text-align: center;
+}
+
+section#curriculo a{
+    text-align: center;
+    margin: 2px;
+}
+
+main#comoAjudar {
+    height: auto;
+    margin-bottom: 0px;
+}
+
+button.textos01 {
+    display: none;
+}
+
+button.textos02 {
+    display: block;
+    margin: 15px auto;
+}
+
+p.ajudar {
+    margin: 25px;
+    height: auto;
+}
+
+footer {
+    width: 400px;
+    margin: auto;
+    flex-flow: column nowrap;
+}
+
+nav {
+    margin: auto;
+    margin-top: 25px;
+}
+
+nav h2 {
+    padding: 0px 0px 70px 0px;
+}
+
+footer p  {
+    margin: 50px 35px;
+    font-size: 1em;
+}
+
+div.links {
+    margin-top: -55px;
+}
