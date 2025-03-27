@@ -123,7 +123,7 @@ main {
 }
 
 h2, h3 {
-    padding: 100px 46px 0px 30px;
+    padding: 25px 46px 25px 30px;
 }
 
 main#meusProjetos {
@@ -166,9 +166,10 @@ button.areas:hover {
 }
 
 div.projetos {
+    background-color: var(--discreto);
     width: 325px;
-    height: 0px;
     padding-top: 80px;
+    margin: 38px;
 }
 
 main#sobreMim {
@@ -179,14 +180,39 @@ p#mim {
     margin: 30px;
     columns: 1;
 }
-
-section#habilidades h3 {
-    text-align: center;
+section#habilidades {
+    background-color: var(--discreto);
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    width: auto;
 }
 
-section#curriculo a{
+img.linguagens {
+    margin: 4px;
+}
+
+section#curriculo {
+    background-color: var(--discreto);
+    display: flex;
+    flex-flow: column wrap;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    width: auto;
+}
+
+a.curriculo {
+    color: black;
     text-align: center;
+    font-size: 1.3em;
+    text-decoration: none;
     margin: 2px;
+}
+
+a.curriculo:hover {
+    color: var(--pricipal);
 }
 
 main#comoAjudar {
