@@ -94,9 +94,13 @@ p#resumo {
     width: 207px;
 }
 
+strong {
+    color: var(--destaques);
+}
+
 img#eu {
-    margin: -173px;
-    margin-right: 32px;
+    margin: -18px;
+    margin-right: 44px;
     border-radius: 5px 10px;
     height: 126px;
     width: 99px;
@@ -119,26 +123,46 @@ main {
 }
 
 h2, h3 {
-    
+    padding: 100px 46px 0px 30px;
 }
 
 main#meusProjetos {
     height: 950px;
 }
 
+aside#seções {
+    align-self: stretch;
+    margin: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px 0px ;
+    
+}
+
 button.areas {
-    padding: 10px 40px;
+    background-color: transparent;
+    color: var(--secundario);
+    border: 2px solid var(--secundario);
+    border-radius: 20px;
     margin: 0px 10px;
-    transform: skewY(0deg);
+    padding: 10px 40px;
+    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.411);
+    transition: 1.0s;
+}
+
+button.areas strong {
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
 }
 
 button.areas:hover {
-    pointer-events: none;
-}
-
-div#pai {
-    display: flex;
-    flex-flow: column nowrap;
+    color: white;
+    background-color: var(--secundario);
+    transition: .5s;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
+    cursor: pointer;
 }
 
 div.projetos {
