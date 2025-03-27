@@ -122,7 +122,11 @@ main {
     margin: auto;
 }
 
-h2, h3 {
+h2 {
+    padding: 80px 46px 25px 30px;
+}
+
+h3 {
     padding: 25px 46px 25px 30px;
 }
 
@@ -220,14 +224,73 @@ main#comoAjudar {
     margin-bottom: 0px;
 }
 
-button.textos01 {
+
+
+
+aside#melhorTexto01 {
     display: none;
+    
+}
+
+
+aside#melhorTexto02 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
 }
 
 button.textos02 {
-    display: block;
+    background-color: var(--secundario);
+    padding: 5px;
     margin: 15px auto;
+    color: white;
+    border:2px solid var(--secundario);
+    border-radius: 25px;
+    transition: .4s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.329);
+    
 }
+
+button.textos02:hover {
+    background-color: var(--pricipal);
+    color: white;
+    border:2px solid var(--secundario);
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.158);
+}
+
+button.textos02.clicado {
+    background-color: var(--pricipal);
+    color: white;
+    border:2px solid var(--secundario);
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.158);
+    filter: none;
+}
+
+button.textos02 strong {
+    color: white;
+    font-family: 'sora', Arial, Helvetica, sans-serif;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.411));
+}
+
+p.ajudar {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.452);
+    color: black;
+    width: 600px;
+    height: 120px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: inset 7px 9px 16px rgba(0, 0, 0, 0.418);
+}
+
+
+
+
+
+
 
 p.ajudar {
     margin: 25px;
