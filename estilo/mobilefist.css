@@ -206,6 +206,7 @@ section#curriculo {
     display: flex;
     flex-flow: column wrap;
     margin: 20px;
+    margin-bottom: 0px;
     padding: 10px;
     border-radius: 25px;
     width: auto;
