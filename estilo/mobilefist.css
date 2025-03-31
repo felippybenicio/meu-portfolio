@@ -126,6 +126,10 @@ h2 {
     padding: 80px 46px 25px 30px;
 }
 
+main#meusProjetos {
+    padding-top: 145px;
+}
+
 h3 {
     padding: 25px 46px 25px 30px;
 }
@@ -288,35 +292,73 @@ p.ajudar {
 
 
 
-
-
-
-
-p.ajudar {
-    margin: 25px;
-    height: auto;
-}
-
 footer {
+    background-color: var(--secundario);
     width: 400px;
+    height: auto;
     margin: auto;
+    display: flex;
     flex-flow: column nowrap;
 }
 
 nav {
+    background-color: rgba(255, 255, 255, 0.719);
+    color: var(--pricipal);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.247);
+    border-radius: 20px;
+    width: 300px;
     margin: auto;
     margin-top: 25px;
+    padding: 15px;
 }
 
-nav h2 {
+nav div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+h2#contato {
+    margin: 0px;
+    margin-bottom: 25px;
+    height: 25px;
+    filter: drop-shadow(0px 0px 0px black);
+    font-size: 1.3em;
     padding: 0px 0px 70px 0px;
 }
 
-footer p  {
+div.links {
+    margin: 10px 15px 0px 15px;
+    margin-top: -55px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    background-color: var(--pricipal);
+    color: var(--secundario);
+}
+
+div.links:hover {
+    background-color: var(--secundario);
+    color: black;
+}
+
+nav img {
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+nav img:hover {
+    filter: drop-shadow(none);;
+}
+
+footer p {
     margin: 50px 35px;
     font-size: 1em;
 }
 
-div.links {
-    margin-top: -55px;
-}
