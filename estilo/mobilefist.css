@@ -3,8 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@200..800&family=Sora:wght@100..800&display=swap');
 
 :root {
-    --pricipal: #002f6d;
-    --secundario: #4d88e0; 
+    /* --pricipal: #002f6d; */
+    --pricipal: #031630;
+    /* --secundario: #4d88e0;  */
+    --secundario: #1c3e70;
     --destaques: #3cced3;
     --discreto: #838383fd;
 }
@@ -39,6 +41,13 @@ i#sanduiche {
     display: block;
 }
 
+i#X {
+    display: block;
+    font-size: 2em;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
 header {
     background-color: var(--pricipal);
     width: 400px;
@@ -49,31 +58,133 @@ header {
     position: relative;
 }
 
-i#X {
-    display: block;
-    font-size: 2em;
-    font-weight: bolder;
-    cursor: pointer;
-}
-    div.fixado {
+
+
+div.fixado {
     position: fixed;
     background-color: var(--secundario);
     height: 100vh;
     padding: 25px;
-    }
-
-menu#vertical {
-    
-    position: absolute ;
-    right: 0px;
-    display: none;
-    z-index: 1000;
-    
-    
 }
 
-#vertical li {
+menu#vertical {
+    position: absolute;
+    height: 100dvh;
+    width: 145px;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    display: none;
+}
+
+menu#vertical li {
+    list-style-type: none;
     font-size: 1.1em;
+    color: var(--pricipal);
+    text-decoration: none;
+    margin-top: 50px;
+    padding: 5px 5px 5px 16px;
+    position: relative;
+    text-decoration: none;
+    transition: .5s;
+    width: 124px;
+    text-align: center;
+}
+
+li.vertical i.material-icons {
+    color: white;
+    position: absolute;
+    left: 0px;
+    transition: 1.0s;
+}
+
+div.linkshori:hover, li.vertical:hover {
+    background-color: var(--secundario);
+    border-radius: 5px;
+    transition: 0.5s;
+
+    button.menu {
+        color: var(--pricipal);
+    }
+
+    i.material-icons {
+        color: var(--pricipal);
+    }    
+}  
+
+menu#vertical aside#traduzir {
+    position: absolute;
+    bottom: 50px;
+
+}
+
+div#idioma {
+    background-color: #83838367;
+    margin: 10px 5px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--secundario);
+    /* display: none ; */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+p#idi {
+    background-color: var(--secundario);
+    padding: 10px 28px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'sora';
+    cursor: pointer;
+}
+
+#idi:hover {
+    background-color: #4d88e0b7;
+}
+
+p#idiHori {
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'sora';
+    cursor: pointer;
+    transition: .2s;
+}
+
+#idiHori:hover {
+    background-color: #002f6d2f;
+}
+
+img.tradução {
+    width: 25px;
+    height: 17px;
+}
+
+button.menu {
+    background-color: transparent;
+    border: none;
+    font-family: 'sora';
+    color: white;
+    font-size: .8em;
+    text-decoration: none;
+    padding: 0px;
+    transition: 1.0s;
+}
+
+li.vertical, div.linkshori, button.menu {
+    cursor: pointer;
+}
+
+#ajuda i {
+    position: absolute;
+    top: 12px;
+}
+
+menu#horizontal {
+    display: none;
     
 }
 
@@ -111,10 +222,7 @@ img#eu:hover {
     pointer-events: none;
 }
 
-menu#horizontal {
-    display: none;
-    
-}
+
 
 main {
     background-color: var(--pricipal);
@@ -123,6 +231,8 @@ main {
 }
 
 h2 {
+    font-family: 'sora', Arial, Helvetica, sans-serif;
+    margin-left: 0px;
     padding: 80px 46px 25px 30px;
 }
 
@@ -131,6 +241,8 @@ main#meusProjetos {
 }
 
 h3 {
+    font-family: 'sora', Arial, Helvetica, sans-serif;
+    margin-left: 0px;
     padding: 25px 46px 25px 30px;
 }
 
@@ -229,14 +341,10 @@ main#comoAjudar {
     margin: auto;
 }
 
-
-
-
 aside#melhorTexto01 {
     display: none;
     
 }
-
 
 aside#melhorTexto02 {
     display: flex;
@@ -290,8 +398,6 @@ p.ajudar {
     border-radius: 20px;
     box-shadow: inset 7px 9px 16px rgba(0, 0, 0, 0.418);
 }
-
-
 
 footer {
     background-color: var(--secundario);
@@ -352,10 +458,6 @@ div.links:hover {
 
 nav img {
     filter: drop-shadow(0px 0px 5px white);
-}
-
-nav img:hover {
-    filter: drop-shadow(none);;
 }
 
 footer p {
