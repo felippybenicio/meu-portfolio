@@ -33,6 +33,10 @@ div#barraMobile {
     z-index: 1000;
 }
 
+div#barraMobile p {
+    margin: 5px;
+}
+
 i#sanduiche {
     font-size: 2em;
     margin-left: 160px; 
@@ -46,6 +50,7 @@ i#X {
     font-size: 2em;
     font-weight: bolder;
     cursor: pointer;
+    margin: 40px 0px;
 }
 
 header {
@@ -59,13 +64,13 @@ header {
 }
 
 
-
 div.fixado {
     position: fixed;
     background-color: var(--secundario);
     height: 100vh;
     padding: 25px;
 }
+
 
 menu#vertical {
     position: absolute;
@@ -78,6 +83,7 @@ menu#vertical {
     flex-flow: column wrap;
     justify-content: flex-start;
     display: none;
+    z-index: 1000;
 }
 
 menu#vertical li {
@@ -127,7 +133,7 @@ div#idioma {
     padding: 8px;
     border-radius: 10px;
     border: 1px solid var(--secundario);
-    /* display: none ; */
+    display: none ;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
@@ -135,6 +141,7 @@ div#idioma {
 p#idi {
     background-color: var(--secundario);
     padding: 10px 28px;
+    margin: 15px auto;
     border-radius: 10px;
     font-size: 1em;
     font-family: 'sora';
@@ -339,6 +346,7 @@ a.curriculo:hover {
 main#comoAjudar {
     height: auto;
     margin: auto;
+    padding-bottom: 1px;
 }
 
 aside#melhorTexto01 {
@@ -390,14 +398,9 @@ p.ajudar {
     /* display: none; */
     background-color: rgba(255, 255, 255, 0.452);
     color: black;
-    width: 600px;
-    height: 120px;
-    /* margin: 50px auto; */
-
-    display: inline-block;
-    margin: 50px;
-
-
+    width: 260px;
+    height: 260px;
+    margin: 50px auto;
     text-align: center;
     padding: 25px;
     border-radius: 20px;

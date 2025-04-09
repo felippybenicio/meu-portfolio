@@ -15,8 +15,8 @@
 <body>
     <header id="cabeçalho">
         <div id="barraMobile">
-            <p>MEU PORTIFÓLIO</p>
-            <i class="material-icons" id="sanduiche" onclick="sanduiche()">menu</i>
+            <p id="p">MEU PORTIFÓLIO</p>
+            <i class="material-icons" id="sanduiche">menu</i>
         </div>
 
         <h1 id="frase">Sou desenvolvedor full-stack, unindo performace,design e funcionalidade em um só codigo!</h1>
@@ -28,28 +28,27 @@
         
             <menu id="vertical" class="menu">
                 <div class="fixado">
-                    <i class="material-icons" id="X" onclick="fechar()">close</i>
+                    <i class="material-icons" id="X">close</i>
                     <ul>
-                
-                        <li class="vertical" id="home" onclick="home()">
+                        <li class="vertical h" id="home">
                             <i class="material-icons">home</i>
                             <button class="menu" id="H">Home</button> <br>
                         </li>
-                        <li class="vertical" id="projetos" onclick="projetos()">
+                        <li class="vertical p" id="projetos">
                             <i class="material-icons" id="projetos">description</i>
                             <button class="menu" id="P">Meus Projetos</button> <br>
                         </li>
-                        <li class="vertical" id="sobreMim" onclick="sobreMim()">
+                        <li class="vertical s" id="sobreMim">
                             <i class="material-icons">face_6</i>
                             <button class="menu" id="S">Sobre Mim</button> <br>
                         </li>
                 
-                        <li class="vertical" id="ajuda" onclick="ajuda()">
+                        <li class="vertical a" id="ajuda">
                             <i class="material-icons">question_mark</i>
                             <button class="menu" id="A">como posso te ajudar?</button>
                         </li>
                     </ul>
-                    <aside id="traduzir" onclick="clicar()">
+                    <aside id="traduzir">
                         <div id="idioma">
                             <a id="ingles" onclick="ingles()"><abbr title="Ingles" class="idioma"><span class="flag-icon flag-icon-us" ></span></abbr></a>
                             <a id="espanhol" onclick="espanhol()"><abbr title="Español"  class="idioma"><span class="flag-icon flag-icon-es" ></span></abbr></a>
@@ -62,27 +61,27 @@
                 
     </header>
     <menu id="horizontal" class="menu">
-        <div class="linkshori" id="home" onclick="home()">
+        <div class="linkshori h" id="home">
             <i class="material-icons">home</i>
             <button class="menu" id="horiH">Home</button>
         </div>
 
-        <div class="linkshori" id="projetos" onclick="projetos()">
+        <div class="linkshori p" id="projetos">
             <i class="material-icons" id="projetos">description</i>
             <button class="menu" id="horiP">Meus Projetos</button>
         </div>
 
-        <div class="linkshori" id="sobreMim" onclick="sobreMim()">
+        <div class="linkshori s" id="sobreMim">
             <i class="material-icons">face_6</i>
             <button class="menu" id="horiS">Sobre Mim</button>
         </div>
 
-        <div class="linkshori" onclick="ajuda()">
+        <div class="linkshori a">
             <i class="material-icons">question_mark</i>
             <button class="menu" id="horiA">como posso te ajudar?</button>
         </div>
 
-        <aside id="traduzirHori" onclick="clicarHorizontal()">
+        <aside id="traduzirHori">
             <p id="idiHori">Idioma</p>
             <div id="idiomaHori">
                 <a id="English" onclick="ingles()"><abbr title="Ingles" class="idioma"><span class="flag-icon flag-icon-us" ></span></abbr></a>
