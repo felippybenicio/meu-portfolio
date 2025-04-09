@@ -141,7 +141,7 @@ div#idioma {
 p#idi {
     background-color: var(--secundario);
     padding: 10px 28px;
-    margin: 15px auto;
+    margin: 5px auto 50px auto;
     border-radius: 10px;
     font-size: 1em;
     font-family: 'sora';
