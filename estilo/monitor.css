@@ -118,6 +118,7 @@
     
     main {  
         width: 100vw;
+        
     }
     
     main#meusProjetos {
@@ -246,7 +247,7 @@
     
     main#comoAjudar {
         height: auto;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
     
     aside#melhorTexto01 {

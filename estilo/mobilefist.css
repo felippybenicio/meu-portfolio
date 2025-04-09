@@ -383,7 +383,7 @@ button.textos02 strong {
 }
 
 p.ajudar {
-    /* display: none; */
+    display: none;
     background-color: rgba(255, 255, 255, 0.452);
     color: black;
     width: 260px;
@@ -391,8 +391,17 @@ p.ajudar {
     margin: 50px auto;
     text-align: center;
     padding: 25px;
-    border-radius: 20px;
+    border-radius: 0px 20px 20px 20px;
     box-shadow: inset 7px 9px 16px rgba(0, 0, 0, 0.418);
+    position: relative;
+}
+
+i.fecharTextos {
+    color: white;
+    position: absolute;
+    top: -24px;
+    left: 0px;
+    cursor: pointer;
 }
 
 footer {
