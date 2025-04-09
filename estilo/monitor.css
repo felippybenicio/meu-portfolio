@@ -4,7 +4,6 @@
 
     html, body {
         background-color: var(--pricipal);
-        height: 100dvh;
         width: 100dvw;
         overflow-x: hidden;
     }
@@ -66,9 +65,8 @@
         z-index: 1000;
     }
     
-    
     div#idiomaHori {
-        background-color: #002f6d45 ;
+        background-color: #03163046 ;
         padding: 8px;
         border-radius: 10px;
         border: 1px solid var(--secundario);
@@ -76,6 +74,20 @@
         flex-flow: row wrap;
         justify-content: space-evenly;
     } 
+
+    p#idiHori {
+        padding: 5px 30px;
+        border-radius: 10px;
+        font-size: 1em;
+        font-family: 'sora';
+        cursor: pointer;
+        transition: .2s;
+
+    }
+    
+    #idiHori:hover {
+        background-color: #03163046;
+    }
     
     div.linkshori {
         display: flex;

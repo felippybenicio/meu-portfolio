@@ -92,20 +92,88 @@ function botoesMenu() {
 
 }
 
-function menus() {
+function rolagemMenu() {
     const menuHorizontal = document.getElementById('horizontal');
 
-    function rolagemMenu() {
-        if (window.scrollY >= 593) {
-            menuHorizontal.classList.add('show');
-            menuHorizontal.style.display = 'flex'; 
-        } else {
-            menuHorizontal.classList.remove('show');
-            menuHorizontal.style.display = 'none';
-        }
+    window.addEventListener('scroll', () => {
+    if (window.scrollY <= 1000) {
+        menuHorizontal.style.display = 'none';
+    } else {
+        menuHorizontal.style.display = 'flex';
     }
-
-    window.addEventListener('scroll', rolagemMenu);
-    rolagemMenu();
+    });
 }
-document.addEventListener('DOMContentLoaded', menus);
+rolagemMenu()
+
+function botoesidioma() {
+    const botaoIdiomaVerti = document.getElementById('idi')
+    const botaoIdiHorizon = document.getElementById('idiHori')
+    const idiomasVertical = document.getElementById('idioma')
+    const idiomasHorizontal = document.getElementById('idiomaHori')
+    const body = document.querySelector('body')
+
+    botaoIdiomaVerti.addEventListener('mouseenter', function () {
+        idiomasVertical.style.display = 'flex';
+    });
+
+    botaoIdiomaVerti.addEventListener('mouseout', function () {
+        idiomasVertical.style.display = 'none';
+    });
+
+    botaoIdiomaVerti.addEventListener('click', function () {
+        botaoIdiomaVerti.addEventListener('mouseout', function () {
+            if (idiomasVertical.style.display === 'flex') {
+                idiomasVertical.style.display = 'none';
+            } else {
+                idiomasVertical.style.display = 'flex';
+            }
+        });
+    });
+
+
+    botaoIdiHorizon.addEventListener('mouseenter', function () {
+        idiomasHorizontal.style.display = 'flex';
+    });
+
+    botaoIdiHorizon.addEventListener('mouseout', function () {
+        idiomasHorizontal.style.display = 'none';
+    });
+
+    botaoIdiHorizon.addEventListener('click', function () {
+        botaoIdiHorizon.addEventListener('mouseout', function () {
+            if (idiomasHorizontal.style.display === 'flex') {
+                idiomasHorizontal.style.display = 'none';
+            } else {
+                idiomasHorizontal.style.display = 'flex';
+            }
+        });
+    });
+
+}
+botoesidioma()
+
+async function traduzir(idioma) {
+    try {
+        const resposta = await fetch('traducao.json'); // ajuste o caminho se necessário
+        const dados = await resposta.json();
+        const traducao = dados[idioma];
+
+        for (const id in traducao) {
+            const elemento = document.getElementById(id);
+            if (elemento) {
+                elemento.textContent = traducao[id];
+            }
+        }
+    } catch (erro) {
+        console.error('Erro ao carregar tradução:', erro);
+    }
+}
+
+function botoesTraducao() {
+    document.getElementById('ingles').addEventListener('click', () => traduzir('en'));
+    document.getElementById('espanhol').addEventListener('click', () => traduzir('es'));
+    document.getElementById('portugues').addEventListener('click', () => location.reload()); // volta ao original
+}
+
+
+botoesTraducao()

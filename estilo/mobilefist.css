@@ -149,21 +149,9 @@ p#idi {
 }
 
 #idi:hover {
-    background-color: #4d88e0b7;
+    background-color: #1c3e70a9;
 }
 
-p#idiHori {
-    padding: 10px 35px;
-    border-radius: 10px;
-    font-size: 1em;
-    font-family: 'sora';
-    cursor: pointer;
-    transition: .2s;
-}
-
-#idiHori:hover {
-    background-color: #002f6d2f;
-}
 
 img.tradução {
     width: 25px;
