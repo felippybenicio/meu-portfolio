@@ -1,402 +1,384 @@
 @charset "UTF-8";
 
-@media(min-width: 990px) {
+html, body {
+    background-color: var(--pricipal);
+    width: 100dvw;
+    overflow-x: hidden;
+}
 
-    html, body {
-        background-color: var(--pricipal);
-        width: 100dvw;
-        overflow-x: hidden;
-    }
-    
-    div#barraMobile {
-        display: none;
-    }
-    
-    header {
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;     
-    }
-    
-    i#X, i#sanduiche {
-        display: none;
-    }
-    
-    h1#frase {
-        text-align: left;
-        width: 450px;
-        height: 0px;
-        margin: 90px;
-        font-size: 2.2em;   
-    }
-    
-    
-    div.linkshori:hover, li.vertical:hover {
-        box-shadow: 0px 0px 5px var(--secundario), 
-                    0px 0px 25px var(--secundario),
-                    0px 0px 50px var(--secundario),
-                    0px 0px 200px var(--secundario);
-        border-radius: 5px;
-    }  
-    
-    menu#vertical {
-        display: block;
-        width: 200px;
-    }
+div#barraMobile {
+    display: none;
+}
 
-    div.fixado {
-        position: static;
-        background-color: transparent;
-    }
+header {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;     
+}
 
-    menu#horizontal {
-        background-color:var(--secundario);
-        width: 90dvw;
-        height: auto;
-        padding: 15px;
-        display: none;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.349);
-        position: fixed;
-        top: 0px;
-        left: 3%;
-        border-radius: 0px 0px 15px 15px ;
-        z-index: 1000;
-    }
-    
-    div#idiomaHori {
-        background-color: #03163046 ;
-        padding: 8px;
-        border-radius: 10px;
-        border: 1px solid var(--secundario);
-        display: none ;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-    } 
+i#X, i#sanduiche {
+    display: none;
+}
 
-    p#idiHori {
-        padding: 5px 30px;
-        border-radius: 10px;
-        font-size: 1em;
-        font-family: 'sora';
-        cursor: pointer;
-        transition: .2s;
+h1#frase {
+    text-align: left;
+    width: 450px;
+    height: 0px;
+    margin: 90px;
+    font-size: 2.2em;   
+}
 
-    }
+
+div.linkshori:hover, li.vertical:hover {
+    box-shadow: 0px 0px 5px var(--secundario), 
+                0px 0px 25px var(--secundario),
+                0px 0px 50px var(--secundario),
+                0px 0px 200px var(--secundario);
+    border-radius: 5px;
+}  
+
+menu#vertical {
+    display: block;
+    width: 200px;
+}
+
+div.fixado {
+    position: static;
+    background-color: transparent;
+}
+
+menu#horizontal {
+    background-color:var(--secundario);
+    width: 90dvw;
+    height: auto;
+    padding: 15px;
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.349);
+    position: fixed;
+    top: 0px;
+    left: 3%;
+    border-radius: 0px 0px 15px 15px ;
+    z-index: 1000;
+}
+
+div#idiomaHori {
+    background-color: #03163046 ;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--secundario);
+    display: none ;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+} 
+
+p#idiHori {
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'sora';
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+#idiHori:hover {
+    background-color: #03163046;
+}
+
+div.linkshori {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 0px 35px ;
+}
+
+img#eu {
+    margin: -600px 295px;
+    height: 415px;
+    width: 370px;
+    border-radius: 0px 0px 50px 50px;
+    transition: 0.3s;
+}
+
+img#eu:hover {
+    transform: skewY(-5deg);
+}
+
+p#resumo {
+    margin: 420px 0px 0px 50px;
+    padding: 42px;
+    padding-right: 146px;
+    width: 242px;
+    font-size: 1.2em;
+}
+
+main {  
+    width: 100vw;
+}
+
+main#meusProjetos {
+    height: 710px;
     
-    #idiHori:hover {
-        background-color: #03163046;
-    }
+}
+
+aside#seções {
+    align-self: stretch;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px 0px ;
+    padding: 0px;
     
-    div.linkshori {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        margin: 0px 35px ;
-    }
+}
+
+button.areas {
+    background-color: transparent;
+    color: var(--secundario);
+    border: 2px solid var(--secundario);
+    border-radius: 20px;
+    padding: 7px 155px;
+    margin-bottom: 25px;
+    transform: skewY(-3deg);
+    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.411);
+    transition: 1.0s;
+    width: auto;
+}
+
+button.areas strong {
+    color: white;
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+button.areas:hover {
+    color: white;
+    background-color: var(--secundario);
+    transition: .5s;
+    transform: skewY(0deg);
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
+    border-radius: 20px;
+}
+
+button.areas::before {
+    background-color: var(--secundario);
+    border-radius: 20px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    transition: width 1.0s  ease;
+    z-index: 1;
+}
+
+button.areas:hover::before {
+    width: 100%;
+    color: var(--discreto);
+    border-radius: 20px;
+}
+
+
+p#mim {
+    columns: 2;
+}
+
+aside#sobreMim {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+section#habilidades {
+    background-color: var(--discreto);
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    width: 376px;
+}
+
+img.linguagens {
+    margin: 4px;
+}
+
+section#curriculo {
+    background-color: var(--discreto);
+    display: flex;
+    flex-flow: column wrap;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    width: 376px;
+}
+
+a.curriculo {
+    color: black;
+    text-align: center;
+    font-size: 1.3em;
+    text-decoration: none;
+    margin: 15px 0px;
+}
+
+a.curriculo:hover {
+    color: var(--pricipal);
+}
+
+main#comoAjudar {
+    height: auto;
+    /* margin-bottom: 20px; */
+}
+
+aside#melhorTexto01 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+button.textos01 {
+    font-family: 'sora', Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    color: var(--secundario);
+    border: 2px solid var(--secundario);
+    transform: skewY(-3deg);
+    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.411);
+    transition: 1.0s;
+    width: 285px;
+    height: 40px;
+    margin: 50px;
+}
+
+button.textos01 strong {
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+button.textos01:hover {
+    color: white;
+    background-color: var(--secundario);
+    transition: .5s;
+    transform: skewY(0deg);
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
     
+}
+
+button.textos01::before {
+    background-color: var(--secundario);
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    transition: width 1.0s  ease;
+    z-index: 1;
+    box-shadow: 0px 0px 5px var(--secundario), 
+                0px 0px 25px var(--secundario),
+                0px 0px 50px var(--secundario),
+                0px 0px 200px var(--secundario);
+}
+
+button.textos01:hover::before {
+    width: 100%;
+    color: var(--discreto);
+}
+
+button.textos02 {
+    display: none;
+}
+
+aside#melhorTexto02 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    
+}
+
+button.textos02:hover {
+    background-color: var(--pricipal);
+    color: white;
+    border:2px solid var(--secundario);
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.158);
+    filter: none;
+}
+
+button.textos02.clicado {
+    background-color: var(--pricipal);
+    color: white;
+    border:2px solid var(--secundario);
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.158);
+    filter: none;
+}
+
+button.textos02 strong {
+    font-family: 'sora', Arial, Helvetica, sans-serif;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.411));
+}
+
+p.ajudar {
+    width: 600px;
+    height: 120px;
+}
+
+footer {
+    background-color: var(--secundario);
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+    nav {
+    margin: 50px;
+    padding: 15px;
+    
+    
+}
+
+.links:hover {
+    background-color: var(--secundario);
+    color: black;
+    box-shadow: 0px 0px 5px var(--secundario), 
+    0px 0px 25px var(--secundario),
+    0px 0px 50px var(--secundario),
+    0px 0px 200px var(--secundario);
+}
+
+nav img {
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+nav img:hover {
+    filter: drop-shadow(none);;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin: 100px 80px;
+} 
+
+@media (max-width: 1175px) and (min-width: 600px) {
     img#eu {
-        margin: -600px 295px;
-        height: 415px;
-        width: 370px;
-        border-radius: 0px 0px 50px 50px;
-        transition: 0.3s;
-    }
-    
-    img#eu:hover {
-        transform: skewY(-5deg);
-    }
-    
-    p#resumo {
-        margin: 420px 0px 0px 50px;
-        padding: 42px;
-        padding-right: 146px;
-        width: 242px;
-        font-size: 1.2em;
-    }
-    
-    main {  
-        width: 100vw;
-        
-    }
-    
-    main#meusProjetos {
-        height: 710px;
+        height: 300px;
+        width: 261px;
+        margin: -550px 310px;
     }
 
-    aside#seções {
-        align-self: stretch;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        margin: 20px 0px ;
-        padding: 0px;
-        
-    }
-    
     button.areas {
-        background-color: transparent;
-        color: var(--secundario);
-        border: 2px solid var(--secundario);
-        border-radius: 20px;
-        padding: 7px 155px;
-        margin-bottom: 25px;
-        transform: skewY(-3deg);
-        box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.411);
-        transition: 1.0s;
-        width: auto;
-    }
-    
-    button.areas strong {
-        color: white;
-        position: relative;
-        z-index: 2;
-        border-radius: 20px;
-    }
-    
-    button.areas:hover {
-        color: white;
-        background-color: var(--secundario);
-        transition: .5s;
-        transform: skewY(0deg);
-        box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
-        border-radius: 20px;
-    }
-    
-    button.areas::before {
-        background-color: var(--secundario);
-        border-radius: 20px;
-        content: '';
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 0px;
-        height: 100%;
-        transition: width 1.0s  ease;
-        z-index: 1;
-    }
-    
-    button.areas:hover::before {
-        width: 100%;
-        color: var(--discreto);
-        border-radius: 20px;
-    }
-    
-    div#pai {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        height: 500px;
-    }
-    
-    
-    div.projetos {
-        background-color: var(--discreto);
-        margin: 15px;
-        border: 3px solid var(--secundario);
-        width: 400px;
-        height: 20px;
-        transform: skewY(-6deg);
-    }
-
-    p#mim {
-        columns: 2;
-    }
-    
-    aside#sobreMim {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        margin-top: 40px;
-    }
-    
-    section#habilidades {
-        background-color: var(--discreto);
-        display: inline-block;
-        margin: 20px;
-        padding: 10px;
-        border-radius: 25px;
-        width: 376px;
-    }
-    
-    img.linguagens {
-        margin: 4px;
-    }
-    
-    section#curriculo {
-        background-color: var(--discreto);
-        display: flex;
-        flex-flow: column wrap;
-        margin: 20px;
-        padding: 10px;
-        border-radius: 25px;
-        width: 376px;
-    }
-    
-    a.curriculo {
-        color: black;
-        text-align: center;
-        font-size: 1.3em;
-        text-decoration: none;
-        margin: 15px 0px;
-    }
-    
-    a.curriculo:hover {
-        color: var(--pricipal);
-    }
-    
-    main#comoAjudar {
-        height: auto;
-        /* margin-bottom: 20px; */
-    }
-    
-    aside#melhorTexto01 {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-    }
-    
-    button.textos01 {
-        font-family: 'sora', Arial, Helvetica, sans-serif;
-        background-color: transparent;
-        color: var(--secundario);
-        border: 2px solid var(--secundario);
-        transform: skewY(-3deg);
-        box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.411);
-        transition: 1.0s;
-        width: 285px;
-        height: 40px;
-        margin: 50px;
-    }
-    
-    button.textos01 strong {
-        color: white;
-        position: relative;
-        z-index: 2;
-    }
-    
-    button.textos01:hover {
-        color: white;
-        background-color: var(--secundario);
-        transition: .5s;
-        transform: skewY(0deg);
-        box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
-        
-    }
-    
-    button.textos01::before {
-        background-color: var(--secundario);
-        content: '';
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 0px;
-        height: 100%;
-        transition: width 1.0s  ease;
-        z-index: 1;
-        box-shadow: 0px 0px 5px var(--secundario), 
-                    0px 0px 25px var(--secundario),
-                    0px 0px 50px var(--secundario),
-                    0px 0px 200px var(--secundario);
-    }
-    
-    button.textos01:hover::before {
-        width: 100%;
-        color: var(--discreto);
-    }
-
-    button.textos02 {
-        display: none;
-    }
-    
-    aside#melhorTexto02 {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
-        
-    }
-    
-    button.textos02:hover {
-        background-color: var(--pricipal);
-        color: white;
-        border:2px solid var(--secundario);
-        box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.158);
-        filter: none;
-    }
-    
-    button.textos02.clicado {
-        background-color: var(--pricipal);
-        color: white;
-        border:2px solid var(--secundario);
-        box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.158);
-        filter: none;
-    }
-    
-    button.textos02 strong {
-        font-family: 'sora', Arial, Helvetica, sans-serif;
-        filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.411));
-    }
-    
-    p.ajudar {
-        width: 600px;
-        height: 120px;
-    }
-
-    footer {
-        background-color: var(--secundario);
-        height: auto;
-        width: 100vw;
-        display: flex;
-        flex-flow: row nowrap;
-    
-    }
-    
-     nav {
-        margin: 50px;
-        padding: 15px;
-        
-        
-    }
-    
-    .links:hover {
-        background-color: var(--secundario);
-        color: black;
-        box-shadow: 0px 0px 5px var(--secundario), 
-        0px 0px 25px var(--secundario),
-        0px 0px 50px var(--secundario),
-        0px 0px 200px var(--secundario);
-    }
-    
-    nav img {
-        filter: drop-shadow(0px 0px 5px white);
-    }
-    
-    nav img:hover {
-        filter: drop-shadow(none);;
-    }
-    
-    footer p {
-        font-size: 1.2em;
-        margin: 100px 80px;
-    } 
-
-    @media (max-width: 1175px) and (min-width: 600px) {
-        img#eu {
-            height: 300px;
-            width: 261px;
-            margin: -550px 310px;
-        }
-
-        button.areas {
-            padding: 7px 145px;
-        }
-    }
-
-    @media (min-width: 1300px) {
-        img#eu {
-            margin: -600px 600px;
-        }
+        padding: 7px 120px;
     }
 }
+
+@media (min-width: 1300px) {
+    img#eu {
+        margin: -600px 600px;
+    }
+}
+
 

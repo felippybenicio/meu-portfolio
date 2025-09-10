@@ -6,14 +6,14 @@
     <title>Meu Portfolio</title>
 
     <link rel="stylesheet" href="estilo/mobilefist.css">
-    <link rel="stylesheet" href="estilo/monitor.css">
+    <link rel="stylesheet" href="estilo/monitor.css" media="screen and (min-width: 990px)">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 </head>
 <body>
-    <header id="cabeçalho">
+    <header id="cabecalho">
         <div id="barraMobile">
             <p id="p">MEU PORTIFÓLIO</p>
             <i class="material-icons" id="sanduiche">menu</i>
@@ -93,38 +93,13 @@
     <main id="meusProjetos">
         <h2 id="tituloP">Meus Projetos</h2>
         <aside id="seções">
-            <button class="areas"><strong>landing Page</strong></button>
-            <button class="areas"><strong>Sites</strong></button>
-            <button class="areas"><strong>Sistemas</strong></button>
+            <button class="areas" id="btnLandingPage"><strong>landing Page</strong></button>
+            <button class="areas" id="btnSites"><strong>Sites</strong></button>
+            <button class="areas" id="btnSistemas"><strong>Sistemas</strong></button>
         </aside>
-        <div id="pai">
-                <a href="https://felippybenicio.github.io/vinicius-faria/" target="_blank">
-                    <div class="projetos landingpage" id="amanda">
-                        <img src="imagens/html-5.png" alt="html">
-                        <img src="imagens/css-3.png" alt="css">
-                    </div>
-                    <p class="nomeProjeto">Clinica de Piscicologia</p>
-                </a>
-                <a href="https://felippybenicio.github.io/eva-moda/" target="_blank">
-                    <div class="projetos landingpage" id="evaModas">
-                        <img src="imagens/html-5.png" alt="html">
-                        <img src="imagens/css-3.png" alt="css">
-                        <img src="imagens/js.png" alt="js">
-                    </div>
-                    <p class="nomeProjeto">Loja de roupas</p>
-                </a>     
-                <a href="https://felippybraga.github.io/landingpage-barbearia-elegance/" target="_blank">
-                    <div class="projetos landingpage" id="barbearia">
-                        <img src="imagens/html-5.png" alt="html">
-                        <img src="imagens/css-3.png" alt="css">
-                        <img src="imagens/js.png" alt="js">
-                    </div>
-                    <p class="nomeProjeto">Barbearia</p>
-                </a>
-                <!-- <div class="projetos"></div>
-                <div class="projetos"></div>
-                <div class="projetos"></div> -->
-        </div>
+        <iframe src="iframes/landingp-page.html" frameborder="0" id="landingPage"></iframe>
+        <iframe src="iframes/sites.html" frameborder="0" id="sites"></iframe>
+        <iframe src="iframes/sistemas.html" frameborder="0" id="sistemas"></iframe>
     </main>
     <main id="sobreMim" id="mim">
         <h2 id="tituloS">Sobre Mim</h2>

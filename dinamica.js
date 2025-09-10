@@ -1,5 +1,4 @@
 function ajustarMenu() {
-    const x = document.getElementById('X');
     const sanduiche = document.getElementById('sanduiche');
     const menu = document.getElementById('vertical');
     const frase = document.getElementById('p');
@@ -13,6 +12,9 @@ function ajustarMenu() {
         sanduiche.style.display = 'block';
         frase.style.marginRight = '5px';
     }
+
+
+
 }
 
 function configurarEventos() {
@@ -20,6 +22,7 @@ function configurarEventos() {
     const sanduiche = document.getElementById('sanduiche');
     const menu = document.getElementById('vertical');
     const frase = document.getElementById('p');
+    const conteudoTodo = document.querySelectorAll('main, footer');
 
     sanduiche.addEventListener('click', function () {
         menu.style.display = 'block';
@@ -32,6 +35,15 @@ function configurarEventos() {
         sanduiche.style.display = 'block';
         frase.style.marginRight = '5px';
     });
+
+    conteudoTodo.forEach(el => {
+        el.addEventListener('click', function() {
+            menu.style.display = 'none';
+            sanduiche.style.display = 'block';
+            frase.style.marginRight = '5px';
+        });
+    });
+
 }
 
 window.addEventListener('resize', ajustarMenu);
@@ -48,7 +60,7 @@ function botoesMenu() {
     const BsobreMim = document.querySelectorAll( '.s')
     const Bajuda = document.querySelectorAll( '.a')
 
-    const header = document.getElementById("cabeçalho")
+    const header = document.getElementById("cabecalho")
     const h2projetos = document.getElementById("tituloP")
     const h2sobreMim = document.getElementById("tituloS")
     const h2ajuda = document.getElementById("tituloA")
@@ -361,3 +373,55 @@ function ajuda() {
     })
 }
 ajuda()
+
+function projetos() {
+    const btnLandingPage = document.getElementById('btnLandingPage')
+    const btnSites = document.getElementById('btnSites')
+    const btnSistemas = document.getElementById('btnSistemas')
+
+    const iframeLandingPage = document.getElementById('landingPage')
+    const iframeSites = document.getElementById('sites')
+    const iframeSistemas = document.getElementById('sistemas')
+
+    btnLandingPage.classList.add('active');
+
+    function resetBtns() {
+        btnLandingPage.classList.remove('active');
+        btnSites.classList.remove('active');
+        btnSistemas.classList.remove('active');
+    }
+
+    // Função para esconder todos os iframes
+    function resetIframes() {
+        iframeLandingPage.style.display = 'none';
+        iframeSites.style.display = 'none';
+        iframeSistemas.style.display = 'none';
+    }
+
+    // Eventos de clique
+    btnLandingPage.addEventListener('click', function() {
+        resetBtns();
+        resetIframes();
+
+        btnLandingPage.classList.add('active');
+        iframeLandingPage.style.display = 'block';
+    });
+
+    btnSites.addEventListener('click', function() {
+        resetBtns();
+        resetIframes();
+
+        btnSites.classList.add('active');
+        iframeSites.style.display = 'block';
+    });
+
+    btnSistemas.addEventListener('click', function() {
+        resetBtns();
+        resetIframes();
+
+        btnSistemas.classList.add('active');
+        iframeSistemas.style.display = 'block';
+    });
+
+}
+projetos()

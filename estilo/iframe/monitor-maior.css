@@ -1,0 +1,21 @@
+div#pai {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 20px auto;
+}
+
+
+div.projetos {
+    background-color: var(--discreto);
+    margin: 15px;
+    border: 3px solid var(--secundario);
+    width: 400px;
+    height: 20px;
+    transform: skewY(-6deg);
+}
+
+p.nomeProjeto {
+    margin: -5px 40px 25px 17px;
+    transform: skewY(-6deg);
+}

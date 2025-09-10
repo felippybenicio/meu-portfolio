@@ -107,7 +107,7 @@ li.vertical i.material-icons {
     transition: 1.0s;
 }
 
-div.linkshori:hover, li.vertical:hover {
+li.vertical:hover {
     background-color: var(--secundario);
     border-radius: 5px;
     transition: 0.5s;
@@ -120,6 +120,14 @@ div.linkshori:hover, li.vertical:hover {
         color: var(--pricipal);
     }    
 }  
+
+div.linkshori {
+    display: none;
+}
+
+aside#traduzirHori {
+    display: none;
+}
 
 menu#vertical aside#traduzir {
     position: absolute;
@@ -281,49 +289,17 @@ button.areas:hover {
     cursor: pointer;
 }
 
-div.projetos {
-    background-color: var(--discreto);
-    width: 325px;
-    height: 85px;
-    padding-top: 80px;
-    margin: 38px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-    scale: calc(1);
-    border: 2px solid var(--secundario);
-    border-radius: 10px;
-}
-
-.projetos:hover {
-    scale: calc(1.1);
-}
-
-.projetos img {
-    width: 25px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-}
-
-p.nomeProjeto {
+button.active {
     color: white;
-    text-decoration: none;
-    margin: -33px 40px 0px 40px;
+    background-color: var(--secundario);
+    transition: .5s;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
+    cursor: pointer;
 }
 
-#amanda {
-    background: var(--discreto) url(../imagens/piscologa.jpg) center top fixed;
-    background-size: cover;
-}
-
-#evaModas {
-    background: var(--discreto) url(../imagens/evas_modas.jpg) center top fixed;
-    background-size: cover;
-}
-
-#barbearia {
-    background: var(--discreto) url(../imagens/barbearia.jpg) center top fixed;
-    background-size: cover;
+iframe {
+    width: 100%;
+    height: 700px;
 }
 
 
