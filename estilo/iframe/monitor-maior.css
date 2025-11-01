@@ -19,3 +19,8 @@ p.nomeProjeto {
     margin: -5px 40px 25px 17px;
     transform: skewY(-6deg);
 }
+
+main {
+    margin: 66px;
+    margin-top: 20px;
+}
