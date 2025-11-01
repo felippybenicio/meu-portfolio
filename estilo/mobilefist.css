@@ -17,6 +17,10 @@
     font-family: 'arvo', 'Times New Roman', Times, serif;
 }
 
+    #btnSites {
+        display: none;
+    }
+
 html, body {
     background-color: #83838349;
     color: white;
