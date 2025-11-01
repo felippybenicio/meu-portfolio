@@ -18,7 +18,8 @@
 }
 
 html, body {
-    background-color: #83838349;
+    background-color: var(--pricipal);
+    /* background-color: #83838349; */
     color: white;
 }
 
