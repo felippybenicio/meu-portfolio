@@ -39,6 +39,7 @@ div.projetos {
 
 .projetos:hover {
     scale: calc(1.1);
+    transition: .5s;
 }
 
 .projetos img {

@@ -122,7 +122,6 @@ function botoesidioma() {
     const botaoIdiHorizon = document.getElementById('idiHori')
     const idiomasVertical = document.getElementById('idioma')
     const idiomasHorizontal = document.getElementById('idiomaHori')
-    const body = document.querySelector('body')
 
     botaoIdiomaVerti.addEventListener('mouseenter', function () {
         idiomasVertical.style.display = 'flex';
@@ -135,7 +134,6 @@ function botoesidioma() {
     botaoIdiomaVerti.addEventListener('click', function () {
         botaoIdiomaVerti.addEventListener('mouseout', function () {
             if (idiomasVertical.style.display === 'flex') {
-                idiomasVertical.style.display = 'none';
             } else {
                 idiomasVertical.style.display = 'flex';
             }
@@ -145,6 +143,7 @@ function botoesidioma() {
 
     botaoIdiHorizon.addEventListener('mouseenter', function () {
         idiomasHorizontal.style.display = 'flex';
+        idiomasHorizontal.style.transition = '1s'
     });
 
     botaoIdiHorizon.addEventListener('mouseout', function () {

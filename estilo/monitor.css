@@ -29,7 +29,18 @@ h1#frase {
 }
 
 
-div.linkshori:hover, li.vertical:hover {
+div.linkshori:hover {
+    color: var(--pricipal);
+    transition: .6s;
+
+    button.menu {
+        color: var(--pricipal);
+        transition: .6s;
+    }
+}
+
+
+li.vertical:hover {
     box-shadow: 0px 0px 5px var(--secundario), 
                 0px 0px 25px var(--secundario),
                 0px 0px 50px var(--secundario),
@@ -63,12 +74,16 @@ menu#horizontal {
     z-index: 1000;
 }
 
+aside#traduzirHori {
+    display: block;
+}
+
 div#idiomaHori {
     background-color: #03163046 ;
     padding: 8px;
     border-radius: 10px;
     border: 1px solid var(--secundario);
-    display: none ;
+    display: none;
     flex-flow: row wrap;
     justify-content: space-evenly;
 } 
@@ -96,7 +111,7 @@ div.linkshori {
 
 img#eu {
     margin: -600px 295px;
-    height: 415px;
+    /* height: 415px; */
     width: 370px;
     border-radius: 0px 0px 50px 50px;
     transition: 0.3s;
@@ -118,9 +133,12 @@ main {
     width: 100vw;
 }
 
+h2 {
+    padding-left: 90px;
+}
+
 main#meusProjetos {
     height: 710px;
-    
 }
 
 aside#seções {
@@ -181,9 +199,18 @@ button.areas:hover::before {
     border-radius: 20px;
 }
 
+button.areas.active {
+    color: white;
+    background-color: var(--secundario);
+    transition: .5s;
+    transform: skewY(0deg);
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
+    border-radius: 20px;
+}
 
 p#mim {
     columns: 2;
+    margin: 30px 90px;
 }
 
 aside#sobreMim {
@@ -206,6 +233,11 @@ img.linguagens {
     margin: 4px;
 }
 
+img.linguagens:hover {
+    scale: calc(1.1);
+    transition: .2s;
+}
+
 section#curriculo {
     background-color: var(--discreto);
     display: flex;
@@ -214,18 +246,6 @@ section#curriculo {
     padding: 10px;
     border-radius: 25px;
     width: 376px;
-}
-
-a.curriculo {
-    color: black;
-    text-align: center;
-    font-size: 1.3em;
-    text-decoration: none;
-    margin: 15px 0px;
-}
-
-a.curriculo:hover {
-    color: var(--pricipal);
 }
 
 main#comoAjudar {
@@ -365,13 +385,17 @@ footer p {
 
 @media (max-width: 1175px) and (min-width: 600px) {
     img#eu {
-        height: 300px;
+        
         width: 261px;
         margin: -550px 310px;
     }
 
     button.areas {
         padding: 7px 120px;
+    }
+
+    aside#seções {
+        margin: 20px 80px;
     }
 }
 
