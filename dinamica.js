@@ -18,33 +18,54 @@ function ajustarMenu() {
 }
 
 function configurarEventos() {
-    const x = document.getElementById('X');
-    const sanduiche = document.getElementById('sanduiche');
-    const menu = document.getElementById('vertical');
-    const frase = document.getElementById('p');
-    const conteudoTodo = document.querySelectorAll('main, footer');
+  const x = document.getElementById('X');
+  const sanduiche = document.getElementById('sanduiche');
+  const menu = document.getElementById('vertical');
+  const frase = document.getElementById('p');
 
-    sanduiche.addEventListener('click', function () {
+  function aplicarEventos() {
+    if (window.innerWidth < 990) {
+      // --- MODO MOBILE ---
+      sanduiche.style.display = 'block';
+      menu.style.display = 'none';
+      frase.style.marginRight = '5px';
+
+      sanduiche.onclick = () => {
         menu.style.display = 'block';
         sanduiche.style.display = 'none';
         frase.style.marginRight = '165px';
-    });
+      };
 
-    x.addEventListener('click', function () {
+      x.onclick = () => {
         menu.style.display = 'none';
         sanduiche.style.display = 'block';
         frase.style.marginRight = '5px';
-    });
+      };
 
-    conteudoTodo.forEach(el => {
-        el.addEventListener('click', function() {
+      // Fechar menu clicando fora dele
+      document.addEventListener('click', function fecharAoClicarFora(e) {
+        if (window.innerWidth < 990) {
+          if (!menu.contains(e.target) && !sanduiche.contains(e.target) && !x.contains(e.target)) {
             menu.style.display = 'none';
             sanduiche.style.display = 'block';
             frase.style.marginRight = '5px';
-        });
-    });
+          }
+        }
+      });
 
+    } else {
+      // --- MODO DESKTOP ---
+      menu.style.display = 'block';
+      sanduiche.style.display = 'none';
+      frase.style.marginRight = '';
+    }
+  }
+
+  aplicarEventos();
+  window.addEventListener('resize', aplicarEventos);
 }
+
+
 
 window.addEventListener('resize', ajustarMenu);
 window.addEventListener('DOMContentLoaded', () => {
