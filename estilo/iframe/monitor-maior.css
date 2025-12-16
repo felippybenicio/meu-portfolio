@@ -16,7 +16,7 @@ div.projetos {
 }
 
 p.nomeProjeto {
-    margin: -5px 40px 25px 17px;
+    margin: 15px 20px -10px 17px;
     transform: skewY(-6deg);
 }
 

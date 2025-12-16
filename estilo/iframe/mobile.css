@@ -28,13 +28,28 @@ div.projetos {
     width: 325px;
     height: 85px;
     padding-top: 80px;
-    margin: 38px auto;
+    margin: 2px auto;
+    margin-bottom: 50px;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 2px;
     scale: calc(1);
     border: 2px solid var(--secundario);
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.projetos::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* top right bottom left = 0 */
+    background: rgba(0, 0, 0, 0.26); /* cor do overlay */
+    opacity: 0;
+    transition: opacity .3s ease;
+    opacity: 1;
+    z-index: 1;
 }
 
 .projetos:hover {
@@ -42,10 +57,21 @@ div.projetos {
     transition: .5s;
 }
 
+.imagens {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+.projetos:hover::before {
+    opacity: 1;
+}
+
 .projetos img {
     width: 25px;
     margin-bottom: 5px;
     margin-left: 5px;
+    z-index: 2;
 }
 
 p.nomeProjeto {
@@ -87,3 +113,9 @@ strong {
     background: var(--discreto) url(../../imagens/barbearia.jpg) center top fixed;
     background-size: cover;
 }
+
+#estoque {
+    background: var(--discreto) url(../../imagens/sistema-estoque.png) center top fixed;
+    background-size: cover;
+}
+
