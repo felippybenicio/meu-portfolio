@@ -9,7 +9,9 @@ div#pai {
 div.projetos {
     background-color: var(--discreto);
     margin: 15px;
+    margin-bottom: 0px;
     border: 3px solid var(--secundario);
+    border-bottom-width: 1.5px;
     width: 400px;
     height: 20px;
     transform: skewY(-6deg);
@@ -24,3 +26,13 @@ main {
     margin: 66px;
     margin-top: 20px;
 }
+
+.codigo {
+    width: 400px;
+    height: 20px;
+    border: 3px solid var(--secundario);
+    border-top-width: 1.5px;
+    transform: skewY(-6deg);
+    margin-bottom: 15px;
+}
+

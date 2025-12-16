@@ -21,22 +21,24 @@ html, body {
 div#pai {
     width: 325px;
     margin: auto;
+    padding:  10px;
 }
+
 
 div.projetos {
     background-color: var(--discreto);
     width: 325px;
     height: 85px;
     padding-top: 80px;
-    margin: 2px auto;
-    margin-bottom: 50px;
+    margin: 2px auto 0px auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     gap: 2px;
     scale: calc(1);
     border: 2px solid var(--secundario);
-    border-radius: 10px;
+    border-bottom-width: 1px;
+    border-radius: 10px 10px 0px 0px;
     position: relative;
     overflow: hidden;
 }
@@ -53,7 +55,7 @@ div.projetos {
 }
 
 .projetos:hover {
-    scale: calc(1.1);
+    border-color: var(--destaques);
     transition: .5s;
 }
 
@@ -119,3 +121,24 @@ strong {
     background-size: cover;
 }
 
+a {
+    text-decoration: none;
+}
+
+.codigo {
+    background-color: var(--discreto);
+    color: white; 
+    text-align: center;
+    width: 325px;
+    margin-bottom: 50px;
+    padding: 15px 0px;
+    border-radius: 0px 0px 10px 10px;
+    border: 2px solid var(--secundario);
+    border-top-width: 1px;
+    cursor: pointer;
+}
+
+.codigo:hover {
+    border-color: var(--destaques);
+    transition: .5s;
+}
