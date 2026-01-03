@@ -14,6 +14,7 @@ header {
     height: 100vh;
     width: 100vw;
     overflow: hidden;     
+    position: relative;
 }
 
 span#X, span#sanduiche {
@@ -25,6 +26,7 @@ h1#frase {
     width: 450px;
     height: 0px;
     margin: 90px;
+    margin-bottom: 372px;
     font-size: 2.2em;   
 }
 
@@ -39,6 +41,9 @@ div.linkshori:hover {
     }
 }
 
+li.vertical {
+    opacity: 0.7;
+}
 
 li.vertical:hover {
     box-shadow: 0px 0px 5px var(--secundario), 
@@ -110,19 +115,18 @@ div.linkshori {
 }
 
 img#eu {
-    margin: -600px 295px;
-    /* height: 415px; */
+    padding-left: 30px;
+    /* padding-top: 200px; */
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%, -50%);
     width: 370px;
-    border-radius: 0px 0px 10px 10px;
     transition: 0.3s;
 }
 
-img#eu:hover {
-    transform: skewY(-5deg);
-}
-
 p#resumo {
-    margin: 420px 0px 0px 50px;
+    margin: 160px 0px 0px 50px;
     padding: 42px;
     padding-right: 146px;
     width: 242px;
@@ -138,6 +142,7 @@ h2 {
 }
 
 main#meusProjetos {
+    padding-top: 20px;
     height: 915px;
 }
 
@@ -206,6 +211,19 @@ button.areas.active {
     transform: skewY(0deg);
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
     border-radius: 20px;
+}
+
+#sobreMim h3 {
+    padding-left: 90px;
+}
+
+section#destaques-pai {
+    width: 1030px;
+}
+
+ul#sobreTexto {
+    margin-left: 108px;
+    columns: 2;
 }
 
 p#mim {
@@ -386,7 +404,7 @@ footer p {
 @media (max-width: 1175px) and (min-width: 600px) {
     img#eu {
         width: 261px;
-        margin: -750px 418px;
+        /* margin: -750px 418px; */
         border-radius: 10px;
     }
 
@@ -394,15 +412,16 @@ footer p {
         padding: 7px 120px;
     }
 
+    ul#sobreTexto {
+        margin: 30px 108px;
+        margin-bottom: 60px;
+    }
+
     aside#seções {
         margin: 20px 80px;
     }
 }
 
-@media (min-width: 1300px) {
-    img#eu {
-        margin: -750px 600px;
-    }
-}
+
 
 

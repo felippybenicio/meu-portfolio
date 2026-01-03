@@ -1,7 +1,5 @@
 :root {
-    /* --pricipal: #002f6d; */
     --pricipal: #031630;
-    /* --secundario: #4d88e0;  */
     --secundario: #1c3e70;
     --destaques: #3cced3;
     --discreto: #838383fd;
@@ -125,8 +123,12 @@ a {
     text-decoration: none;
 }
 
+.link-codigo {
+    
+}
+
 .codigo {
-    background-color: var(--discreto);
+    background: var(--discreto) url(../../imagens/codigo.jpg) center center fixed;
     color: white; 
     text-align: center;
     width: 325px;

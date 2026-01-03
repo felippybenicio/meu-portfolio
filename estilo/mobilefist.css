@@ -3,12 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@200..800&family=Sora:wght@100..800&display=swap');
 
 :root {
-    /* --pricipal: #002f6d; */
     --pricipal: #031630;
-    /* --secundario: #4d88e0;  */
     --secundario: #1c3e70;
     --destaques: #3cced3;
-    --discreto: #838383fd;
+    --discreto: rgba(28, 62, 112, 0.15);
 }
 
 * {
@@ -17,9 +15,9 @@
     font-family: 'arvo', 'Times New Roman', Times, serif;
 }
 
-    #btnSites {
-        display: none;
-    }
+#btnSites {
+    display: none;
+}
 
 html, body {
     background-color: #83838349;
@@ -58,6 +56,7 @@ span#X {
 }
 
 header {
+    background-image: linear-gradient(to top, var(--pricipal), var(--secundario));
     background-color: var(--pricipal);
     width: 400px;
     margin: auto;
@@ -178,7 +177,7 @@ button.menu {
     font-size: .8em;
     text-decoration: none;
     padding: 0px;
-    transition: 1.0s;
+    transition: .5s;
 }
 
 li.vertical, div.linkshori, button.menu {
@@ -204,11 +203,17 @@ header h1 {
     transition: 1s;
 }
 
+#frase span {
+    color: #8ab7e9;
+}
+
 p#resumo {
     margin: 35px 0px 0px 0px;
     padding: 42px;
     padding-right: 146px;
     width: 207px;
+    opacity: 0.85;
+
 }
 
 strong {
@@ -245,10 +250,12 @@ main#meusProjetos {
     padding-top: 145px;
 }
 
-h3 {
+#sobreMim h4 {
     font-family: 'sora', Arial, Helvetica, sans-serif;
     margin-left: 0px;
     padding: 25px 46px 25px 30px;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 main#meusProjetos {
@@ -311,6 +318,26 @@ main#sobreMim {
     height: auto;
 }
 
+#sobreMim h3 {
+    padding-left: 29px;
+    padding-bottom: 0px;
+    margin-bottom: -10px;
+}
+
+ul#sobreTexto {
+    margin: 30px 30px 60px 48px;
+    columns: 1;
+}
+
+#sobreTexto a {
+    color: var(--destaques);
+    text-decoration: none;
+}
+
+#sobreTexto a:hover {
+    text-decoration: underline;
+}
+
 p#mim {
     margin: 30px;
     columns: 1;
@@ -350,10 +377,10 @@ a.curriculo {
 }
 
 a.curriculo:hover {
-        border: 1px solid var(--pricipal);
-        border-radius: 5px;
-        scale: calc(1.2);
-        transition: 0.5s;
+    border: 1px solid var(--pricipal);
+    border-radius: 5px;
+    scale: calc(1.2);
+    transition: 0.5s;
 
 }
 
@@ -364,6 +391,7 @@ a.curriculo img {
 }
 
 main#comoAjudar {
+    background-image: linear-gradient(to bottom, var(--pricipal), #0c2957);
     height: auto;
     margin: auto;
     padding-bottom: 1px;
@@ -425,7 +453,21 @@ p.ajudar {
     border-radius: 0px 20px 20px 20px;
     box-shadow: inset 7px 9px 16px rgba(0, 0, 0, 0.418);
     position: relative;
+    animation: fadeUp 0.5s ease;
 }
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 i.fecharTextos {
     color: white;
