@@ -16,7 +16,7 @@ header {
     overflow: hidden;     
 }
 
-i#X, i#sanduiche {
+span#X, span#sanduiche {
     display: none;
 }
 
