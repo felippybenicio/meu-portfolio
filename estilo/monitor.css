@@ -64,20 +64,32 @@ div.fixado {
 }
 
 menu#horizontal {
-    background-color:var(--secundario);
+    background-color: var(--secundario);
     width: 90dvw;
-    height: auto;
     padding: 15px;
-    display: none;
+
+    display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.349);
+
     position: fixed;
-    top: 0px;
+    top: 0;
     left: 3%;
-    border-radius: 0px 0px 15px 15px ;
+    border-radius: 0 0 15px 15px;
     z-index: 1000;
+
+    /* estado inicial */
+    opacity: 0;
+    transform: translateX(-80px);
+    pointer-events: none;
+
+    transition:
+      opacity 0.35s ease,
+      transform 0.45s cubic-bezier(.4,0,.2,1);
+
+    will-change: transform, opacity;
 }
+
 
 aside#traduzirHori {
     display: block;
@@ -113,6 +125,25 @@ div.linkshori {
     align-items: center;
     margin: 0px 35px ;
 }
+
+body.scrolled #vertical {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-60%);
+}
+
+body.scrolled menu#horizontal {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 
 img#eu {
     padding-left: 30px;

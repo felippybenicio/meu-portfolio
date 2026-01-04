@@ -4,11 +4,11 @@ function ajustarMenu() {
     const frase = document.getElementById('p');
 
     if (window.innerWidth > 990) {
-        menu.style.display = 'block';
+        menu.style.display = 'flex';
         sanduiche.style.display = 'none';
         frase.style.marginRight = '165px';
     } else {
-        menu.style.display = 'none';
+        menu.style.display = 'flex';
         sanduiche.style.display = 'block';
         frase.style.marginRight = '5px';
     }
@@ -18,52 +18,51 @@ function ajustarMenu() {
 }
 
 function configurarEventos() {
-  const x = document.getElementById('X');
   const sanduiche = document.getElementById('sanduiche');
-  const menu = document.getElementById('vertical');
   const frase = document.getElementById('p');
 
-  function aplicarEventos() {
+  let scrollAtivo = false;
+
+  function controlarScroll() {
     if (window.innerWidth < 990) {
-      // --- MODO MOBILE ---
+      document.body.classList.remove('scrolled');
+      return;
+    }
+
+    if (scrollAtivo) return;
+    scrollAtivo = true;
+
+    requestAnimationFrame(() => {
+      if (window.scrollY > 120) {
+        document.body.classList.add('scrolled');
+      } else {
+        document.body.classList.remove('scrolled');
+      }
+      scrollAtivo = false;
+    });
+  }
+
+  function aplicarLayout() {
+    if (window.innerWidth < 990) {
       sanduiche.style.display = 'block';
-      menu.style.display = 'none';
       frase.style.marginRight = '5px';
-
-      sanduiche.onclick = () => {
-        menu.style.display = 'block';
-        sanduiche.style.display = 'none';
-        frase.style.marginRight = '165px';
-      };
-
-      x.onclick = () => {
-        menu.style.display = 'none';
-        sanduiche.style.display = 'block';
-        frase.style.marginRight = '5px';
-      };
-
-      // Fechar menu clicando fora dele
-      document.addEventListener('click', function fecharAoClicarFora(e) {
-        if (window.innerWidth < 990) {
-          if (!menu.contains(e.target) && !sanduiche.contains(e.target) && !x.contains(e.target)) {
-            menu.style.display = 'none';
-            sanduiche.style.display = 'block';
-            frase.style.marginRight = '5px';
-          }
-        }
-      });
-
+      document.body.classList.remove('scrolled');
     } else {
-      // --- MODO DESKTOP ---
-      menu.style.display = 'block';
       sanduiche.style.display = 'none';
       frase.style.marginRight = '';
+      controlarScroll();
     }
   }
 
-  aplicarEventos();
-  window.addEventListener('resize', aplicarEventos);
+  aplicarLayout();
+  window.addEventListener('resize', aplicarLayout);
+  window.addEventListener('scroll', controlarScroll);
 }
+
+document.addEventListener('DOMContentLoaded', configurarEventos);
+
+
+
 
 
 
@@ -124,19 +123,6 @@ function botoesMenu() {
     })
 
 }
-
-function rolagemMenu() {
-    const menuHorizontal = document.getElementById('horizontal');
-
-    window.addEventListener('scroll', () => {
-    if (window.scrollY <= 500) {
-        menuHorizontal.style.display = 'none';
-    } else {
-        menuHorizontal.style.display = 'flex';
-    }
-    });
-}
-rolagemMenu()
 
 function botoesidioma() {
     const botaoIdiomaVerti = document.getElementById('idi')
