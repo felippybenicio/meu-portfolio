@@ -86,13 +86,6 @@ menu#vertical {
     flex-flow: column wrap;
     justify-content: flex-start;
     z-index: 1000;
-
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: auto;
-
-    transition: opacity 0.4s ease, transform 0.4s ease;
-
 }
 
 menu#vertical li {

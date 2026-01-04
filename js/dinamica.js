@@ -4,11 +4,11 @@ function ajustarMenu() {
     const frase = document.getElementById('p');
 
     if (window.innerWidth > 990) {
-        menu.style.display = 'flex';
+        menu.style.display = 'block';
         sanduiche.style.display = 'none';
         frase.style.marginRight = '165px';
     } else {
-        menu.style.display = 'flex';
+        menu.style.display = 'none';
         sanduiche.style.display = 'block';
         frase.style.marginRight = '5px';
     }
@@ -19,10 +19,13 @@ function ajustarMenu() {
 
 function configurarEventos() {
   const sanduiche = document.getElementById('sanduiche');
+  const x = document.getElementById('X');
+  const menuVertical = document.getElementById('vertical');
   const frase = document.getElementById('p');
 
   let scrollAtivo = false;
 
+  // ===== SCROLL (MENU HORIZONTAL) =====
   function controlarScroll() {
     if (window.innerWidth < 990) {
       document.body.classList.remove('scrolled');
@@ -42,17 +45,53 @@ function configurarEventos() {
     });
   }
 
+  // ===== MENU VERTICAL =====
+  function abrirMenu() {
+    menuVertical.style.display = 'block';
+    sanduiche.style.display = 'none';
+    frase.style.marginRight = '165px';
+  }
+
+  function fecharMenu() {
+    menuVertical.style.display = 'none';
+    sanduiche.style.display = 'block';
+    frase.style.marginRight = '5px';
+  }
+
+  // ===== LAYOUT =====
   function aplicarLayout() {
     if (window.innerWidth < 990) {
       sanduiche.style.display = 'block';
-      frase.style.marginRight = '5px';
+      fecharMenu();
       document.body.classList.remove('scrolled');
     } else {
+      menuVertical.style.display = 'block';
       sanduiche.style.display = 'none';
       frase.style.marginRight = '';
       controlarScroll();
     }
   }
+
+  // ===== EVENTOS =====
+  sanduiche.addEventListener('click', (e) => {
+    e.stopPropagation();
+    abrirMenu();
+  });
+
+  x.addEventListener('click', (e) => {
+    e.stopPropagation();
+    fecharMenu();
+  });
+
+  document.addEventListener('click', (e) => {
+    if (
+      window.innerWidth < 990 &&
+      !menuVertical.contains(e.target) &&
+      !sanduiche.contains(e.target)
+    ) {
+      fecharMenu();
+    }
+  });
 
   aplicarLayout();
   window.addEventListener('resize', aplicarLayout);
@@ -60,6 +99,7 @@ function configurarEventos() {
 }
 
 document.addEventListener('DOMContentLoaded', configurarEventos);
+
 
 
 
@@ -124,6 +164,8 @@ function botoesMenu() {
 
 }
 
+
+
 function botoesidioma() {
     const botaoIdiomaVerti = document.getElementById('idi')
     const botaoIdiHorizon = document.getElementById('idiHori')
@@ -170,7 +212,106 @@ function botoesidioma() {
 }
 botoesidioma()
 
+function traducao() {
+    const es = document.querySelectorAll('.espanhol')
+    const en = document.querySelectorAll('.ingles')
+    const pt = document.querySelectorAll('.portugues')
 
+    function ingles() {
+        document.querySelector('#frase').textContent = "I’m a full-stack developer, bringing performance, design, and functionality together in a single codebase!"
+    
+        document.querySelector('#resumo').innerHTML = "Hello! I'm <strong>Felippy Benicio Joaquim Braga</strong>, a full-stack developer specializing in <strong>PHP, JavaScript, HTML, and CSS</strong>. I can help turn your dreams into code!"
+    
+        
+    
+        document.querySelector('#H').textContent = "Home"
+        document.querySelector('#P').textContent = "My Projects"
+        document.querySelector('#S').textContent = "About Me"
+        document.querySelector('#A').textContent = "How can I help you?"
+        document.querySelector('#idi').textContent = "Lenguage"
+        document.querySelector('#idiHori').textContent = "Lenguage"
+        document.querySelector('#horiH').textContent = "Home"
+        document.querySelector('#horiP').textContent = "My Projects"
+        document.querySelector('#horiS').textContent = "About Me"
+        document.querySelector('#horiA').textContent = "How can I help you?"
+        document.querySelector('#tituloP').textContent = "My Projects"
+        document.querySelector('#tituloS').textContent = "About Me"
+        document.querySelector('#tituloA').textContent = "How can I help you?"
+    
+        document.querySelector('#mim').innerHTML = "<p>Hello! My name is <strong>Felippy Benicio Joaquim Braga</strong>, an early-career software developer passionate about technology — a journey that began in 2020, while I was still in high school.<br><br>Since then, I have been dedicated to self-directed learning through free online content and courses on platforms such as YouTube and Udemy. Along this path, I have developed skills in <strong>algorithms, C, C++, C#, Java, Python, PHP, JavaScript, databases, HTML, and CSS</strong>, as well as <strong>graphic design</strong> principles applied to user interface development, enabling me to build functional systems with clear structure, usability, and visual consistency.<br><br>I am focused on consolidating my career as a developer, with an emphasis on <strong>web and backend development</strong>, creating <strong>efficient, secure, and scalable solutions</strong>.<br><br>Currently, I am pursuing a degree in <strong>Systems Analysis and Development</strong>, deepening my knowledge of data structures and algorithms — a fundamental foundation for continuous technical growth.<br><br>I have an <strong>advanced level of English</strong> and I am learning <strong>Spanish</strong>, aiming to collaborate on international projects and exchange experiences with developers from around the world.<br><br>💻 Interested in exploring my projects and following my professional growth? Visit my GitHub and see how I am contributing to the future of technology.</p>"
+
+    
+        document.querySelector('#recrutador01').textContent = "I am a recruiter for a company"
+        document.querySelector('#freelancer01').textContent = "I need help with my project"
+        document.querySelector('#recrutador02').textContent = "I am a recruiter for a company"
+        document.querySelector('#freelancer02').textContent ="I need help with my project"
+    
+        document.querySelector('#skills').textContent = "My skills"
+        document.querySelector('#cv').textContent = "My resume/CV"
+        document.querySelector('#formal').textContent = "Formal resume, no photo"
+        document.querySelector('#informal').textContent = "Informal resume, with photo"
+    
+    
+        document.querySelector('#TextoRecrutador').textContent  = "Hello, Recruiter! If you're looking for a motivated full-stack developer with a strong desire to grow, I could be an excellent addition to your team. I am a dedicated young professional with great enthusiasm for learning new technologies and receiving feedback. I believe in the power of collaboration and am always committed to adapting to challenges and contributing to the success of the team and the company."
+        document.querySelector('#textoFreelancer').textContent  = "Looking for someone to bring your project to life? I can help! I’m a developer specializing in creating responsive and dynamic websites, with skills in both front-end and back-end development. My focus is on delivering customized and functional solutions that meet your needs and provide a great user experience. Shall we talk about how to turn your ideas into reality?"
+    
+        document.querySelector('#contato').textContent = "Find me on the following platforms"
+        document.querySelector('#direitos').innerHTML = "© 2024 <strong>Felippy Benicio Joaquim Braga</strong>. All rights reserved."
+    } 
+    
+
+    function espanhol() {
+        document.querySelector('#frase').textContent = "Soy desarrollador full-stack, combinando rendimiento, diseño y funcionalidad en un solo código."
+    
+        document.querySelector('#resumo').innerHTML = "¡Hola! Soy <strong>Felippy Benicio Joaquim Braga</strong>, desarrollador full-stack especializado en PHP<strong>, JavaScript, HTML y CSS</strong>. ¡Puedo ayudarte a convertir tus sueños en código!"
+    
+        document.querySelector('#H').textContent = "Inicio"
+        document.querySelector('#P').textContent = "Mis Proyectos"
+        document.querySelector('#S').textContent = "Acerca de Mí"
+        document.querySelector('#A').textContent = "¿Como Puedo Ayudarte?"
+        document.querySelector('#idi').textContent = "Linguagem"
+        document.querySelector('#idi').style.padding = "10px 20px"
+        document.querySelector('#idiHori').textContent = "Linguagem"
+        document.querySelector('#horiH').textContent = "Inicio"
+        document.querySelector('#horiP').textContent = "Mis Proyectos"
+        document.querySelector('#horiS').textContent = "Acerca de Mí"
+        document.querySelector('#horiA').textContent = "¿Como Puedo Ayudarte?"
+        document.querySelector('#tituloP').textContent = "Mis Proyectos"
+        document.querySelector('#tituloS').textContent = "Acerca de Mí"
+        document.querySelector('#tituloA').textContent = "¿Como Puedo Ayudarte?"
+    
+        document.querySelector('#mim').innerHTML = "¡Hola! Mi nombre es <strong>Felippy Benicio Joaquim Braga</strong>, soy un desarrollador de software en inicio de carrera, apasionado por la tecnología — un camino que comenzó en 2020, cuando aún cursaba la educación secundaria.<br><br>Desde entonces, me he dedicado al aprendizaje autodidacta a través de contenidos gratuitos en línea y cursos en plataformas como YouTube y Udemy. A lo largo de esta trayectoria, he desarrollado habilidades en <strong>algoritmos, C, C++, C#, Java, Python, PHP, JavaScript, bases de datos, HTML y CSS</strong>, además de conocimientos en <strong>diseño gráfico</strong> aplicados al desarrollo de interfaces, lo que me permite crear sistemas funcionales con buena organización visual y usabilidad.<br><br>Mi objetivo es consolidar mi carrera como desarrollador, con enfoque en <strong>desarrollo web y backend</strong>, creando soluciones <strong>eficientes, seguras y escalables</strong>.<br><br>Actualmente, estudio <strong>Análisis y Desarrollo de Sistemas</strong>, profundizando mis conocimientos en estructuras de datos y algoritmos — una base esencial para el crecimiento técnico continuo.<br><br>Tengo un <strong>nivel avanzado de inglés</strong> y estoy aprendiendo <strong>español</strong>, con el objetivo de colaborar en proyectos internacionales y compartir experiencias con desarrolladores de todo el mundo.<br><br>"
+    
+        document.querySelector('#recrutador01').textContent = "Soy reclutador para una empresa"
+        document.querySelector('#freelancer01').textContent = "Necesito ayuda con mi proyecto"
+        document.querySelector('#recrutador02').textContent = "Soy reclutador para una empresa"
+        document.querySelector('#freelancer02').textContent = "Necesito ayuda con mi proyecto"
+    
+        document.querySelector('#skills').textContent = "Mis habilidades"
+        document.querySelector('#cv').textContent = "Currículum Vitae"
+        document.querySelector('#formal').textContent = "CV formal, sin foto"
+        document.querySelector('#informal').textContent = "CV informal, con foto"
+    
+        document.querySelector('#TextoRecrutador').textContent  = "¡Hola, Reclutador! Si buscas un desarrollador full-stack motivado y con un gran deseo de crecer, podría ser una excelente elección para tu equipo. Soy un joven dedicado, con gran entusiasmo por aprender nuevas tecnologías y recibir retroalimentación. Creo en el poder de la colaboración y siempre estoy comprometido a adaptarme a los desafíos y contribuir al éxito del equipo y la empresa."
+        document.querySelector('#textoFreelancer').textContent  = "¿Estás buscando a alguien que le dé vida a tu proyecto? ¡Puedo ayudarte! Soy un desarrollador especializado en la creación de sitios web responsivos y dinámicos, con habilidades tanto en front-end como en back-end. Mi enfoque es ofrecer soluciones personalizadas y funcionales que se adapten a tus necesidades y brinden una excelente experiencia de usuario. ¿Hablamos sobre cómo convertir tus ideas en realidad?"
+    
+        document.querySelector('#contato').textContent = "Encuéntrame en las siguientes plataformas:"
+        document.querySelector('#direitos').innerHTML = "© 2024 <strong>Felippy Benicio Joaquim Braga</strong>. Todos los derechos reservados."
+    }
+
+    es.forEach(btn => {
+        btn.addEventListener('click', espanhol)
+    })
+
+    en.forEach(btn => {
+        btn.addEventListener('click', ingles)
+    })
+
+    pt.forEach(btn => {
+        btn.addEventListener('click', () => location.reload())
+    })
+}
+document.addEventListener("DOMContentLoaded", traducao)
 
 function ajuda() {
     const btRecrutador1 = document.getElementById('recrutador01')
