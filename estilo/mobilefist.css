@@ -86,6 +86,7 @@ menu#vertical {
     flex-flow: column wrap;
     justify-content: flex-start;
     z-index: 1000;
+    overflow: hidden;
 }
 
 menu#vertical li {
@@ -129,11 +130,13 @@ div.linkshori {
 
 aside#traduzirHori {
     display: none;
+    position: absolute;
+    bottom: 0px;
 }
 
 menu#vertical aside#traduzir {
     position: absolute;
-    bottom: 50px;
+    bottom: 100px;
 }
 
 div#idioma {
@@ -220,11 +223,14 @@ strong {
 }
 
 img#eu {
-    margin: -112px;
-    margin-right: 44px;
+    /* margin: -112px;
+    margin-right: 44px; */
     border-radius: 10px;
     width: 160px;
-    align-self: flex-end;
+    /* align-self: flex-end; */
+    position: absolute;
+    bottom: -155px;
+    right: 30px;
 }
 
 img#eu:hover {
