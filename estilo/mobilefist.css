@@ -130,8 +130,6 @@ div.linkshori {
 
 aside#traduzirHori {
     display: none;
-    position: absolute;
-    bottom: 0px;
 }
 
 menu#vertical aside#traduzir {

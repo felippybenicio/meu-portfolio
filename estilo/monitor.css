@@ -94,6 +94,10 @@ menu#horizontal {
     will-change: transform, opacity;
 }
 
+aside#traduzir {
+    width: 148px;
+    
+}
 
 aside#traduzirHori {
     display: block;
@@ -108,6 +112,10 @@ div#idiomaHori {
     flex-flow: row wrap;
     justify-content: space-evenly;
 } 
+
+p#idi {
+    text-align: center;
+}
 
 p#idiHori {
     padding: 5px 30px;
