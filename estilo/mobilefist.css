@@ -165,10 +165,9 @@ p#idi {
     background-color: #1c3e70a9;
 }
 
-
-img.tradução {
-    width: 25px;
-    height: 17px;
+span.traducao {
+    width: 40px;
+    height: 25px;
 }
 
 button.menu {
