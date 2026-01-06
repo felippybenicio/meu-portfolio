@@ -135,7 +135,10 @@ aside#traduzirHori {
 menu#vertical aside#traduzir {
     position: absolute;
     bottom: 100px;
+    width: 148px;
 }
+
+
 
 div#idioma {
     background-color: #83838367;
@@ -157,6 +160,7 @@ p#idi {
     font-size: 1em;
     font-family: 'sora';
     cursor: pointer;
+    text-align: center;
 }
 
 #idi:hover {
@@ -309,7 +313,7 @@ button.active {
 
 iframe {
     width: 100%;
-    height: 810px;
+    height: 872px;
 }
 
 #sites, #sistemas {
@@ -318,6 +322,7 @@ iframe {
 
 main#sobreMim {
     height: auto;
+    margin-top: 80px;
 }
 
 #sobreMim h3 {
