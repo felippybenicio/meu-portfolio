@@ -51,7 +51,7 @@ const idiomas = {
     },
 
     es: {
-        frase: "Soy desarrollador full-stack, combinando <span>rendimiento, diseño y funcionalidad en un solo código!</span>",
+        frase: "Soy desarrollador<br>full-stack, combinando <span>rendimiento, diseño y funcionalidad en un solo código!</span>",
         resumo: "¡Hola! Soy <strong>Felippy Benicio Joaquim Braga</strong>, desarrollador full-stack especializado en <strong>C, C++, C#, Java, Python, PHP, JavaScript, HTML e CSS</strong>. ¡Puedo ayudarte a convertir tus sueños en código!",
 
         menu: {

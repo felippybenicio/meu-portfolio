@@ -8,7 +8,7 @@ window.idiomas.en = {
   },
 
   sistemas: {
-    s1: 'inventory Management'
+    s1: 'Inventory Management'
   },
 
   codigo: '< CODE >'
@@ -22,7 +22,7 @@ window.idiomas.es = {
   },
 
   sistemas: {
-    s1: 'gestión de Inventario'
+    s1: 'Gestión de Inventario'
   },
 
   codigo: '< CÓDIGO >'
