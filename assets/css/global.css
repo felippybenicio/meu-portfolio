@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@200..800&family=Sora:wght@100..800&display=swap');
+
+:root {
+    --pricipal: #031630;
+    --secundario: #1c3e70;
+    --secundario-claro: #8ab7e9;
+    --destaques: #3cced3;
+    --discreto: rgba(28, 62, 112, 0.15);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'arvo', 'Times New Roman', Times, serif;
+}
+
+html, body {
+    background-image: linear-gradient(to top, var(--pricipal), var(--secundario), var(--pricipal));
+    color: white;
+}
+
+.hedden {
+    display: none;
+}
+
+strong {
+    color: var(--destaques);
+}

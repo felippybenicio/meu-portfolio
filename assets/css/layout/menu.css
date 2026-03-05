@@ -1,0 +1,271 @@
+menu#horizontal {
+    display: none;
+}
+
+div#barraMobile {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: calc(100% - 50px);
+    background-color: var(--secundario);
+    padding: 10px 25px;
+    position: fixed;
+    z-index: 1000;
+}
+
+div#barraMobile p {
+    margin: 5px;
+}
+
+span#sanduiche {
+    font-size: 2em;
+    height: auto;
+    cursor: pointer;
+    display: block;
+}
+
+span#X {
+    display: block;
+    font-size: 2em;
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 40px 0px;
+}
+
+
+div.fixado {
+    position: fixed;
+    background-color: var(--secundario);
+    height: 100vh;
+    padding: 25px;
+}
+
+
+menu#vertical {
+    position: absolute;
+    height: 100dvh;
+    width: 195px;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+menu#vertical li {
+    list-style-type: none;
+    font-size: 1.1em;
+    color: var(--pricipal);
+    text-decoration: none;
+    margin-top: 50px;
+    padding: 5px 5px 5px 16px;
+    position: relative;
+    text-decoration: none;
+    transition: .5s;
+    width: 124px;
+    text-align: center;
+}
+
+li.vertical i.material-icons {
+    color: white;
+    position: absolute;
+    left: 0px;
+    transition: .6s;
+}
+
+li.vertical:hover {
+    background-color: var(--secundario);
+    border-radius: 5px;
+    transition: 0.5s;
+
+    button.menu {
+        color: var(--pricipal);
+    }
+
+    i.material-icons {
+        color: var(--pricipal);
+    }    
+}  
+
+div.linkshori {
+    display: none;
+}
+
+aside#traduzirHori {
+    display: none;
+}
+
+menu#vertical aside#traduzir {
+    position: absolute;
+    bottom: 100px;
+    width: 148px;
+}
+
+
+
+div#idioma {
+    background-color: #83838367;
+    margin: 10px 5px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--secundario);
+    display: none ;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+}
+
+p#idi {
+    background-color: var(--secundario);
+    padding: 10px 28px;
+    margin: 5px auto 50px auto;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'sora';
+    cursor: pointer;
+    text-align: center;
+}
+
+#idi:hover {
+    background-color: #1c3e70a9;
+}
+
+span.traducao {
+    width: 40px;
+    height: 25px;
+}
+
+button.menu {
+    background-color: transparent;
+    border: none;
+    font-family: 'sora';
+    color: white;
+    font-size: .8em;
+    text-decoration: none;
+    padding: 0px;
+    transition: .5s;
+}
+
+li.vertical, div.linkshori, button.menu {
+    cursor: pointer;
+}
+
+#ajuda i {
+    position: absolute;
+    top: 12px;
+}
+
+
+@media screen and (min-width: 990px) {
+    div#barraMobile {
+        display: none;
+    }
+
+    header {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;     
+        position: relative;
+    }
+
+    span#X, span#sanduiche {
+        display: none;
+    }
+
+    menu#vertical {
+        display: flex;
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    div.fixado {
+        position: static;
+        background-color: transparent;
+    }
+
+    menu#horizontal {
+        background-color: var(--secundario);
+        width: 90dvw;
+        padding: 15px;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        position: fixed;
+        top: 0;
+        left: 3%;
+        border-radius: 0 0 15px 15px;
+        z-index: 1000;
+
+        /* estado inicial */
+        opacity: 0;
+        transform: translateX(-80px);
+        pointer-events: none;
+
+        transition:
+        opacity 0.35s ease,
+        transform 0.45s cubic-bezier(.4,0,.2,1);
+
+        will-change: transform, opacity;
+    }
+
+    aside#traduzirHori {
+        display: block;
+    }
+
+    div#idiomaHori {
+        background-color: #03163046 ;
+        padding: 8px;
+        border-radius: 10px;
+        border: 1px solid var(--secundario);
+        display: none;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    } 
+
+
+    p#idiHori {
+        padding: 5px 30px;
+        border-radius: 10px;
+        font-size: 1em;
+        font-family: 'sora';
+        cursor: pointer;
+        transition: .2s;
+
+    }
+
+    #idiHori:hover {
+        background-color: #03163046;
+    }
+
+    div.linkshori {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: 0px 35px ;
+    }
+
+    span.traducao {
+        width: 25px;
+        height: 17px;
+    }
+
+    body.scrolled #vertical {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-60%);
+    }
+
+    body.scrolled menu#horizontal {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+    }
+}

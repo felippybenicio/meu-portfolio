@@ -1,0 +1,513 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@200..800&family=Sora:wght@100..800&display=swap');
+
+
+
+main {
+    background-color: transparent;
+    width: 100vw;
+    margin: auto;
+}
+
+h3 {
+    font-family: 'sora', Arial, Helvetica, sans-serif;
+    margin-left: 0px;
+    padding: 80px 46px 25px 30px;
+}
+
+#meusProjetos {
+    padding-top: 105px;
+}
+
+#sobreMim h4 {
+    font-family: 'sora', Arial, Helvetica, sans-serif;
+    margin-left: 0px;
+    padding: 25px 46px 25px 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+main#meusProjetos {
+    height: 950px;
+}
+
+aside#seções {
+    align-self: stretch;
+    margin: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+button.areas {
+    background-color: transparent;
+    color: var(--secundario);
+    border: 2px solid var(--secundario);
+    border-radius: 20px;
+    margin: 0px 10px;
+    padding: 8px 5px;
+    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.411);
+    transition: 1.0s;
+    width: 113px;
+}
+
+button.areas strong {
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+button.areas:hover {
+    color: white;
+    background-color: var(--secundario);
+    transition: .5s;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
+    cursor: pointer;
+}
+
+button.active {
+    color: white;
+    background-color: var(--secundario);
+    transition: .5s;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 872px;
+}
+
+#sites, #sistemas {
+    display: none;
+}
+
+main#sobreMim {
+    height: auto;
+    margin-top: 80px;
+}
+
+#sobreMim h3 {
+    padding-left: 29px;
+    padding-bottom: 0px;
+    margin-bottom: -10px;
+}
+
+ul#sobreTexto {
+    margin: 30px 30px 60px 48px;
+    columns: 1;
+}
+
+#sobreTexto a {
+    color: var(--destaques);
+    text-decoration: none;
+}
+
+#sobreTexto a:hover {
+    text-decoration: underline;
+}
+
+p#mim {
+    margin: 30px;
+    columns: 1;
+}
+section#habilidades {
+    background-color: var(--discreto);
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    width: auto;
+}
+
+img.linguagens {
+    margin: 4px;
+}
+
+section#curriculo {
+    background-color: var(--discreto);
+    display: flex;
+    flex-flow: column wrap;
+    margin: 20px;
+    margin-bottom: 0px;
+    padding: 10px;
+    border-radius: 25px;
+    width: auto;
+}
+
+a.curriculo {
+    color: black;
+    text-align: center;
+    font-size: 1.3em;
+    text-decoration: none;
+    width: 82px;
+    height: 115px;
+    margin: auto;
+}
+
+a.curriculo:hover {
+    border: 1px solid var(--pricipal);
+    border-radius: 5px;
+    scale: calc(1.2);
+    transition: 0.5s;
+
+}
+
+a.curriculo img {
+    width: 82px;
+    height: 115px;
+    border-radius: 5px;
+}
+
+main#comoAjudar {
+    background-image: linear-gradient(to bottom, var(--pricipal), #0c2957);
+    height: auto;
+    margin: auto;
+    padding-bottom: 1px;
+}
+
+aside#melhorTexto01 {
+    display: none;
+    
+}
+
+aside#melhorTexto02 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+button.textos02 {
+    background-color: var(--secundario);
+    padding: 5px;
+    margin: 15px auto;
+    color: white;
+    border:2px solid var(--secundario);
+    border-radius: 25px;
+    transition: .4s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.329);
+    
+}
+
+button.textos02:hover {
+    background-color: var(--pricipal);
+    color: white;
+    border:2px solid var(--secundario);
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.158);
+}
+
+button.textos02.clicado {
+    background-color: var(--pricipal);
+    color: white;
+    border:2px solid var(--secundario);
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.158);
+    filter: none;
+}
+
+button.textos02 strong {
+    color: white;
+    font-family: 'sora', Arial, Helvetica, sans-serif;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.411));
+}
+
+p.ajudar {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.452);
+    color: black;
+    width: 260px;
+    height: 260px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 25px;
+    border-radius: 0px 20px 20px 20px;
+    box-shadow: inset 7px 9px 16px rgba(0, 0, 0, 0.418);
+    position: relative;
+    animation: fadeUp 0.5s ease;
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+i.fecharTextos {
+    color: white;
+    position: absolute;
+    top: -24px;
+    left: 0px;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (min-width: 990px) {
+    html, body {
+        background-color: var(--pricipal);
+        width: 100dvw;
+        overflow-x: hidden;
+    }
+
+    main {  
+        width: 100vw;
+    }
+
+    h3 {
+        padding-left: 90px;
+    }
+
+    main#meusProjetos {
+        padding-top: 20px;
+        height: 915px;
+    }
+
+    aside#seções {
+        align-self: stretch;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 20px 0px ;
+        padding: 0px;
+        
+    }
+
+    button.areas {
+        background-color: transparent;
+        color: var(--secundario);
+        border: 2px solid var(--secundario);
+        border-radius: 20px;
+        padding: 7px 155px;
+        margin-bottom: 25px;
+        transform: skewY(-3deg);
+        box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.411);
+        transition: 1.0s;
+        width: auto;
+    }
+
+    button.areas strong {
+        color: white;
+        position: relative;
+        z-index: 2;
+        border-radius: 20px;
+    }
+
+    button.areas:hover {
+        color: white;
+        background-color: var(--secundario);
+        transition: .5s;
+        transform: skewY(0deg);
+        box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
+        border-radius: 20px;
+    }
+
+    button.areas::before {
+        background-color: var(--secundario);
+        border-radius: 20px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 100%;
+        transition: width 1.0s  ease;
+        z-index: 1;
+    }
+
+    button.areas:hover::before {
+        width: 100%;
+        color: var(--discreto);
+        border-radius: 20px;
+    }
+
+    button.areas.active {
+        color: white;
+        background-color: var(--secundario);
+        transition: .5s;
+        transform: skewY(0deg);
+        box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
+        border-radius: 20px;
+    }
+
+    #sobreMim h3 {
+        padding-left: 90px;
+    }
+
+    section#destaques-pai {
+        width: 1030px;
+    }
+
+    ul#sobreTexto {
+        margin-left: 108px;
+        columns: 2;
+    }
+
+    p#mim {
+        columns: 2;
+        margin: 30px 90px;
+    }
+
+    aside#sobreMim {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+
+    section#habilidades {
+        background-color: var(--discreto);
+        display: inline-block;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 25px;
+        width: 376px;
+    }
+
+    img.linguagens {
+        margin: 4px;
+    }
+
+    img.linguagens:hover {
+        scale: calc(1.1);
+        transition: .2s;
+    }
+
+    section#curriculo {
+        background-color: var(--discreto);
+        display: flex;
+        flex-flow: column wrap;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 25px;
+        width: 376px;
+    }
+
+    main#comoAjudar {
+        height: auto;
+        /* margin-bottom: 20px; */
+    }
+
+    aside#melhorTexto01 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    button.textos01 {
+        font-family: 'sora', Arial, Helvetica, sans-serif;
+        background-color: transparent;
+        color: var(--secundario);
+        border: 2px solid var(--secundario);
+        transform: skewY(-3deg);
+        box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.411);
+        transition: 1.0s;
+        width: 285px;
+        height: 40px;
+        margin: 50px;
+    }
+
+    button.textos01 strong {
+        color: white;
+        position: relative;
+        z-index: 2;
+    }
+
+    button.textos01:hover {
+        color: white;
+        background-color: var(--secundario);
+        transition: .5s;
+        transform: skewY(0deg);
+        box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.411);
+        
+    }
+
+    button.textos01::before {
+        background-color: var(--secundario);
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 100%;
+        transition: width 1.0s  ease;
+        z-index: 1;
+        box-shadow: 0px 0px 5px var(--secundario), 
+                    0px 0px 25px var(--secundario),
+                    0px 0px 50px var(--secundario),
+                    0px 0px 200px var(--secundario);
+    }
+
+    button.textos01:hover::before {
+        width: 100%;
+        color: var(--discreto);
+    }
+
+    button.textos02 {
+        display: none;
+    }
+
+    aside#melhorTexto02 {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        
+    }
+
+    button.textos02:hover {
+        background-color: var(--pricipal);
+        color: white;
+        border:2px solid var(--secundario);
+        box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.158);
+        filter: none;
+    }
+
+    button.textos02.clicado {
+        background-color: var(--pricipal);
+        color: white;
+        border:2px solid var(--secundario);
+        box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.158);
+        filter: none;
+    }
+
+    button.textos02 strong {
+        font-family: 'sora', Arial, Helvetica, sans-serif;
+        filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.411));
+    }
+
+    p.ajudar {
+        width: 600px;
+        height: 120px;
+    }
+
+
+
+    @media (max-width: 1175px) and (min-width: 600px) {
+        img#eu {
+            width: 261px;
+            /* margin: -750px 418px; */
+            border-radius: 10px;
+        }
+
+        button.areas {
+            padding: 7px 120px;
+        }
+
+        ul#sobreTexto {
+            margin: 30px 108px;
+            margin-bottom: 60px;
+        }
+
+        aside#seções {
+            margin: 20px 80px;
+        }
+    }
+}
+

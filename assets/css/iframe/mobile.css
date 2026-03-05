@@ -12,7 +12,7 @@
 }
 
 html, body {
-    background-color: var(--pricipal);
+    background-color: transparent;
     color: white;
 }
 

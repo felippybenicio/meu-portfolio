@@ -1,3 +1,50 @@
+function botoesidioma() {
+    const botaoIdiomaVerti = document.getElementById('idi')
+    const botaoIdiHorizon = document.getElementById('idiHori')
+    const idiomasVertical = document.getElementById('idioma')
+    const idiomasHorizontal = document.getElementById('idiomaHori')
+
+    botaoIdiomaVerti.addEventListener('mouseenter', function () {
+        idiomasVertical.style.display = 'flex';
+    });
+
+    botaoIdiomaVerti.addEventListener('mouseout', function () {
+        idiomasVertical.style.display = 'none';
+    });
+
+    botaoIdiomaVerti.addEventListener('click', function () {
+        botaoIdiomaVerti.addEventListener('mouseout', function () {
+            if (idiomasVertical.style.display === 'flex') {
+                idiomasVertical.style.display = 'none';
+            } else {
+                idiomasVertical.style.display = 'flex';
+            }
+        });
+    });
+
+
+    botaoIdiHorizon.addEventListener('mouseenter', function () {
+        idiomasHorizontal.style.display = 'flex';
+        idiomasHorizontal.style.transition = '1s'
+    });
+
+    botaoIdiHorizon.addEventListener('mouseout', function () {
+        idiomasHorizontal.style.display = 'none';
+    });
+
+    botaoIdiHorizon.addEventListener('click', function () {
+        botaoIdiHorizon.addEventListener('mouseout', function () {
+            if (idiomasHorizontal.style.display === 'flex') {
+                idiomasHorizontal.style.display = 'none';
+            } else {
+                idiomasHorizontal.style.display = 'flex';
+            }
+        });
+    });
+
+}
+botoesidioma()
+
 
 const $ = (id) => document.querySelector(id);
 let estadoOriginal = {};
