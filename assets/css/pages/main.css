@@ -129,7 +129,7 @@ img.linguagens {
     margin: 4px;
 }
 
-#curriculo {
+#containerCv {
     background-color: var(--discreto);
     display: flex;
     flex-flow: column wrap;
@@ -140,29 +140,12 @@ img.linguagens {
     width: auto;
 }
 
-a.curriculo {
-    color: black;
+#containerCv p {
     text-align: center;
-    font-size: 1.3em;
-    text-decoration: none;
-    width: 82px;
-    height: 115px;
-    margin: auto;
 }
 
-a.curriculo:hover {
-    border: 1px solid var(--pricipal);
-    border-radius: 5px;
-    scale: calc(1.2);
-    transition: 0.5s;
 
-}
 
-a.curriculo img {
-    width: 82px;
-    height: 115px;
-    border-radius: 5px;
-}
 
 #comoAjudar {
     background-image: linear-gradient(to bottom, var(--pricipal), #0c2957);

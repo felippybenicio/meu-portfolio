@@ -10,6 +10,7 @@ div#barraMobile {
     width: calc(100% - 50px);
     background-color: var(--secundario);
     padding: 10px 25px;
+    border-bottom: 0.5px solid var(--corBorda);
     position: fixed;
     z-index: 1000;
 }
