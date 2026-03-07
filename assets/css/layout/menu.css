@@ -1,4 +1,4 @@
-menu#horizontal {
+#horizontal {
     display: none;
 }
 
@@ -6,6 +6,7 @@ div#barraMobile {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
     width: calc(100% - 50px);
     background-color: var(--secundario);
     padding: 10px 25px;
@@ -13,18 +14,38 @@ div#barraMobile {
     z-index: 1000;
 }
 
-div#barraMobile p {
-    margin: 5px;
+.contato {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
-span#sanduiche {
+.contato a {
+    text-decoration: none;
+}
+
+.contato a img {
+    margin: 0px 5px;
+    width: 20px;
+    transition: 0.3s;
+}
+
+.contato a img:hover {
+    filter: drop-shadow(0 0 10px white)
+            drop-shadow(0 0 30px white)
+            drop-shadow(0 0 50px white);
+    transform: scale(1.2); 
+}
+
+#sanduiche {
     font-size: 2em;
+    margin-left: 70px; 
     height: auto;
     cursor: pointer;
     display: block;
 }
 
-span#X {
+#X {
     display: block;
     font-size: 2em;
     font-weight: bolder;
@@ -41,7 +62,7 @@ div.fixado {
 }
 
 
-menu#vertical {
+#vertical {
     position: absolute;
     height: 100dvh;
     width: 195px;
@@ -55,7 +76,7 @@ menu#vertical {
     overflow: hidden;
 }
 
-menu#vertical li {
+#vertical li {
     list-style-type: none;
     font-size: 1.1em;
     color: var(--pricipal);
@@ -69,19 +90,19 @@ menu#vertical li {
     text-align: center;
 }
 
-li.vertical i.material-icons {
+.vertical i.material-icons {
     color: white;
     position: absolute;
     left: 0px;
     transition: .6s;
 }
 
-li.vertical:hover {
+.vertical:hover {
     background-color: var(--secundario);
     border-radius: 5px;
     transition: 0.5s;
 
-    button.menu {
+    a {
         color: var(--pricipal);
     }
 
@@ -90,15 +111,15 @@ li.vertical:hover {
     }    
 }  
 
-div.linkshori {
+.linkshori {
     display: none;
 }
 
-aside#traduzirHori {
+#traduzirHori {
     display: none;
 }
 
-menu#vertical aside#traduzir {
+#vertical #traduzir {
     position: absolute;
     bottom: 100px;
     width: 148px;
@@ -106,7 +127,7 @@ menu#vertical aside#traduzir {
 
 
 
-div#idioma {
+#idioma {
     background-color: #83838367;
     margin: 10px 5px;
     padding: 8px;
@@ -138,7 +159,7 @@ span.traducao {
     height: 25px;
 }
 
-button.menu {
+.vertical a {
     background-color: transparent;
     border: none;
     font-family: 'sora';
@@ -149,7 +170,7 @@ button.menu {
     transition: .5s;
 }
 
-li.vertical, div.linkshori, button.menu {
+li.vertical, div.linkshori, .vertical a {
     cursor: pointer;
 }
 
@@ -159,7 +180,7 @@ li.vertical, div.linkshori, button.menu {
 }
 
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1220px) {
     div#barraMobile {
         display: none;
     }
@@ -175,7 +196,7 @@ li.vertical, div.linkshori, button.menu {
         display: none;
     }
 
-    menu#vertical {
+    #vertical {
         display: flex;
         opacity: 1;
         transform: translateX(0);
@@ -189,7 +210,7 @@ li.vertical, div.linkshori, button.menu {
         background-color: transparent;
     }
 
-    menu#horizontal {
+    #horizontal {
         background-color: var(--secundario);
         width: 90dvw;
         padding: 15px;
@@ -263,7 +284,7 @@ li.vertical, div.linkshori, button.menu {
     transform: translateY(-60%);
     }
 
-    body.scrolled menu#horizontal {
+    body.scrolled #horizontal {
         opacity: 1;
         transform: translateX(0);
         pointer-events: auto;

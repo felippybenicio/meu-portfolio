@@ -3,7 +3,7 @@ function ajustarMenu() {
     const menu = document.getElementById('vertical');
     const frase = document.getElementById('p');
 
-    if (window.innerWidth > 990) {
+    if (window.innerWidth > 1220) {
         menu.style.display = 'block';
         sanduiche.style.display = 'none';
         frase.style.marginRight = '165px';
@@ -60,7 +60,7 @@ function configurarEventos() {
 
   // ===== LAYOUT =====
   function aplicarLayout() {
-    if (window.innerWidth < 990) {
+    if (window.innerWidth < 1220) {
       sanduiche.style.display = 'block';
       fecharMenu();
       document.body.classList.remove('scrolled');
@@ -112,54 +112,54 @@ window.addEventListener('DOMContentLoaded', () => {
     configurarEventos();
 });
 
-document.addEventListener('DOMContentLoaded', botoesMenu);
-window.onload = botoesMenu;
-function botoesMenu() {
-    const Bhome = document.querySelectorAll( '.h')
-    const Bprojetos = document.querySelectorAll( '.p')
-    const BsobreMim = document.querySelectorAll( '.s')
-    const Bajuda = document.querySelectorAll( '.a')
+// document.addEventListener('DOMContentLoaded', botoesMenu);
+// window.onload = botoesMenu;
+// function botoesMenu() {
+//     const Bhome = document.querySelectorAll( '.h')
+//     const Bprojetos = document.querySelectorAll( '.p')
+//     const BsobreMim = document.querySelectorAll( '.s')
+//     const Bajuda = document.querySelectorAll( '.a')
 
-    const header = document.getElementById("cabecalho")
-    const h3projetos = document.getElementById("tituloP")
-    const h3sobreMim = document.getElementById("tituloS")
-    const h3ajuda = document.getElementById("tituloA")
+//     const header = document.getElementById("cabecalho")
+//     const h3projetos = document.getElementById("tituloP")
+//     const h3sobreMim = document.getElementById("tituloS")
+//     const h3ajuda = document.getElementById("tituloA")
 
-    Bhome.forEach(botao => {
-        botao.addEventListener('click', function(){
-            header.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        });
-    });
+//     Bhome.forEach(botao => {
+//         botao.addEventListener('click', function(){
+//             header.scrollIntoView({
+//                 behavior: 'smooth',
+//                 block: 'start'
+//             });
+//         });
+//     });
     
     
-    Bprojetos.forEach(botoes => {
-        botoes.addEventListener('click', function(){
-            h3projetos.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        })
-    })
+//     Bprojetos.forEach(botoes => {
+//         botoes.addEventListener('click', function(){
+//             h3projetos.scrollIntoView({
+//                 behavior: 'smooth',
+//                 block: 'start'
+//             });
+//         })
+//     })
 
-    BsobreMim.forEach(botoes => {
-        botoes.addEventListener('click', function(){
-            h3sobreMim.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        })
-    })
+//     BsobreMim.forEach(botoes => {
+//         botoes.addEventListener('click', function(){
+//             h3sobreMim.scrollIntoView({
+//                 behavior: 'smooth',
+//                 block: 'start'
+//             });
+//         })
+//     })
 
-    Bajuda.forEach(botoes => {
-        botoes.addEventListener('click', function(){
-            h3ajuda.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        })
-    })
+//     Bajuda.forEach(botoes => {
+//         botoes.addEventListener('click', function(){
+//             h3ajuda.scrollIntoView({
+//                 behavior: 'smooth',
+//                 block: 'start'
+//             });
+//         })
+//     })
 
-}
+// }

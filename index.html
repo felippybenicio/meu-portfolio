@@ -20,40 +20,79 @@
 </head>
 <body>
     <header id="cabecalho">
+        <nav class="contato desktop">
+                <a href="https://wa.me/11933208464">
+                    <img src="assets/imagens/whatsapp-branco.png" alt="Whatsapp">
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&to=desenvolvedor.felippybenicio24@gmail.com&su=Olá Felippy,&body=Vi seu portfólio e achei seu trabalho interessante. Podemos conversar?%0A%0AAtenciosamente,">
+                    <img src="assets/imagens/email-branco.png" alt="E-mail">
+                </a>
+                <a href="https://www.linkedin.com/in/felippy-benicio-joaquim-braga-967011336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <img src="assets/imagens/linkedin-branco.png" alt="Linkedin">
+                </a>
+                <a href="https://github.com/felippybraga?tab=repositories">
+                    <img src="assets/imagens/github-branco.png" alt="GitHub">
+                </a>
+        </nav>
         <div id="barraMobile">
-            <p id="p">Felippy Benicio Joaquim Braga</p>
+            <nav class="contato">
+                <a href="https://wa.me/11933208464" target="_blank">
+                    <img src="assets/imagens/whatsapp-branco.png" alt="Whatsapp">
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&to=desenvolvedor.felippybenicio24@gmail.com&su=Olá Felippy,&body=Vi seu portfólio e achei seu trabalho interessante. Podemos conversar?%0A%0AAtenciosamente," target="_blank">
+                    <img src="assets/imagens/email-branco.png" alt="E-mail">
+                </a>
+                <a href="https://www.linkedin.com/in/felippy-benicio-joaquim-braga-967011336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <img src="assets/imagens/linkedin-branco.png" alt="Linkedin">
+                </a>
+                <a href="https://github.com/felippybraga?tab=repositories" target="_blank">
+                    <img src="assets/imagens/github-branco.png" alt="GitHub">
+                </a>
+            </nav>
             <span class="material-symbols-outlined" id="sanduiche">menu</span>
         </div>
 
         <div class="divHeader">
-            <h1>Felippy benicio</h1>
+            <h1>Felippy Benicio Joaquim Braga</h1>
             <h2>
                 Desenvolvedor de Software | <span id="typing"></span>
             </h2>
-            <aside class="previa">
-                <p id="resumo">Desenvolvo aplicações web e sistemas práticos, focados em organização de dados, automação e integração com banco de dados.</p>
+            <div class="previa">
+                <p id="resumo">Desenvolvo <strong>aplicações web</strong> e <strong>sistemas práticos</strong>, focados em organização de dados, automação e integração com banco de dados.</p>
                 <img src="assets/imagens/eu.png" alt="foto de mim" id="eu">
-            </aside>
-            <menu id="vertical" class="menu">
+            </div>
+            <div id="vertical" class="menu">
                 <div class="fixado">
                     <span class="material-symbols-outlined" id="X">close</span>
                     <ul>
-                        <li class="vertical h" id="home">
-                            <i class="material-icons">home</i>
-                            <button class="menu" id="H">Home</button> <br>
+                        <li class="vertical">
+                            <!-- <button class="menu" id="H">Home</button> <br> -->
+                             <a href="#cabecalho">
+                                <i class="material-icons">home</i>
+                                Home
+                            </a>
                         </li>
-                        <li class="vertical p" id="projetos">
-                            <i class="material-icons" id="projetos">description</i>
-                            <button class="menu" id="P">Meus Projetos</button> <br>
+                        <li class="vertical">
+                            <!-- <button class="menu" id="P">Meus Projetos</button> <br> -->
+                             <a href="#tituloP">
+                                <i class="material-icons" id="projetos">description</i>
+                                Meus Projetos
+                             </a>
                         </li>
-                        <li class="vertical s" id="sobreMim">
-                            <i class="material-icons">face_6</i>
-                            <button class="menu" id="S">Sobre Mim</button> <br>
+                        <li class="vertical">
+                            <!-- <button class="menu" id="S">Sobre Mim</button> <br> -->
+                             <a href="#tituloS">
+                                <i class="material-icons">face_6</i>
+                                Sobre Mim
+                             </a>
                         </li>
             
-                        <li class="vertical a" id="ajuda">
-                            <i class="material-icons">question_mark</i>
-                            <button class="menu" id="A">como posso te ajudar?</button>
+                        <li class="vertical">
+                            <!-- <button class="menu" id="A">como posso te ajudar?</button> -->
+                             <a href="#tituloA">
+                                <i class="material-icons">question_mark</i>
+                                como posso ajudar
+                             </a>
                         </li>
                     </ul>
                     <aside id="traduzir">
@@ -65,129 +104,137 @@
                         <p id="idi">Idioma</p>
                     </aside>
                 </div>
-        </div>
-        </menu>  
+            </nav>
+        </div>  
                 
     </header>
-    <menu id="horizontal" class="menu">
-        <div class="linkshori h" id="home2">
-            <i class="material-icons">home</i>
-            <button class="menu" id="horiH">Home</button>
-        </div>
-
-        <div class="linkshori p" id="projetos2">
-            <i class="material-icons" id="projetos">description</i>
-            <button class="menu" id="horiP">Meus Projetos</button>
-        </div>
-
-        <div class="linkshori s" id="sobreMim2">
-            <i class="material-icons">face_6</i>
-            <button class="menu" id="horiS">Sobre Mim</button>
-        </div>
-
-        <div class="linkshori a">
-            <i class="material-icons">question_mark</i>
-            <button class="menu" id="horiA">como posso te ajudar?</button>
-        </div>
-
-        <aside id="traduzirHori">
-            <p id="idiHori">Idioma</p>
-            <div id="idiomaHori">
-                <a class="ingles"><abbr title="English" class="idioma"><span class="flag-icon flag-icon-us" ></span></abbr></a>
-                <a class="espanhol"><abbr title="Español"  class="idioma"><span class="flag-icon flag-icon-es" ></span></abbr></a>
-                <a class="portugues"><abbr title="Portugês"  class="idioma"><span class="flag-icon flag-icon-br" ></span></abbr></a>
+    <main>
+        <nav id="horizontal" class="menu">
+            <div class="linkshori h" id="home2">
+                <!-- 
+                <button class="menu" id="horiH">Home</button> -->
+                <a href="#cabecalho">
+                    <i class="material-icons">home</i>
+                    Home
+                </a>
             </div>
-        </aside>
-    </menu>
-    <main id="meusProjetos">
-        <h3 id="tituloP">Meus Projetos</h3>
-        <aside id="seções">
-            <button class="areas" id="btnLandingPage"><strong>landing Page</strong></button>
-            <button class="areas" id="btnSistemas"><strong>Sistemas</strong></button>
-        </aside>
-        <iframe src="iframes/landingp-page.html" frameborder="0" id="landingPage"></iframe>
-        <iframe src="iframes/sites.html" frameborder="0" id="sites"></iframe>
-        <iframe src="iframes/sistemas.html" frameborder="0" id="sistemas"></iframe>
-    </main>
-    <main id="sobreMim" id="mim">
-        <h3 id="tituloS">Sobre Mim</h3>
-
-        <section id="destaques-pai">
-            <h3 id="destaques">Destaques</h3>
-            <ul id="sobreTexto">
-                <li>Desenvolvedor em início de carreira</li>
-                <li>ADS — Análise e Desenvolvimento de Sistemas</li>
-                <li>Aprendizado autodidata e prática contínua</li>
-                <li>Backend & Web</li>
-                <li>Algoritmos e Estruturas de Dados</li>
-                <li>Linguagens: C, C++, C#, Java, Python, PHP, JS</li>
-                <li>HTML, CSS & noções de UI/UX</li>
-                <li>Inglês avançado | Espanhol básico</li>
-                <li><a href="https://github.com/felippybraga?tab=repositories" target="_blank">GitHub com minha evolução prática em cada tecnologia</a></li>
-            </ul>
-        </section>
+            <div class="linkshori p" id="projetos2">
+                <!-- <i class="material-icons" id="projetos">description</i>
+                <button class="menu" id="horiP">Meus Projetos</button> -->
+                <a href="#tituloP">
+                    <i class="material-icons" id="projetos">description</i>
+                    Meus Projetos
+                </a>
+            </div>
+            <div class="linkshori s" id="sobreMim2">
+                <!-- <i class="material-icons">face_6</i>
+                <button class="menu" id="horiS">Sobre Mim</button> -->
+                <a href="#tituloS">
+                    <i class="material-icons">face_6</i>
+                    Sobre Mim
+                </a>
+            </div>
+            <div class="linkshori a">
+                <!-- <i class="material-icons">question_mark</i>
+                <button class="menu" id="horiA">como posso ajudar</button> -->
+                <a href="#tituloA">
+                    <i class="material-icons">question_mark</i>
+                    como posso te ajudar
+                </a>
+            </div>
+            <aside id="traduzirHori">
+                <p id="idiHori">Idioma</p>
+                <div id="idiomaHori">
+                    <a class="ingles"><abbr title="English" class="idioma"><span class="flag-icon flag-icon-us" ></span></abbr></a>
+                    <a class="espanhol"><abbr title="Español"  class="idioma"><span class="flag-icon flag-icon-es" ></span></abbr></a>
+                    <a class="portugues"><abbr title="Portugês"  class="idioma"><span class="flag-icon flag-icon-br" ></span></abbr></a>
+                </div>
+            </aside>
+        </nav>
+        <section id="sobreMim" id="mim">
+            <h3 id="tituloS">Sobre Mim</h3>
+            <article id="destaques-pai">
+                <h4 id="destaques">Destaques</h4>
+                <ul id="sobreTexto">
+                    <li>Desenvolvedor em início de carreira</li>
+                    <li>ADS — Análise e Desenvolvimento de Sistemas</li>
+                    <li>Aprendizado autodidata e prática contínua</li>
+                    <li>Backend & Web</li>
+                    <li>Algoritmos e Estruturas de Dados</li>
+                    <li>Linguagens: C, C++, C#, Java, Python, PHP, JS</li>
+                    <li>HTML, CSS & noções de UI/UX</li>
+                    <li>Inglês avançado | Espanhol básico</li>
+                    <li><a href="https://github.com/felippybraga?tab=repositories" target="_blank">GitHub com minha evolução prática em cada tecnologia</a></li>
+                </ul>
+            </article>
         
-        <section>
-            <h3 id="maisDeMim">Um pouco mais sobre mim</h3>
-            <p id="mim">
-                Olá! Sou <strong>Felippy Benicio Joaquim Braga</strong>, um programador em início de carreira apaixonado por desenvolvimento de software — uma jornada que começou em 2020, ainda durante o ensino médio.<br><br>
-                Desde então, venho me dedicando ao aprendizado de forma autodidata, explorando conteúdos gratuitos no YouTube e cursos na Udemy. Nessa trajetória, desenvolvi habilidades em <strong>algoritmos, C, C++, C#, Java, Python, PHP, JavaScript, bancos de dados, HTML e CSS</strong>, além de conhecimentos em <strong>design gráfico</strong> aplicados à criação de interfaces, permitindo o desenvolvimento de sistemas funcionais, organizados e com boa usabilidade.<br><br>
-                Busco consolidar minha carreira como desenvolvedor, com foco em <strong>desenvolvimento web e backend</strong>, criando soluções <strong>eficientes, seguras e inovadoras</strong>.<br><br>
-                Atualmente, curso <strong>Análise e Desenvolvimento de Sistemas</strong>, aprofundando meus estudos em estruturas de dados e algoritmos — uma base essencial para o crescimento técnico contínuo.<br><br>
-                Tenho nível <strong>avançado de inglês</strong> e estou aprendendo <strong>espanhol</strong>, com o objetivo de colaborar em projetos internacionais e trocar experiências com desenvolvedores do mundo todo.<br><br>
-                💻 Quer conhecer meus projetos e acompanhar minha evolução? Acesse meu GitHub e veja como estou contribuindo para o futuro da tecnologia!
+            <article>
+                <h4 id="maisDeMim">Um pouco mais sobre mim</h4>
+                <p id="mim">
+                    Olá! Sou <strong>Felippy Benicio Joaquim Braga</strong>, um programador em início de carreira apaixonado por desenvolvimento de software — uma jornada que começou em 2020, ainda durante o ensino médio.<br><br>
+                    Desde então, venho me dedicando ao aprendizado de forma autodidata, explorando conteúdos gratuitos no YouTube e cursos na Udemy. Nessa trajetória, desenvolvi habilidades em <strong>algoritmos, C, C++, C#, Java, Python, PHP, JavaScript, bancos de dados, HTML e CSS</strong>, além de conhecimentos em <strong>design gráfico</strong> aplicados à criação de interfaces, permitindo o desenvolvimento de sistemas funcionais, organizados e com boa usabilidade.<br><br>
+                    Busco consolidar minha carreira como desenvolvedor, com foco em <strong>desenvolvimento web e backend</strong>, criando soluções <strong>eficientes, seguras e inovadoras</strong>.<br><br>
+                    Atualmente, curso <strong>Análise e Desenvolvimento de Sistemas</strong>, aprofundando meus estudos em estruturas de dados e algoritmos — uma base essencial para o crescimento técnico contínuo.<br><br>
+                    Tenho nível <strong>avançado de inglês</strong> e estou aprendendo <strong>espanhol</strong>, com o objetivo de colaborar em projetos internacionais e trocar experiências com desenvolvedores do mundo todo.<br><br>
+                    💻 Quer conhecer meus projetos e acompanhar minha evolução? Acesse meu GitHub e veja como estou contribuindo para o futuro da tecnologia!
+                </p>
+            </article>
+            <article id="sobreHabilidades">
+                <div id="habilidades">
+                    <h4 id="skills">Minhas habilidades</h4>
+                    <img src="assets/imagens/html-5.png" alt="HTML" class="linguagens">
+                    <img src="assets/imagens/css-3.png" alt="CSS" class="linguagens">
+                    <img src="assets/imagens/js.png" alt="JavaScript" class="linguagens">
+                    <img src="assets/imagens/php.png" alt="PHP" class="linguagens">
+                    <img src="assets/imagens/java.png" alt="Java" class="linguagens">
+                    <img src="assets/imagens/python.png" alt="Python" class="linguagens">
+                    <img src="assets/imagens/C.png" alt="C" class="linguagens">
+                    <img src="assets/imagens/c-.png" alt="C++" class="linguagens">
+                    <img src="assets/imagens/c-sharp.png" alt="C#" class="linguagens">
+                    <img src="assets/imagens/sql-server.png" alt="SQL" class="linguagens">
+                </div>
+                <div id="curriculo">
+                    <h4 id="cv">Meu curriculo/CV</h4>
+                    <a href="https://www.canva.com/design/DAGeaeJ1ZUI/MiRFkAAYOYDg36HtSYz1ng/view?utm_content=DAGeaeJ1ZUI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h01d2e14ec2" target="_blank" class="curriculo" id="informal">
+                        <img src="assets/imagens/curriculo.jpg" alt="curriculo">
+                    </a>
+                </div>
+            </article>
+        </section>
+        <section id="meusProjetos">
+            <h3 id="tituloP">Meus Projetos</h3>
+            <div id="seções">
+                <button class="areas" id="btnLandingPage"><strong>landing Page</strong></button>
+                <button class="areas" id="btnSistemas"><strong>Sistemas</strong></button>
+            </div>
+            <iframe src="iframes/landingp-page.html" frameborder="0" id="landingPage"></iframe>
+            <iframe src="iframes/sites.html" frameborder="0" id="sites"></iframe>
+            <iframe src="iframes/sistemas.html" frameborder="0" id="sistemas"></iframe>
+        </section>
+        <section id="comoAjudar">
+            <h3 id="tituloA">Como posso te a judar?</h3>
+            <div id="melhorTexto01">
+                <button class="textos01 textos" id="recrutador01" ><strong>Sou um recrutador de um empresa</strong></button>
+                <button class="textos01 textos" id="freelancer01"><strong>Preciso de ajuda com meu prjeto?</strong></button>
+            </div>
+            <div id="melhorTexto02">
+                <button class="textos02 textos" id="recrutador02"><strong>Sou um recrutador de um empresa</strong></button>
+                <button class="textos02 textos" id="freelancer02"><strong>Preciso de ajuda com meu prjeto?</strong></button>
+            </div>
+            <p class="ajudar" id="TextoRecrutador">
+                <i class="material-icons fecharTextos">close</i>
+                Olá, recrutador! Se você busca um desenvolvedor full-stack motivado e com uma grande vontade de evoluir, eu posso ser uma excelente escolha para a sua equipe. Sou um jovem dedicado, com grande disposição para aprender novas tecnologias e ouvir feedbacks. Acredito no poder da colaboração e estou sempre empenhado em me adaptar aos desafios e contribuir para o sucesso do time e da empresa.
+            </p>
+            <p class="ajudar" id="textoFreelancer">
+                <i class="material-icons fecharTextos">close</i>
+                Está buscando alguém para dar vida ao seu projeto? Eu posso ajudar! Sou desenvolvedor especializado na criação de sites responsivos e dinâmicos, com habilidades tanto em front-end quanto em back-end. Meu foco é entregar soluções personalizadas e funcionais, que atendam às suas necessidades e ofereçam uma ótima experiência ao usuário. Vamos conversar sobre como transformar suas ideias em realidade?
             </p>
         </section>
-
-        <aside id="sobreMim">
-            <section id="habilidades">
-                <h4 id="skills">Minhas habilidades</h4> 
-                <img src="assets/imagens/html-5.png" alt="HTML" class="linguagens">
-                <img src="assets/imagens/css-3.png" alt="CSS" class="linguagens">
-                <img src="assets/imagens/js.png" alt="JavaScript" class="linguagens">
-                <img src="assets/imagens/php.png" alt="PHP" class="linguagens">
-                <img src="assets/imagens/java.png" alt="Java" class="linguagens">
-                <img src="assets/imagens/python.png" alt="Python" class="linguagens">
-                <img src="assets/imagens/C.png" alt="C" class="linguagens">
-                <img src="assets/imagens/c-.png" alt="C++" class="linguagens">
-                <img src="assets/imagens/c-sharp.png" alt="C#" class="linguagens"> 
-                <img src="assets/imagens/sql-server.png" alt="SQL" class="linguagens">
-            </section>
-            <section id="curriculo">
-                <h4 id="cv">Meu curriculo/CV</h4>
-                <a href="https://www.canva.com/design/DAGeaeJ1ZUI/MiRFkAAYOYDg36HtSYz1ng/view?utm_content=DAGeaeJ1ZUI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h01d2e14ec2" target="_blank" class="curriculo" id="informal">
-                    <img src="assets/imagens/curriculo.jpg" alt="curriculo">
-                </a>
-            </section>
-        </aside>    
-    </main>
-    <main id="comoAjudar">
-        <h3 id="tituloA">Como posso te a judar?</h3>
-        <aside id="melhorTexto01">
-            <button class="textos01 textos" id="recrutador01" ><strong>Sou um recrutador de um empresa</strong></button>
-            <button class="textos01 textos" id="freelancer01"><strong>Preciso de ajuda com meu prjeto?</strong></button>
-        </aside>
-
-        <aside id="melhorTexto02">
-            <button class="textos02 textos" id="recrutador02"><strong>Sou um recrutador de um empresa</strong></button>
-            <button class="textos02 textos" id="freelancer02"><strong>Preciso de ajuda com meu prjeto?</strong></button>
-        </aside>
-
-
-        <p class="ajudar" id="TextoRecrutador">
-            <i class="material-icons fecharTextos">close</i>
-            Olá, recrutador! Se você busca um desenvolvedor full-stack motivado e com uma grande vontade de evoluir, eu posso ser uma excelente escolha para a sua equipe. Sou um jovem dedicado, com grande disposição para aprender novas tecnologias e ouvir feedbacks. Acredito no poder da colaboração e estou sempre empenhado em me adaptar aos desafios e contribuir para o sucesso do time e da empresa.
-        </p>
-
-        <p class="ajudar" id="textoFreelancer">
-            <i class="material-icons fecharTextos">close</i>
-            Está buscando alguém para dar vida ao seu projeto? Eu posso ajudar! Sou desenvolvedor especializado na criação de sites responsivos e dinâmicos, com habilidades tanto em front-end quanto em back-end. Meu foco é entregar soluções personalizadas e funcionais, que atendam às suas necessidades e ofereçam uma ótima experiência ao usuário. Vamos conversar sobre como transformar suas ideias em realidade?
-        </p>
     </main>
 
 
     <footer>
-        <nav>
+        <nav class="navFooter">
             <h3 id="contato">Me encontre nas seguintes plataformas:</h3>
             <div>
                 <a href="https://wa.me/11933208464" target="_blank">
@@ -213,7 +260,7 @@
             </div>
         </nav>
 
-        <p id="direitos">© 2024 <strong>Felippy Benicio Joaquim Braga</strong>. Todos os direitos reservados.</p>
+        <p id="direitos">© 2026 <strong>Felippy Benicio Joaquim Braga</strong>. Todos os direitos reservados.</p>
     </footer>
 
     

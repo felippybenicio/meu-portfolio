@@ -15,23 +15,26 @@ h3 {
     padding: 80px 46px 25px 30px;
 }
 
+h4 {
+    font: 300 1em 'Solway', 'Arial', 'Helvetica', 'sans-serif';
+    color: white;
+}
+
 #meusProjetos {
     padding-top: 105px;
 }
 
 #sobreMim h4 {
-    font-family: 'sora', Arial, Helvetica, sans-serif;
     margin-left: 0px;
-    padding: 25px 46px 25px 30px;
+    padding: 25px 46px 10px 30px;
     text-align: center;
-    font-size: 1.2em;
 }
 
-main#meusProjetos {
+#meusProjetos {
     height: 950px;
 }
 
-aside#seções {
+#seções {
     align-self: stretch;
     margin: center;
     display: flex;
@@ -83,7 +86,7 @@ iframe {
     display: none;
 }
 
-main#sobreMim {
+#sobreMim {
     height: auto;
     margin-top: 80px;
 }
@@ -95,7 +98,7 @@ main#sobreMim {
 }
 
 ul#sobreTexto {
-    margin: 30px 30px 60px 48px;
+    margin: 5px 30px 60px 48px;
     columns: 1;
 }
 
@@ -110,9 +113,10 @@ ul#sobreTexto {
 
 p#mim {
     margin: 30px;
+    margin-top: 5px;
     columns: 1;
 }
-section#habilidades {
+#habilidades {
     background-color: var(--discreto);
     display: inline-block;
     margin: 20px;
@@ -125,7 +129,7 @@ img.linguagens {
     margin: 4px;
 }
 
-section#curriculo {
+#curriculo {
     background-color: var(--discreto);
     display: flex;
     flex-flow: column wrap;
@@ -160,19 +164,19 @@ a.curriculo img {
     border-radius: 5px;
 }
 
-main#comoAjudar {
+#comoAjudar {
     background-image: linear-gradient(to bottom, var(--pricipal), #0c2957);
     height: auto;
     margin: auto;
     padding-bottom: 1px;
 }
 
-aside#melhorTexto01 {
+#melhorTexto01 {
     display: none;
     
 }
 
-aside#melhorTexto02 {
+#melhorTexto02 {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -247,15 +251,9 @@ i.fecharTextos {
     cursor: pointer;
 }
 
+@media screen and (min-width: 800px) {
 
 
-
-@media screen and (min-width: 990px) {
-    html, body {
-        background-color: var(--pricipal);
-        width: 100dvw;
-        overflow-x: hidden;
-    }
 
     main {  
         width: 100vw;
@@ -265,12 +263,12 @@ i.fecharTextos {
         padding-left: 90px;
     }
 
-    main#meusProjetos {
+    #meusProjetos {
         padding-top: 20px;
         height: 915px;
     }
 
-    aside#seções {
+    #seções {
         align-self: stretch;
         display: flex;
         flex-flow: row wrap;
@@ -337,11 +335,7 @@ i.fecharTextos {
         border-radius: 20px;
     }
 
-    #sobreMim h3 {
-        padding-left: 90px;
-    }
-
-    section#destaques-pai {
+    #destaques-pai {
         width: 1030px;
     }
 
@@ -355,14 +349,14 @@ i.fecharTextos {
         margin: 30px 90px;
     }
 
-    aside#sobreMim {
+    #sobreHabilidades {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         margin-top: 40px;
     }
 
-    section#habilidades {
+    #habilidades {
         background-color: var(--discreto);
         display: inline-block;
         margin: 20px;
@@ -380,7 +374,7 @@ i.fecharTextos {
         transition: .2s;
     }
 
-    section#curriculo {
+    #curriculo {
         background-color: var(--discreto);
         display: flex;
         flex-flow: column wrap;
@@ -390,12 +384,12 @@ i.fecharTextos {
         width: 376px;
     }
 
-    main#comoAjudar {
+    #comoAjudar {
         height: auto;
         /* margin-bottom: 20px; */
     }
 
-    aside#melhorTexto01 {
+    #melhorTexto01 {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -454,7 +448,7 @@ i.fecharTextos {
         display: none;
     }
 
-    aside#melhorTexto02 {
+    #melhorTexto02 {
         display: flex;
         flex-flow: row wrap;
         align-items: flex-start;
@@ -490,12 +484,6 @@ i.fecharTextos {
 
 
     @media (max-width: 1175px) and (min-width: 600px) {
-        img#eu {
-            width: 261px;
-            /* margin: -750px 418px; */
-            border-radius: 10px;
-        }
-
         button.areas {
             padding: 7px 120px;
         }
@@ -505,7 +493,7 @@ i.fecharTextos {
             margin-bottom: 60px;
         }
 
-        aside#seções {
+        #seções {
             margin: 20px 80px;
         }
     }
