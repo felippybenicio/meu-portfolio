@@ -13,11 +13,11 @@ header {
 
 .divHeader {
     padding-top: 72px;
-    margin-top: 45px;
+    /* margin-top: 45px; */
 }
 
 header h1 {
-    font-family: 'Oxanium', Arial, Helvetica, sans-serif;;
+    font-family: var(--tituloPricipal);
     font-size: 2em;
     text-align: center;
     padding: 0px;
@@ -26,7 +26,7 @@ header h1 {
 }
 
 header h2 {
-    font-family: 'Quantico' ;
+    font-family: var(--tituloPricipal);
     font-size: 1em;
     text-align: center;
     margin: 15px;
@@ -35,7 +35,7 @@ header h2 {
 }
 
 #typing{
-    font-family: 'Quantico' ;
+    font-family: var(--tituloPricipal);
     transition: transform 0.5s ease;
 }
 
@@ -46,24 +46,81 @@ header h2 {
     align-items: flex-end;
     gap: 20px;
     margin: 10px;
+    margin-top: 35px;
 }
 
-p#resumo {
+#resumo {
     /* margin: 120px 0px 0px 0px; */
     
     width: 207px;
     opacity: 0.85;
+}
 
+.Impacto {
+    position: relative;
+    margin: 60px 20px -25px 20px;
+    text-align: center;
+    font: italic 100 .8em sans-serif;
+    z-index: 0;
+    animation: pulsar 5s infinite;
+}
+
+.containerFoto {
+    position: relative;
+    display: inline-block;
 }
 
 #eu {
     border-radius: 10px;
     width: 160px;
     transition: 1s;
+    z-index: 100;
+    position: block;
+}
+
+.containerFoto::after {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 100%;
+
+    width: 100%;
+    height: 100%;
+
+    background: url("../../imagens/eu.png");
+    background-size: cover;
+    transform: scaleY(-1) skewY(-17deg) rotate(16deg);
+    opacity: 0.4;
+
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+
 }
 
 img#eu:hover {
     pointer-events: none;
+}
+
+@keyframes pulsar {
+    0% {
+        filter: drop-shadow(0 0 10px white)
+                drop-shadow(0 0 20px white)
+                drop-shadow(0 0 40px white);
+        transform: scale(1.2); 
+    }
+
+    50% {
+        filter: drop-shadow(0 0 60px white)
+                drop-shadow(0 0 70px white)
+                drop-shadow(0 0 60px white);
+        transform: scale(1.2); 
+    }
+
+    100% {
+        filter: drop-shadow(0 0 40px white)
+                drop-shadow(0 0 20px white)
+                drop-shadow(0 0 10px white);
+        transform: scale(1.2); 
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -82,6 +139,13 @@ img#eu:hover {
     .previa {
         display: flex;
         justify-content: space-around;
+    }
+
+    #resumo {
+        padding: 42px;
+        padding-right: 146px;
+        width: 242px;
+        font-size: 1.2em;
     }
 
     #eu {
@@ -109,14 +173,6 @@ img#eu:hover {
                     0px 0px 200px var(--secundario);
         border-radius: 5px;
     }   */
-
-    p#resumo {
-        padding: 42px;
-        padding-right: 146px;
-        width: 242px;
-        font-size: 1.2em;
-    }
-
     
 }
 
@@ -129,8 +185,28 @@ img#eu:hover {
         padding-right: 195px;
     }
 
+    #resumo {
+        width: 330px;
+        font-size: 1.4em;
+    }
+
     #eu {
         width: 280px;
         margin: -45px 275px;
     }    
+}
+
+@media screen and (max-width: 1582px) and (min-width: 880px) {
+    .previa {
+        margin-top: -30px;
+    }
+
+    #resumo {
+        width: 242px;
+        font-size: 1.2em;
+    }
+
+    #eu {
+        margin: 0px;
+    }
 }

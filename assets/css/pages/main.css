@@ -10,13 +10,13 @@ main {
 }
 
 h3 {
-    font-family: 'sora', Arial, Helvetica, sans-serif;
+    font-family: var(--titulosSecundarios);
     margin-left: 0px;
     padding: 80px 46px 25px 30px;
 }
 
 h4 {
-    font: 300 1em 'Solway', 'Arial', 'Helvetica', 'sans-serif';
+    font: 300 1em var(--titulosSecundarios);
     color: white;
 }
 

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@200..800&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Solway:wght@300;400;500;700;800&family=Sora:wght@100..800&display=swap');
 
 :root {
+    /*cores*/
     --pricipal: #031630;
     --secundario: #1c3e70;
     --secundario-claro: #8ab7e9;
@@ -9,12 +10,18 @@
     --discreto: rgba(28, 62, 112, 0.15);
 
     --texth4: rgb(206, 206, 206);
+
+    /*fontes*/
+    --tituloPricipal: 'Oxanium', Arial, Helvetica, sans-serif;
+    --titulosSecundarios: 'arvo', 'Times New Roman', Times, serif;
+    --texto: 'sora', Arial, Helvetica, sans-serif;
+    --textoTeste: 'Solway', 'Arial', 'Helvetica', 'sans-serif';
 }
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'arvo', 'Times New Roman', Times, serif;
+    font-family: var(--texto);
 }
 
 html, body {
