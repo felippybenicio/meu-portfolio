@@ -30,6 +30,7 @@ html, body {
     background-image: linear-gradient(to top, var(--pricipal), var(--secundario), var(--pricipal));
     color: white;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .hidden {

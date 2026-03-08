@@ -5,7 +5,7 @@
 
 main {
     background-color: transparent;
-    width: 100vw;
+    width: 90vw;
     margin: auto;
 }
 
@@ -20,21 +20,45 @@ h4 {
     color: white;
 }
 
+h5 {
+    font-family: var(--titulosSecundarios);
+}
+
 #meusProjetos {
     padding-top: 105px;
 }
 
 #sobreMim h4 {
     margin-left: 0px;
-    padding: 25px 46px 10px 30px;
+    padding: 25px 46px 10px 46px;
     text-align: center;
+    width: calc(100% - 92px);
 }
 
 #meusProjetos {
     height: 950px;
 }
 
-#seções {
+.apresentacaoProjetos {
+    border: 3px solid var(--destaques);
+    border-radius: 15px 0px;
+    padding: 15px;
+
+}
+
+.acessoProjeto {
+    color: var(--secundario-claro);
+}
+
+#meusProjetos h5 {
+    margin: 0px 0px 10px 0px;
+}
+
+/* .QRcode {
+    background-color: white;
+} */
+
+/* #seções {
     align-self: stretch;
     margin: center;
     display: flex;
@@ -84,7 +108,7 @@ iframe {
 
 #sites, #sistemas {
     display: none;
-}
+} */
 
 #sobreMim {
     height: auto;
@@ -97,7 +121,7 @@ iframe {
     margin-bottom: -10px;
 }
 
-ul#sobreTexto {
+#sobreTexto {
     margin: 5px 30px 60px 48px;
     columns: 1;
 }
@@ -111,18 +135,32 @@ ul#sobreTexto {
     text-decoration: underline;
 }
 
-p#mim {
+#mim {
     margin: 30px;
     margin-top: 5px;
     columns: 1;
 }
+
+#sobreHabilidades {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.detalhesDeMim {
+    width: 442px;
+    margin: auto;
+}
+
 #habilidades {
     background-color: var(--discreto);
-    display: inline-block;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     margin: 20px;
     padding: 10px;
     border-radius: 25px;
-    width: auto;
 }
 
 img.linguagens {
@@ -137,18 +175,33 @@ img.linguagens {
     margin-bottom: 0px;
     padding: 10px;
     border-radius: 25px;
-    width: auto;
 }
 
 #containerCv p {
     text-align: center;
 }
 
+.linksCurriculos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 45px 0px 10px 0px;
+}
 
+.linksCurriculos a {
+    color: var(--destaques);
+    text-shadow: 8px 6px 5px #00000044;
+    text-decoration: none;
+}
 
+.linksCurriculos a:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    text-shadow: 10px 8px 6px #0000002a;
+}
 
 #comoAjudar {
-    background-image: linear-gradient(to bottom, var(--pricipal), #0c2957);
+    background-color: transparent;
     height: auto;
     margin: auto;
     padding-bottom: 1px;
@@ -156,7 +209,6 @@ img.linguagens {
 
 #melhorTexto01 {
     display: none;
-    
 }
 
 #melhorTexto02 {
@@ -235,15 +287,22 @@ i.fecharTextos {
 }
 
 @media screen and (min-width: 800px) {
-
-
-
     main {  
-        width: 100vw;
+        width: 95vw;
     }
 
     h3 {
         padding-left: 90px;
+        font-size: 1.4em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    p, li {
+       font-size: 1.2em;
+       font-weight: 300;
     }
 
     #meusProjetos {
@@ -318,18 +377,17 @@ i.fecharTextos {
         border-radius: 20px;
     }
 
-    #destaques-pai {
-        width: 1030px;
-    }
-
-    ul#sobreTexto {
-        margin-left: 108px;
+    #sobreTexto {
+        margin: 5px 108px 30px 108px;
         columns: 2;
     }
 
-    p#mim {
-        columns: 2;
-        margin: 30px 90px;
+    #sobreTexto li {
+        margin: 0px 10px
+    }
+
+    #mim {
+        margin: 5px 90px 30px 90px;
     }
 
     #sobreHabilidades {
@@ -339,32 +397,9 @@ i.fecharTextos {
         margin-top: 40px;
     }
 
-    #habilidades {
-        background-color: var(--discreto);
-        display: inline-block;
-        margin: 20px;
-        padding: 10px;
-        border-radius: 25px;
-        width: 376px;
-    }
-
-    img.linguagens {
-        margin: 4px;
-    }
-
-    img.linguagens:hover {
-        scale: calc(1.1);
-        transition: .2s;
-    }
-
-    #curriculo {
-        background-color: var(--discreto);
-        display: flex;
-        flex-flow: column wrap;
-        margin: 20px;
-        padding: 10px;
-        border-radius: 25px;
-        width: 376px;
+    .linguagens:hover {
+        transform: scale(1.1);
+        transition: .3s;
     }
 
     #comoAjudar {
@@ -466,18 +501,17 @@ i.fecharTextos {
 
 
 
-    @media (max-width: 1175px) and (min-width: 600px) {
-        button.areas {
-            padding: 7px 120px;
+    @media (min-width: 1175px) {
+        main {
+            width: 85vw;
         }
 
-        ul#sobreTexto {
-            margin: 30px 108px;
-            margin-bottom: 60px;
+        #mim {
+            columns: 2;
         }
 
-        #seções {
-            margin: 20px 80px;
+        .linguagens {
+            height: 64px;
         }
     }
 }

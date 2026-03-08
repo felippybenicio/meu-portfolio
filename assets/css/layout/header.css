@@ -120,19 +120,15 @@ header h2 {
 .containerFoto::after {
     content: "";
     position: absolute;
-    left: 50px;
-    top: 100%;
-
+    left: 77px;
+    top: 105%;
     width: 100%;
     height: 100%;
-
-    background: url("../../imagens/eu.png");
+    background: url(../../imagens/eu.png);
     background-size: cover;
-    transform: scaleY(-1) skewY(-17deg) rotate(16deg);
+    transform: scaleY(-1) skewY(-27deg) rotate(27deg);
     opacity: 0.4;
-
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
-
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
 
 img#eu:hover {
@@ -208,6 +204,10 @@ img#eu:hover {
     #eu {
         width: 250px;
     } 
+
+    .containerFoto::after {
+        left: 115px;
+    }
 
     /* div.linkshori:hover {
         color: var(--pricipal);
