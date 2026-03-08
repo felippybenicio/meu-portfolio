@@ -39,6 +39,17 @@ h5 {
     height: 950px;
 }
 
+.projetosCategoria {
+    border: 1px solid var(--corBorda);
+    border-radius: 0px 0px 15px 0px;
+    margin: 15px 0px;
+}
+
+.projetosCategoria h4 {
+    margin: 15px auto;
+    text-align: center;
+}
+
 .apresentacaoProjetos {
     border: 3px solid var(--destaques);
     border-radius: 15px 0px;
@@ -46,12 +57,50 @@ h5 {
 
 }
 
-.acessoProjeto {
-    color: var(--secundario-claro);
+.infoProjeo {
+    margin-bottom: 50px;
 }
+
+
 
 #meusProjetos h5 {
     margin: 0px 0px 10px 0px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--corBorda);
+}
+
+.acessos {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.acessoProjeto {
+    color: var(--secundario-claro);
+    text-decoration: none;
+    font-size: .8em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+}
+
+.acessoProjeto span {
+    font-size: 1.4em;
+    margin-top: -2px;
+}
+
+.logosLinguagens {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+
+}
+
+.logosLinguagens i {
+    color: var(--destaques);
+    font-size: 1.5em;
+    margin: 0px 2px;
 }
 
 /* .QRcode {
