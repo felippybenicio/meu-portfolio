@@ -55,7 +55,8 @@ h5 {
 
 .apresentacaoProjetos {    
     padding: 15px;
-    height: 355px;
+    border-radius: 15px 0px;
+    height: 376px;
     transition: .5s;
     position: relative;
     z-index: 1;
@@ -82,6 +83,21 @@ h5 {
      z-index:-1;
 }
 
+.apresentacaoProjetos:hover {
+    box-shadow:
+        0 0 5px var(--destaques),
+        0 0 10px var(--destaques),
+        inset 0 0 5px var(--destaques),
+        inset 0 0 10px var(--destaques);
+
+
+}
+
+.apresentacaoProjetos em {
+    color: #818181;
+}
+
+
 .infoProjeo {
     margin-bottom: 50px;
     height: 168px;
@@ -92,6 +108,10 @@ h5 {
     margin: 0px 0px 10px 0px;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--corBorda);
+}
+
+#meusProjetos h5 strong {
+    color: white;
 }
 
 .acessos {
@@ -133,11 +153,29 @@ h5 {
     color: var(--destaques);
     font-size: 1.5em;
     margin: 0px 2px;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.26);
 }
 
 .logosLinguagens i:hover {
     transform: scale(1.3);
     transition: .5s;
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.178);
+}
+
+.apresentacaoProjetos img {
+    position: absolute;
+    bottom: 63px;
+    right: 16px;
+    width: 157px;
+    border: 1px solid var(--corBorda);
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.164);
+    z-index: -1;
+}
+
+.apresentacaoProjetos img:hover {
+    transform: scale(1.4);
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.178);
 }
 
 /* .QRcode {
@@ -419,7 +457,7 @@ i.fecharTextos {
 
     .apresentacaoProjetos {
         max-width: 336px;
-        height: 410px;
+        height: 426px;
     }
 
     .infoProjeo {
@@ -430,6 +468,9 @@ i.fecharTextos {
         font-size: .9em;
     }
 
+    .apresentacaoProjetos img {
+        display: none;
+    }
     /* #seções {
         align-self: stretch;
         display: flex;
