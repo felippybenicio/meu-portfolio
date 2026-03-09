@@ -1,27 +1,23 @@
 function ajustarMenu() {
     const sanduiche = document.getElementById('sanduiche');
-    const menu = document.getElementById('vertical');
-    const frase = document.getElementById('p');
+    const x = document.getElementById('X');
+    const menu = document.getElementById('navVertical');
 
     if (window.innerWidth > 1220) {
-        menu.style.display = 'block';
-        sanduiche.style.display = 'none';
-        frase.style.marginRight = '165px';
+        menu.classList.remove("hidden")
+        sanduiche.classList.add('hidden')
+        x.classList.add("hidden")
     } else {
-        menu.style.display = 'none';
-        sanduiche.style.display = 'block';
-        frase.style.marginRight = '5px';
+        menu.classList.add('hidden')
+        sanduiche.classList.remove("hidden")
+        x.classList.remove('hidden')
     }
-
-
-
 }
 
 function configurarEventos() {
   const sanduiche = document.getElementById('sanduiche');
   const x = document.getElementById('X');
-  const menuVertical = document.getElementById('vertical');
-  const frase = document.getElementById('p');
+  const menuVertical = document.getElementById('navVertical');
 
   let scrollAtivo = false;
 
@@ -47,27 +43,24 @@ function configurarEventos() {
 
   // ===== MENU VERTICAL =====
   function abrirMenu() {
-    menuVertical.style.display = 'block';
-    sanduiche.style.display = 'none';
-    frase.style.marginRight = '165px';
+    menuVertical.classList.remove('hidden')
+    sanduiche.classList.add('hidden')
   }
 
   function fecharMenu() {
-    menuVertical.style.display = 'none';
-    sanduiche.style.display = 'block';
-    frase.style.marginRight = '5px';
+    menuVertical.classList.add('hidden')
+    sanduiche.classList.remove('hidden')
   }
 
   // ===== LAYOUT =====
   function aplicarLayout() {
     if (window.innerWidth < 1220) {
-      sanduiche.style.display = 'block';
+      sanduiche.classList.remove('hidden')
       fecharMenu();
       document.body.classList.remove('scrolled');
     } else {
-      menuVertical.style.display = 'block';
-      sanduiche.style.display = 'none';
-      frase.style.marginRight = '';
+      menuVertical.classList.remove('hidden')
+      sanduiche.classList.add('hidden')
       controlarScroll();
     }
   }

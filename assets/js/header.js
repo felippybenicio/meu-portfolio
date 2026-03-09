@@ -1,9 +1,9 @@
 const elemento = document.getElementById("typing")
 
 const frases = [
-    " aplicações web",
-    " Backend",
-    " Sistemas de Gestão"
+    "Aplicações",
+    "Interfaces",
+    "Soluções Web"
 ]
 
 let fraseIndex = 0

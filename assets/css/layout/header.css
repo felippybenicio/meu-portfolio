@@ -4,7 +4,6 @@ header {
     margin: auto;
     display: flex;
     flex-flow: column nowrap;
-    z-index:5;
     overflow:visible;
 }
 
@@ -49,6 +48,17 @@ header h2 {
 #typing{
     font-family: var(--tituloPricipal);
     transition: transform 0.5s ease;
+}
+
+#typing::after{
+    content: "|";
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar{
+    0%{opacity:1}
+    50%{opacity:0}
+    100%{opacity:1}
 }
 
 .previa {
@@ -114,7 +124,6 @@ header h2 {
     border-radius: 10px;
     width: 160px;
     transition: 1s;
-    z-index: 100;
     position: relative;;
 }
 
@@ -249,10 +258,11 @@ img#eu:hover {
     }
 
     .containerFoto::after {
-        left: 139px;
-        top: 105%;
-        width: 104%;
-        height: 107%;
+        left: 405px;
+        top: 134%;
+        width: 37%;
+        height: 160%;
+        z-index: 10;
     }
 
     #eu {
