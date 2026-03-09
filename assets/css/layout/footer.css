@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--secundario);
+    background-color: transparent;
     width: 100dvw;
     height: auto;
     margin: auto;
@@ -7,11 +7,23 @@ footer {
     flex-flow: column nowrap;
 }
 
+.linhaDivisorio {
+    height: 1px;
+    width: calc(100% - 50px);
+    background-color: var(--corBorda);
+
+    box-shadow:
+        0 0 5px #ffffff5b,
+        0 0 15px #ffffff5b;
+
+    margin: 60px auto 0px auto;
+}
+
 .navFooter {
-    background-color: rgba(255, 255, 255, 0.719);
+    background-color: #ffffff73;;
     color: var(--pricipal);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.247);
-    border-radius: 20px;
+    border-radius: 5px;
     width: 300px;
     margin: auto;
     margin-top: 25px;
@@ -56,7 +68,7 @@ div.links:hover {
 }
 
 .navFooter img {
-    filter: drop-shadow(0px 0px 5px white);
+    filter: drop-shadow(0px 0px 5px #a0a0a0);
 }
 
 footer p {
@@ -64,17 +76,20 @@ footer p {
     font-size: 1em;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 800px) {
     footer {
-        background-color: var(--secundario);
         height: auto;
         width: 100vw;
         display: flex;
         flex-flow: row nowrap;
-
+        justify-content: center;
     }
 
-        .navFooter {
+    .linhaDivisorio {
+        width: calc(100% - 200px);   
+    }
+
+    .navFooter {
         margin: 50px;
         padding: 15px;
         
@@ -91,11 +106,11 @@ footer p {
     }
 
     .navFooter img {
-        filter: drop-shadow(0px 0px 5px white);
+        filter: drop-shadow(0px 0px 5px rgb(146, 20, 20));
     }
 
     .navFooter img:hover {
-        filter: drop-shadow(none);;
+        filter: drop-shadow(none);
     }
 
     footer p {
