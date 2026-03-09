@@ -1,108 +1,134 @@
-function ajuda() {
-    const btRecrutador1 = document.getElementById('recrutador01')
-    const btRecrutador2 = document.getElementById('recrutador02')
-    const btFrelancer1 = document.getElementById('freelancer01')
-    const btFrelancer2 = document.getElementById('freelancer02')
-
-    const textorecrutar = document.getElementById('TextoRecrutador')
-    const textofrela = document.getElementById('textoFreelancer')
-
+function escrolagem() {
     const Bajuda = document.querySelectorAll('.textos')
     const h3ajuda = document.getElementById('tituloA')
 
+    Bajuda.forEach(botoes => {
+            botoes.addEventListener('click', function(){
+                h3ajuda.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            })
+        })
+}
+document.addEventListener('DOMContentLoaded', escrolagem)
+
+window.addEventListener('resize', verificarTamanho)
+
+const btRecrutador1 = document.getElementById('recrutador01')
+const btRecrutador2 = document.getElementById('recrutador02')
+const btFrelancer1 = document.getElementById('freelancer01')
+const btFrelancer2 = document.getElementById('freelancer02')
+
+const textorecrutar = document.getElementById('TextoRecrutador')
+const textofrela = document.getElementById('textoFreelancer')
+
+function verificarTamanho(){
+
+    if (window.innerWidth >= 800){
+
+        // verifica se algum texto está aberto
+        if(textorecrutar.classList.contains('hidden') && textofrela.classList.contains('hidden')){
+
+            btRecrutador1.classList.remove('hidden')
+            btFrelancer1.classList.remove('hidden')
+
+            btRecrutador2.classList.add('hidden')
+            btFrelancer2.classList.add('hidden')
+
+        }
+
+    }
+
+}
+verificarTamanho()
+
+function ajuda() {
+    
+
+    
     const fechar = document.querySelectorAll('.fecharTextos')
 
     btRecrutador1.addEventListener('click', function() {
-        btRecrutador1.style.display = 'none'
-        btFrelancer1.style.display = 'none'
+        btRecrutador1.classList.add('hidden')
+        btFrelancer1.classList.add('hidden')
 
-        btRecrutador2.style.display = 'block'
-        btFrelancer2.style.display = 'block'
+        btRecrutador2.classList.remove('hidden')
+        btFrelancer2.classList.remove('hidden')
 
-        textorecrutar.style.display = 'block'
+        textorecrutar.classList.remove('hidden')
 
         btRecrutador2.classList.add('clicado')
         btFrelancer2.classList.remove('clicado')
 
-        Bajuda.forEach(botoes => {
-            botoes.addEventListener('click', function(){
-                h3ajuda.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            })
-        })
+        escrolagem()
     })
 
     btFrelancer1.addEventListener('click', function() {
-        btRecrutador1.style.display = 'none'
-        btFrelancer1.style.display = 'none'
+        btRecrutador1.classList.add('hidden')
+        btFrelancer1.classList.add('hidden')
 
-        btRecrutador2.style.display = 'block'
-        btFrelancer2.style.display = 'block'
+        btRecrutador2.classList.remove('hidden')
+        btFrelancer2.classList.remove('hidden')
 
-        textofrela.style.display = 'block'
+        textofrela.classList.remove('hidden')
 
         btFrelancer2.classList.add('clicado')
         btRecrutador2.classList.remove('clicado')
 
-        Bajuda.forEach(botoes => {
-            botoes.addEventListener('click', function(){
-                h3ajuda.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            })
-        })
+        escrolagem()
     })
 
     btRecrutador2.addEventListener('click', function() {
-        textorecrutar.style.display = 'block'
-        textofrela.style.display = 'none'
+        btRecrutador1.classList.add('hidden')
+        btFrelancer1.classList.add('hidden')
+
+        btRecrutador2.classList.remove('hidden')
+        btFrelancer2.classList.remove('hidden')
+
+        textorecrutar.classList.remove('hidden')
+        textofrela.classList.add('hidden')
         btRecrutador2.classList.add('clicado')
         btFrelancer2.classList.remove('clicado')
 
-        Bajuda.forEach(botoes => {
-            botoes.addEventListener('click', function(){
-                h3ajuda.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            })
-        })
+        escrolagem()
     })
 
     btFrelancer2.addEventListener('click', function() {
-        textorecrutar.style.display = 'none'
-        textofrela.style.display = 'block'
+        btRecrutador1.classList.add('hidden')
+        btFrelancer1.classList.add('hidden')
+
+        btRecrutador2.classList.remove('hidden')
+        btFrelancer2.classList.remove('hidden')
+
+
+        textorecrutar.classList.add('hidden')
+        textofrela.classList.remove('hidden')
         btFrelancer2.classList.add('clicado')
         btRecrutador2.classList.remove('clicado')
 
-        Bajuda.forEach(botoes => {
-            botoes.addEventListener('click', function(){
-                h3ajuda.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            })
-        })
+        escrolagem()
+
     })
 
     fechar.forEach(botoes => {
         botoes.addEventListener('click', function () {
-            textorecrutar.style.display = 'none';
-            textofrela.style.display = 'none';
+            textorecrutar.classList.add('hidden')
+            textofrela.classList.add('hidden')
+            
+            btRecrutador1.classList.remove('hidden')
+            btFrelancer1.classList.remove('hidden')
+
             btRecrutador2.classList.remove('clicado')
             btFrelancer2.classList.remove('clicado')
 
-            if (window.matchMedia('(min-width: 990px)').matches) {
-                btRecrutador1.style.display = 'block'
-                btFrelancer1.style.display = 'block'
+            if (window.matchMedia('(min-width: 800px)').matches) {
+                btRecrutador1.classList.remove('hidden')
+                btFrelancer1.classList.remove('hidden')
 
-                btRecrutador2.style.display = 'none'
-                btFrelancer2.style.display = 'none'
+                btRecrutador2.classList.add('hidden')
+                btFrelancer2.classList.add('hidden')
             }
-
         })
     })
 }

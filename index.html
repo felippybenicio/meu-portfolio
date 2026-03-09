@@ -105,7 +105,7 @@
                             <button class="espanhol"><span class="flag-icon flag-icon-es traducao" ></span></button>
                             <button class="portugues"><span class="flag-icon flag-icon-br traducao" ></span></button>
                         </div>
-                        <p id="idi">Idioma</p>
+                        <p id="idi" data-key="navIdi">Idioma</p>
                     </aside>
                 </div>
             </nav>
@@ -115,31 +115,31 @@
     <main>
         <nav id="horizontal" class="menu hidden">
             <div class="linkshori h" id="home2">
-                <a href="#cabecalho">
+                <a href="#cabecalho" data-key="navHome">
                     <i class="material-icons">home</i>
                     Home
                 </a>
             </div>
             <div class="linkshori p" id="projetos2">
-                <a href="#tituloP">
+                <a href="#tituloP" data-key="navProjetos">
                     <i class="material-icons" id="projetos">description</i>
                     Meus Projetos
                 </a>
             </div>
             <div class="linkshori s" id="sobreMim2">
-                <a href="#tituloS">
+                <a href="#tituloS" data-key="navSobre">
                     <i class="material-icons">face_6</i>
                     Sobre Mim
                 </a>
             </div>
             <div class="linkshori a">
-                <a href="#tituloA">
+                <a href="#tituloA" data-key="navAjuda">
                     <i class="material-icons">question_mark</i>
                     como posso te ajudar
                 </a>
             </div>
             <aside id="traduzirHori">
-                <p id="idiHori">Idioma</p>
+                <p id="idiHori" data-key="navIdi">Idioma</p>
                 <div id="idiomaHori">
                     <a class="ingles"><abbr title="English" class="idioma"><span class="flag-icon flag-icon-us" ></span></abbr></a>
                     <a class="espanhol"><abbr title="Español"  class="idioma"><span class="flag-icon flag-icon-es" ></span></abbr></a>
@@ -149,10 +149,6 @@
         </nav>
         <section id="meusProjetos">
             <h3 id="tituloP" data-key="meusProjetosH3">Meus Projetos</h3>
-            <!-- <div id="seções">
-                <button class="areas" id="btnLandingPage"><strong>landing Page</strong></button>
-                <button class="areas" id="btnSistemas"><strong>Sistemas</strong></button>
-            </div> -->
             <article class="projetosCategoria">
                 <h4 data-key="h4Aplicaoes">Aplicações</h4>
                 <div class="apresentacaoProjetos">
@@ -235,24 +231,24 @@
             </aside>
         </section>
         <section id="sobreMim" id="mim">
-            <h3 id="tituloS">Sobre Mim</h3>
+            <h3 id="tituloS" data-key="sobreMimH3">Sobre Mim</h3>
             <article id="destaques-pai">
-                <h4 id="destaques">Destaques</h4>
+                <h4 id="destaques" data-key="destaquesH4">Destaques</h4>
                 <ul id="sobreTexto">
-                    <li>ADS — Análise e Desenvolvimento de Sistemas</li>
-                    <li>Desenvolvedor em início de carreira com foco em software e web</li>
-                    <li>Aprendizado autodidata e prática contínua</li>
-                    <li>Backend, Web, Algoritmos e Estruturas de Dados</li>
-                    <li>Python, PHP e JavaScript</li>
-                    <li>HTML, CSS e noções de UI/UX</li>
-                    <li>Inglês avançado | Espanhol básico</li>
-                    <li><a href="https://github.com/felippybraga?tab=repositories" target="_blank">GitHub documentando minha evolução em programação</a></li>
+                    <li data-key="item1">ADS — Análise e Desenvolvimento de Sistemas</li>
+                    <li data-key="item2">Desenvolvedor em início de carreira com foco em software e full-sack</li>
+                    <li data-key="item3">Aprendizado autodidata e prática contínua</li>
+                    <li data-key="item4">Backend, Web, Algoritmos e Estruturas de Dados</li>
+                    <li data-key="item5">Python, PHP e JavaScript</li>
+                    <li data-key="item6">HTML, CSS e noções de UI/UX</li>
+                    <li data-key="item7">Inglês avançado | Espanhol básico</li>
+                    <li data-key="item8"><a href="https://github.com/felippybraga?tab=repositories" target="_blank" data-key="item9">GitHub documentando minha evolução em programação</a></li>
                 </ul>
             </article>
         
             <article>
-                <h4 id="maisDeMim">Um pouco mais sobre mim</h4>
-                <p id="mim">
+                <h4 id="maisDeMim" data-key="maisDeMimH4">Um pouco mais sobre mim</h4>
+                <p id="mim" data-key="pMim">
                     Olá! Sou <strong>Felippy Benicio</strong>, desenvolvedor de software em formação e estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>.<br>
 
                     Tenho interesse em desenvolvimento de software e na criação de aplicações práticas, trabalhando com <strong>interface, lógica de backend e integração com banco de dados</strong>.<br>
@@ -266,7 +262,7 @@
             </article>
             <article id="sobreHabilidades">
                 <div id="habilidades" class="detalhesDeMim">
-                    <h4 id="skills">Minhas habilidades</h4>
+                    <h4 id="skills" data-key="skillsH4">Minhas habilidades</h4>
                     <img src="assets/imagens/liguagens/html-5.png" alt="HTML" class="linguagens">
                     <img src="assets/imagens/liguagens/css-3.png" alt="CSS" class="linguagens">
                     <img src="assets/imagens/liguagens/js.png" alt="JavaScript" class="linguagens">
@@ -275,32 +271,32 @@
                     <img src="assets/imagens/liguagens/mysql.png" alt="SQL" class="linguagens">
                 </div>
                 <div id="containerCv" class="detalhesDeMim">
-                    <h4 id="cv">Currículo</h4>
-                    <p>Você pode visualizar ou baixar meu currículo completo em PDF.</p>
+                    <h4 id="cv" data-key="CVH4">Currículo</h4>
+                    <p data-key="pCV">Você pode visualizar ou baixar meu currículo completo em PDF.</p>
                     <div class="linksCurriculos">
-                        <a href="https://www.canva.com/design/DAGeaeJ1ZUI/MiRFkAAYOYDg36HtSYz1ng/view?utm_content=DAGeaeJ1ZUI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h01d2e14ec2" target="_blank">
+                        <a href="https://www.canva.com/design/DAGeaeJ1ZUI/MiRFkAAYOYDg36HtSYz1ng/view?utm_content=DAGeaeJ1ZUI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h01d2e14ec2" target="_blank" data-key="verCV">
                             Ver Currículo
                         </a>
-                        <a href="./assets/documentos/Felippy_Benicio_Desenvolvedor_de_Software_CV.pdf" target="_blank">Baixar PDF</a>
+                        <a href="./assets/documentos/Felippy_Benicio_Desenvolvedor_de_Software_CV.pdf" target="_blank" data-key="baixarCV">Baixar PDF</a>
                     </div>
                 </div>
             </article>
         </section>
         <section id="comoAjudar">
-            <h3 id="tituloA">Como posso a judar</h3>
-            <div id="melhorTexto01">
-                <button class="textos01 textos" id="recrutador01" ><strong>Sou um recrutador de um empresa</strong></button>
-                <button class="textos01 textos" id="freelancer01"><strong>Preciso de ajuda com meu prjeto?</strong></button>
+            <h3 id="tituloA" data-key="comoAjudarH3">Como posso a judar</h3>
+            <div id="melhorTexto01" class="hidden">
+                <button class="textos01 textos" id="recrutador01" data-key="btnRecrutador"><strong>Sou um recrutador de um empresa</strong></button>
+                <button class="textos01 textos" id="freelancer01" data-key="btnFrela"><strong>Preciso de ajuda com meu prjeto?</strong></button>
             </div>
             <div id="melhorTexto02">
-                <button class="textos02 textos" id="recrutador02"><strong>Sou um recrutador de um empresa</strong></button>
-                <button class="textos02 textos" id="freelancer02"><strong>Preciso de ajuda com meu prjeto?</strong></button>
+                <button class="textos02 textos" id="recrutador02" data-key="btnRecrutador"><strong>Sou um recrutador de um empresa</strong></button>
+                <button class="textos02 textos" id="freelancer02" data-key="btnFrela"><strong>Preciso de ajuda com meu prjeto</strong></button>
             </div>
-            <p class="ajudar" id="TextoRecrutador">
+            <p class="ajudar hidden" id="TextoRecrutador" data-key="textoRecrutador">
                 <i class="material-icons fecharTextos">close</i>
                 Olá, recrutador! Se você busca um desenvolvedor full-stack motivado e com muita vontade de evoluir, posso ser uma ótima adição para a sua equipe. Sou um desenvolvedor dedicado, sempre aberto a aprender novas tecnologias, receber feedbacks e melhorar continuamente meu trabalho. Valorizo o trabalho em equipe e acredito que a colaboração é essencial para enfrentar desafios e construir soluções que realmente façam diferença.
             </p>
-            <p class="ajudar" id="textoFreelancer">
+            <p class="ajudar hidden" id="textoFreelancer" data-key="textoFrela">
                 <i class="material-icons fecharTextos">close</i>
                 Está buscando alguém para tirar seu projeto do papel? Eu posso ajudar. Desenvolvo sites modernos, responsivos e dinâmicos, cuidando tanto do design quanto do funcionamento do site. Meu objetivo é criar soluções que realmente funcionem para o seu negócio e ofereçam uma ótima experiência para quem usa. Se você tem uma ideia ou projeto em mente, vamos conversar e transformar isso em realidade.
             </p>
@@ -310,7 +306,7 @@
     <div class="linhaDivisorio"></div>
     <footer>
         <section class="navFooter">
-            <h3 id="contato">Me encontre nas seguintes plataformas:</h3>
+            <h3 id="contato" data-key="navFooterH3">Me encontre nas seguintes plataformas:</h3>
             <div>
                 <a href="https://wa.me/11933208464" target="_blank">
                     <div class="links">
@@ -335,7 +331,7 @@
             </div>
         </section>
 
-        <p id="direitos">© 2026 <strong>Felippy Benicio Joaquim Braga</strong>. Todos os direitos reservados.</p>
+        <p id="direitos" data-key="copyRight">© 2026 <strong>Felippy Benicio Joaquim Braga</strong>. Todos os direitos reservados.</p>
     </footer>
 
     
@@ -343,6 +339,6 @@
     <!-- <script src="assets/js/header.js"></script> -->
     <script src="assets/js/menu.js"></script>
     <!-- <script src="assets/js/secao_projetos.js"></script> -->
-    <!-- <script src="assets/js/secao_ajuda.js"></script> -->
+    <script src="assets/js/secao_ajuda.js"></script>
 </body>
 </html>
