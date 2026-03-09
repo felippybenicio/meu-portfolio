@@ -4,7 +4,8 @@ header {
     margin: auto;
     display: flex;
     flex-flow: column nowrap;
-    align-content: space-evenly;
+    z-index:5;
+    overflow:visible;
 }
 
 .desktop {
@@ -245,6 +246,13 @@ img#eu:hover {
     #resumo {
         width: 330px;
         font-size: 1.2em;
+    }
+
+    .containerFoto::after {
+        left: 139px;
+        top: 105%;
+        width: 104%;
+        height: 107%;
     }
 
     #eu {

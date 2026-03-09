@@ -7,6 +7,8 @@ main {
     background-color: transparent;
     width: 90vw;
     margin: auto;
+    position: relative;
+    z-index: 0;
 }
 
 h3 {
@@ -390,6 +392,7 @@ i.fecharTextos {
     }
 
     #meusProjetos {
+        background-color: transparent;
         padding-top: 20px;
         height: auto;
         display: flex;
