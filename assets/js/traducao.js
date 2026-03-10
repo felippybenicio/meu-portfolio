@@ -77,6 +77,8 @@ const traducoes = {
         pQrCode: "<span class='material-symbols-outlined' >qr_code_2</span>To access by QR Code",
         acessoProjeto: "<span class='material-symbols-outlined' >open_in_new</span>Access the project",
         codigo: " <span class='material-symbols-outlined'>code</span>View code",
+        fraseQRcode1: "Make it easy!To PC from mobile:<br> one QR code and",
+        fraseQRcode2: "coffes and done",
 
         //sistema estoque
         h5Etoque: "Stock Control System<br><em>#Web Aplication</em>",
@@ -154,6 +156,8 @@ const traducoes = {
         pQrCode: "<span class='material-symbols-outlined' >qr_code_2</span>Accede por QR Code",
         acessoProjeto: "<span class='material-symbols-outlined' >open_in_new</span>Accede proyestos",
         codigo: " <span class='material-symbols-outlined'>code</span>Ver codigo",
+        fraseQRcode1: "Facilita! De PC a móvil:<br> un código QR y",
+        fraseQRcode2: "cafés y listo",
 
         //sistema estoque
         h5Etoque: "Sistema de control de inventario<br><em>#Sistema Web</em>",
