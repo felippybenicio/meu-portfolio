@@ -16,6 +16,8 @@ h3 {
     margin-left: 0px;
     padding: 80px 46px 25px 30px;
     transition: .5s;
+    scroll-margin-top: 0px;
+
 }
 
 h3::before {
@@ -371,6 +373,7 @@ button.textos02{
     background: linear-gradient(145deg, var(--secundario), #1a4f73);
     padding: 6px 14px;
     margin: 15px auto;
+    width: 266px;
     color: white;
 
     border: 1.5px solid rgba(255,255,255,0.12);
@@ -454,6 +457,7 @@ i.fecharTextos {
     h3 {
         padding-left: 90px;
         font-size: 1.4em;
+        scroll-margin-top: 40px;
     }
 
     h3::before {
