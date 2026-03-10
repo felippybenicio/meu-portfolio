@@ -211,7 +211,7 @@ const traducoes = {
 
 const btnEnglish = document.querySelectorAll('.ingles')
 const btnEspanol = document.querySelectorAll('.espanhol')
-const btnPortugues = document.querySelector('.portugues')
+const btnPortugues = document.querySelectorAll('.portugues')
 function trocarIdioma(idioma){
 
     document.querySelectorAll("[data-key]").forEach(el => {
@@ -235,5 +235,7 @@ btnEspanol.forEach(btn => {
     btn.addEventListener('click', () => trocarIdioma('es'))
 })
 
-btnPortugues.addEventListener('click', () => trocarIdioma('pt'))
+btnPortugues.forEach(btn => {
+    btn.addEventListener('click', () => trocarIdioma('pt'))
+})
 
