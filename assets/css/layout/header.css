@@ -72,7 +72,7 @@ header h2 {
 }
 
 #resumo {
-    justify-content: center;
+    text-align: center;
     width: 207px;
     opacity: 0.85;
 }
@@ -208,6 +208,7 @@ img#eu:hover {
         padding-right: 146px;
         width: 242px;
         font-size: 1.2em;
+        text-align: left;
     }
 
     #eu {
