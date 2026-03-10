@@ -15,16 +15,18 @@ h3 {
     font-family: var(--titulosSecundarios);
     margin-left: 0px;
     padding: 80px 46px 25px 30px;
+    transition: .5s;
 }
 
 h3::before {
     content:"";
     display:block;
-    width: 460px;
+    width: 240px;
     height:2px;
     background:linear-gradient(90deg,#00f0ff 0%,transparent 75%);
     margin-bottom:8px;
     text-align: left;
+    transition: 2s;
 }
 
 #contato::before {
@@ -169,7 +171,7 @@ h5 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: 5s;
+    transition: .5s;
     z-index: 1;
 }
 
@@ -184,7 +186,7 @@ h5 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: .7s;
+    transition: .5s;
     z-index: 2;
 }
 
@@ -249,7 +251,7 @@ h5 {
     border: 1px solid var(--corBorda);
     border-radius: 5px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.164);
-    transition: .3s;
+    transition: .5s;
 }
 
 .interface:hover {
@@ -271,6 +273,8 @@ h5 {
 #sobreTexto {
     margin: 5px 30px 60px 48px;
     columns: 1;
+    transition: .5s
+
 }
 
 #sobreTexto a {
@@ -286,6 +290,7 @@ h5 {
     margin: 30px;
     margin-top: 5px;
     columns: 1;
+    transition: .5s
 }
 
 #sobreHabilidades {
@@ -451,6 +456,10 @@ i.fecharTextos {
         font-size: 1.4em;
     }
 
+    h3::before {
+        width: 460px;
+    }
+
     h4 {
         font-size: 1.2em;
     }
@@ -512,6 +521,18 @@ i.fecharTextos {
     .apresentacaoProjetos:hover .interface {
         opacity: 1;
         pointer-events: painted;
+        animation: interfaceImg .5s;
+    }
+
+    @keyframes interfaceImg {
+        from {
+            opacity: 0;
+            transform: translateY(10px) rotate(15deg);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) rotate(0deg);
+        }
     }
 
     #sobreTexto {

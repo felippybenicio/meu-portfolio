@@ -57,6 +57,7 @@ div.fixado {
     background-color: var(--secundario);
     height: 100vh;
     padding: 25px;
+    transition: .5s;
 }
 
 
