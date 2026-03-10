@@ -125,12 +125,39 @@ div.fixado {
 #idiomaHori button {
     border: none;
     background-color: transparent;
+    position: relative;
+}
+
+
+
+#idioma button .card,
+#idiomaHori button .card{
+    background-color: #bdbdbd;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: .8em;
+
+    position: absolute;
+    top: -23px;
+    right: 7px;
+    opacity: 0; 
+    transition:0.2s;
+    pointer-events: none;
+    text-transform: uppercase;
 }
 
 #idioma button:hover,
 #idiomaHori button:hover {
     transform: scale(1.2);
     transition: .3s;
+}
+
+
+#idioma button:hover .card,
+#idiomaHori button:hover .card{
+    opacity:1;
+    transform: scale(.8);
 }
 
 #idi {

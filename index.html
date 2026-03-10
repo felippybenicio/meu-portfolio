@@ -24,7 +24,7 @@
 <body>
     <header id="cabecalho">
         <nav class="contato desktop">
-                <a href="https://wa.me/11933208464">
+                <a href="https://wa.me/+5511933208464">
                     <img src="assets/imagens/logos-sociais/whatsapp-branco.png" alt="Whatsapp">
                 </a>
                 <a href="https://mail.google.com/mail/?view=cm&to=desenvolvedor.felippybenicio24@gmail.com&su=Olá Felippy,&body=Vi seu portfólio e achei seu trabalho interessante. Podemos conversar?%0A%0AAtenciosamente,">
@@ -57,8 +57,9 @@
 
         <div class="divHeader">
             <h1>Felippy Benicio Joaquim Braga</h1>
-            <h2 data-key="headerH2">
-                Desenvolvedor de Software_<span id="typing"></span>
+            <h2>
+                <span data-key="headerH2">Desenvolvedor de Software</span>
+                <span id="typing"></span>
             </h2>
             <p class="impacto" id="impactoDasktop" data-key="impacto">// Transformando estudo e prática em evolução constante na programação.</p>
             <div class="previa">
@@ -101,9 +102,18 @@
                     </ul>
                     <aside id="traduzir">
                         <div id="idioma">
-                            <button class="ingles"><span class="flag-icon flag-icon-us traducao" ></span></button>
-                            <button class="espanhol"><span class="flag-icon flag-icon-es traducao" ></span></button>
-                            <button class="portugues"><span class="flag-icon flag-icon-br traducao" ></span></button>
+                            <button class="ingles">
+                                <span class="flag-icon flag-icon-us traducao"></span>
+                                <span class="card" id="cardEn" data-key="cardEn">Inglés</span>
+                            </button>
+                            <button class="espanhol">
+                                <span class="flag-icon flag-icon-es traducao"></span>
+                                <span class="card" id="cardEs" data-key="cardEs">Espanhol</span>
+                            </button>
+                            <button class="portugues">
+                                <span class="flag-icon flag-icon-br traducao"></span>
+                                <span class="card" id="cardPt" data-key="cardPt">Português</span>
+                            </button>
                         </div>
                         <p id="idi" data-key="navIdi">Idioma</p>
                     </aside>
@@ -141,9 +151,18 @@
             <aside id="traduzirHori">
                 <p id="idiHori" data-key="navIdi">Idioma</p>
                 <div id="idiomaHori">
-                    <a class="ingles"><abbr title="English" class="idioma"><span class="flag-icon flag-icon-us" ></span></abbr></a>
-                    <a class="espanhol"><abbr title="Español"  class="idioma"><span class="flag-icon flag-icon-es" ></span></abbr></a>
-                    <a class="portugues"><abbr title="Portugês"  class="idioma"><span class="flag-icon flag-icon-br" ></span></abbr></a>
+                    <button class="ingles">
+                        <span class="flag-icon flag-icon-us traducao"></span>
+                        <span class="card" id="cardEn" data-key="cardEn">Inglés</span>
+                    </button>
+                    <button class="espanhol">
+                        <span class="flag-icon flag-icon-es traducao"></span>
+                        <span class="card" id="cardEs" data-key="cardEs">Espanhol</span>
+                    </button>
+                    <button class="portugues">
+                        <span class="flag-icon flag-icon-br traducao"></span>
+                        <span class="card" id="cardPt" data-key="cardPt">Português</span>
+                    </button>
                 </div>
             </aside>
         </nav>
@@ -159,9 +178,12 @@
                     <div class="projetos landingpage" id="estoque">
                         <p class="infoProjeto" data-key="infoProjetoEstoque">Sistema web desenvolvido para gerenciamento de produtos e organização de estoque, com funcionalidades de cadastro, edição e controle de dados armazenados em banco de dados.</p>
                         <div class="acessos">
-                            <p class="acessoProjeto" data-key="pQrCode"><span class="material-symbols-outlined" >qr_code_2</span>Acessar via QRcode</p>
+                            <p class="acessoProjeto" data-key="pQrCode"><span class="material-symbols-outlined">qr_code_2</span>Acessar via QRcode</p>
+                            <div class="overlay hidden"></div>
                             <div class="QRcode hidden">
+                                <h6>Sistema de controle de Estoque</h6>
                                 <img src="assets/imagens/qrCodes/qr-code-estoque.png" alt="QRcode">
+                                <p>Facilite seu acesse o mobile escaneando aqui</p>
                             </div>
                             <a href="https://gestao-estoque.rf.gd/" target="_blank" data-key="acessoProjeto" class="acessoProjeto">
                                 <span class="material-symbols-outlined" >open_in_new</span>
@@ -173,15 +195,30 @@
                             </a>
                         </div>
                         <div class="logosLinguagens">
-                            <i class="devicon-html5-plain-wordmark html"></i>
-                            <i class="devicon-css3-plain-wordmark css"></i>
-                            <i class="devicon-javascript-plain js"></i>
-                            <i class="devicon-php-plain php"></i>
-                            <i class="devicon-mysql-original mysql"></i>
+                            <div>
+                                <i class="devicon-html5-plain-wordmark html"></i>
+                                <span class="card">HTML</span>
+                            </div>
+                            <div>
+                                <i class="devicon-css3-plain-wordmark css"></i>
+                                <span class="card">CSS</span>
+                            </div>
+                            <div>
+                                <i class="devicon-javascript-plain js"></i>
+                                <span class="card">JavaScript</span>
+                            </div>
+                            <div>
+                                <i class="devicon-php-plain php"></i>
+                                <span class="card">PHP</span>
+                            </div>
+                            <div>
+                                <i class="devicon-mysql-original mysql"></i>
+                                <span class="card">MySQL</span>
+                            </div>
                             <!-- <i class="devicon-fastapi-plain fastapi"></i> -->
                         </div>
                     </div>
-                    <img src="assets/imagens/inteface-projetos/sistema-estoque.png" alt="sistema-estoque">
+                    <img src="assets/imagens/inteface-projetos/sistema-estoque.png" alt="sistema-estoque" class="interface">
                 </div>
             </article>
 
@@ -196,8 +233,11 @@
                         <p class="infoProjeto" data-key="infoProjetoElegance">Landing page responsiva desenvolvida para apresentação de uma barbearia, com seções de serviços, informações institucionais e contato. O projeto foi criado com foco em organização do layout, design moderno e adaptação para diferentes tamanhos de tela.</p>
                         <div class="acessos">
                             <p class="acessoProjeto" data-key="pQrCode"><span class="material-symbols-outlined">qr_code_2</span>Acessar via QRcode</p>
+                            <div class="overlay hidden"></div>
                             <div class="QRcode hidden">
+                                <h6>Sistema de controle de Estoque</h6>
                                 <img src="assets/imagens/qrCodes/qr-code-barbearia.png" alt="QRcode">
+                                <p>Facilite seu acesse o mobile escaneando aqui</p>
                             </div>
                             <a href="https://felippybraga.github.io/landingpage-barbearia-elegance/" target="_blank" data-key="acessoProjeto"class="acessoProjeto">
                                 <span class="material-symbols-outlined">open_in_new</span>
@@ -209,26 +249,25 @@
                             </a>
                         </div>
                         <div class="logosLinguagens">
-                            <i class="devicon-html5-plain-wordmark html"></i>
-                            <i class="devicon-css3-plain-wordmark css"></i>
-                            <i class="devicon-javascript-plain js"></i>
-
+                             <div>
+                                <i class="devicon-html5-plain-wordmark html"></i>
+                                <span class="card">Html</span>
+                            </div>
+                            <div>
+                                <i class="devicon-css3-plain-wordmark css"></i>
+                                <span class="card">Css</span>
+                            </div>
+                            <div>
+                                <i class="devicon-javascript-plain js"></i>
+                                <span class="card">JavaScript</span>
+                            </div>
                             <!-- ICONE PYTHON -->
                             <!-- <i class="devicon-python-plain"></i> -->
                         </div>
                     </div>
-                    <img src="assets/imagens/inteface-projetos/barbearia.jpg" alt="barbearia">             
+                    <img src="assets/imagens/inteface-projetos/barbearia.jpg" alt="barbearia" class="interface">             
                 </div>
             </article>
-            <aside class="card hidden">
-                <div id="html">HTML</div>
-                <div id="css">CSS</div>
-                <div id="js">JAVASCRIPT</div>
-                <div id="php">PHP</div>
-                <div id="python">PYTHON</div>
-                <div id="fastapi">FASTAPI</div>
-                <div id="mysql">MYSQL</div>
-            </aside>
         </section>
         <section id="sobreMim" id="mim">
             <h3 id="tituloS" data-key="sobreMimH3">Sobre Mim</h3>
@@ -292,13 +331,13 @@
                 <button class="textos02 textos" id="recrutador02" data-key="btnRecrutador"><strong>Sou um recrutador de um empresa</strong></button>
                 <button class="textos02 textos" id="freelancer02" data-key="btnFrela"><strong>Preciso de ajuda com meu prjeto</strong></button>
             </div>
-            <p class="ajudar hidden" id="TextoRecrutador" data-key="textoRecrutador">
+            <p class="ajudar hidden" id="TextoRecrutador">
                 <i class="material-icons fecharTextos">close</i>
-                Olá, recrutador! Se você busca um desenvolvedor full-stack motivado e com muita vontade de evoluir, posso ser uma ótima adição para a sua equipe. Sou um desenvolvedor dedicado, sempre aberto a aprender novas tecnologias, receber feedbacks e melhorar continuamente meu trabalho. Valorizo o trabalho em equipe e acredito que a colaboração é essencial para enfrentar desafios e construir soluções que realmente façam diferença.
+                <span data-key="textoRecrutador">Olá, recrutador! Se você busca um desenvolvedor full-stack motivado e com muita vontade de evoluir, posso ser uma ótima adição para a sua equipe. Sou um desenvolvedor dedicado, sempre aberto a aprender novas tecnologias, receber feedbacks e melhorar continuamente meu trabalho. Valorizo o trabalho em equipe e acredito que a colaboração é essencial para enfrentar desafios e construir soluções que realmente façam diferença.</span>
             </p>
-            <p class="ajudar hidden" id="textoFreelancer" data-key="textoFrela">
+            <p class="ajudar hidden" id="textoFreelancer">
                 <i class="material-icons fecharTextos">close</i>
-                Está buscando alguém para tirar seu projeto do papel? Eu posso ajudar. Desenvolvo sites modernos, responsivos e dinâmicos, cuidando tanto do design quanto do funcionamento do site. Meu objetivo é criar soluções que realmente funcionem para o seu negócio e ofereçam uma ótima experiência para quem usa. Se você tem uma ideia ou projeto em mente, vamos conversar e transformar isso em realidade.
+                <span data-key="textoFrela">Está buscando alguém para tirar seu projeto do papel? Eu posso ajudar. Desenvolvo sites modernos, responsivos e dinâmicos, cuidando tanto do design quanto do funcionamento do site. Meu objetivo é criar soluções que realmente funcionem para o seu negócio e ofereçam uma ótima experiência para quem usa. Se você tem uma ideia ou projeto em mente, vamos conversar e transformar isso em realidade.</span>
             </p>
         </section>
     </main>
@@ -336,9 +375,9 @@
 
     
     <script src="assets/js/traducao.js"></script>
-    <!-- <script src="assets/js/header.js"></script> -->
+    <script src="assets/js/header.js"></script>
     <script src="assets/js/menu.js"></script>
-    <!-- <script src="assets/js/secao_projetos.js"></script> -->
+    <script src="assets/js/secao_projetos.js"></script>
     <script src="assets/js/secao_ajuda.js"></script>
 </body>
 </html>
