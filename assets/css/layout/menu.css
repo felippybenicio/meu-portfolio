@@ -286,6 +286,7 @@ li.vertical, div.linkshori, .vertical a {
         transform 0.45s cubic-bezier(.4,0,.2,1);
 
         will-change: transform, opacity;
+        pointer-events: none;
     }
 
     .linkshori {
