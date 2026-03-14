@@ -3,7 +3,7 @@
 
 :root {
     /*cores*/
-    --pricipal: #031630;
+    --principal: #031630;
     --secundario: #1c3e70;
     --secundario-claro: #8ab7e9;
     --destaques: #3cced3;
@@ -14,7 +14,7 @@
     --corBorda: #b9b9b94d;
 
     /*fontes*/
-    --tituloPricipal: 'Oxanium', Arial, Helvetica, sans-serif;
+    --tituloprincipal: 'Oxanium', Arial, Helvetica, sans-serif;
     --titulosSecundarios: 'arvo', 'Times New Roman', Times, serif;
     --texto: 'sora', Arial, Helvetica, sans-serif;
 }
@@ -26,7 +26,7 @@
 }
 
 html, body {
-    background-image: linear-gradient(to top, var(--pricipal), var(--secundario), var(--pricipal));
+    background-image: linear-gradient(to top, var(--principal), var(--secundario), var(--principal));
     color: white;
     scroll-behavior: smooth;
     overflow-x: hidden;

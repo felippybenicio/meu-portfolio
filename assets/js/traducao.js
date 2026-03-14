@@ -74,19 +74,26 @@ const traducoes = {
         meusProjetosH3: "My Projects",
         h4Aplicaoes: "Applications",
         h4Interfaces: "Interfaces",
+        pAcessos: "Demo available",
         pQrCode: "<span class='material-symbols-outlined' >qr_code_2</span>To access by QR Code",
         acessoProjeto: "<span class='material-symbols-outlined' >open_in_new</span>Access the project",
         codigo: " <span class='material-symbols-outlined'>code</span>View code",
         fraseQRcode1: "Make it easy!To PC from mobile:<br> one QR code and",
         fraseQRcode2: "coffes and done",
+        aviso: "<span class='material-symbols-outlined'>warning</span> Project hosted on a free server for demonstration purposes, which may experience slight delays. Improvements and optimizations are currently in development.",
+        pPrincipal: '&#127775; Main Project',
+
+        //sistema chamados
+        h5Chamado: "<strong>Ticket Management System</strong><br><em>#Web Aplication</em>",
+        infoProjetoChamados: "Web-based ticket management system with a REST API, user authentication via JWT, and role-based access control, enabling the registration, tracking, and organization of requests across departments.",
 
         //sistema estoque
-        h5Etoque: "Stock Control System<br><em>#Web Aplication</em>",
-        infoProjetoEstoque: "Web applications developed for product management and inventory organization, with features for registering, editing, and controlling data stored in a database.",
+        h5Etoque: "<strong>Inventory Management System</strong><br><em>#Web Aplication</em>",
+        infoProjetoEstoque: "Web-based inventory management system that allows registering, editing, and managing products, keeping information organized and stored in a database.",
 
         //LP barbearia elegance
-        h5Elegance: "Elegance Barber Shop<br><em>#Landing Page</em>",
-        infoProjetoElegance: "Responsive landing page developed to present a barbershop, with sections for services, institutional information, and contact. The project was created with a focus on layout organization, modern design, and adaptation to different screen sizes.",
+        h5Elegance: "<strong>Elegance Barber Shop</strong><br><em>#Landing Page</em>",
+        infoProjetoElegance: "Responsive landing page developed to showcase a barbershop, featuring sections for services, company information, and contact, with a focus on layout organization, modern design, and adaptation to different devices.",
 
         //SOBRE MIM
         sobreMimH3: "About Me",
@@ -153,19 +160,25 @@ const traducoes = {
         meusProjetosH3: "Mis Proyectos",
         h4Aplicaoes: "Aplicaciones",
         h4Interfaces: "Interfaces",
+        pAcessos: "Demo disponible",
         pQrCode: "<span class='material-symbols-outlined' >qr_code_2</span>Accede por QR Code",
         acessoProjeto: "<span class='material-symbols-outlined' >open_in_new</span>Accede proyestos",
         codigo: " <span class='material-symbols-outlined'>code</span>Ver codigo",
         fraseQRcode1: "Facilita! De PC a móvil:<br> un código QR y",
         fraseQRcode2: "cafés y listo",
+        aviso: "<span class='material-symbols-outlined'>warning</span> Proyecto alojado en un servidor gratuito con fines de demostración, que puede presentar ligeras demoras. Las mejoras y optimizaciones se encuentran en desarrollo.",
+        pPrincipal: '&#127775; Proyecto Principal',
+        
+        h5Chamado: "<strong>Sistema de Gestión de Tickets</strong><br><em>#Sistema Web</em>",
+        infoProjetoChamados: "Sistema web de gestión de tickets con API REST, autenticación de usuarios mediante JWT y control de acceso por roles, que permite registrar, supervisar y organizar solicitudes entre departamentos.",
 
         //sistema estoque
-        h5Etoque: "Sistema de control de inventario<br><em>#Sistema Web</em>",
-        infoProjetoEstoque: "Sistema web desarrollado para la gestión de productos y organización del inventario, con funcionalidades de registro, edición y control de datos almacenados en una base de datos.",
+        h5Etoque: "<strong>Sistema de Gestión de Inventario</strong><br><em>#Sistema Web</em>",
+        infoProjetoEstoque: "Sistema web de gestión de inventario que permite registrar, editar y administrar productos, manteniendo la información organizada y almacenada en una base de datos.",
 
         //LP barbearia elegance
-        h5Elegance: "Barbería Elegance<br><em>#Landing Page</em>",
-        infoProjetoElegance: "Landing page responsiva desarrollada para la presentación de una barbería, con secciones de servicios, información institucional y contacto. El proyecto fue creado con enfoque en la organización del layout, diseño moderno y adaptación a diferentes tamaños de pantalla.",
+        h5Elegance: "<strong>Barbería Elegance</strong><br><em>#Landing Page</em>",
+        infoProjetoElegance: "Landing page responsiva desarrollada para presentar una barbería, con secciones de servicios, información institucional y contacto, enfocada en la organización del diseño, un estilo moderno y la adaptación a distintos dispositivos.",
 
         //SOBRE MIM
         sobreMimH3: "Sobre mí",

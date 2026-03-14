@@ -21,7 +21,7 @@ footer {
 
 .navFooter {
     background-color: #ffffff73;;
-    color: var(--pricipal);
+    color: var(--principal);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.247);
     border-radius: 5px;
     width: 300px;
@@ -58,7 +58,7 @@ div.links {
     align-items: center;
     text-decoration: none;
     transition: 0.5s;
-    background-color: var(--pricipal);
+    background-color: var(--principal);
     color: var(--secundario);
 }
 

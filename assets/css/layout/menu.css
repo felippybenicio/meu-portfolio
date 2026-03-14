@@ -75,7 +75,7 @@ div.fixado {
 #navVertical li {
     list-style-type: none;
     font-size: 1.1em;
-    color: var(--pricipal);
+    color: var(--principal);
     text-decoration: none;
     margin-top: 50px;
     padding: 5px 5px 5px 16px;
@@ -96,11 +96,11 @@ div.fixado {
     border-radius: 5px;
 
     a {
-        color: var(--pricipal);
+        color: var(--principal);
     }
 
     i.material-icons {
-        color: var(--pricipal);
+        color: var(--principal);
     }    
 }  
 
@@ -173,7 +173,7 @@ div.fixado {
 }
 
 #idi:hover {
-    color: var(--pricipal);
+    color: var(--principal);
 }
 
 span.traducao {
