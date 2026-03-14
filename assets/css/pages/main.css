@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@200..800&family=Sora:wght@100..800&display=swap');
 
 
-
 main {
     background-color: transparent;
     width: 90vw;
@@ -75,32 +74,33 @@ h5 {
 
 .apresentacaoProjetos {    
     padding: 15px;
-    border-radius: 15px 0px;
+    border-radius: 15px 4px;
     height: 376px;
     transition: .5s;
     position: relative;
     z-index: 1;
+    box-shadow:
+        0 0 2px var(--destaques),
+        0 0 7px var(--destaques),
+        inset 0 0 2px var(--destaques),
+        inset 0 0 7px var(--destaques);
+    position: relative;
 }
 
 .apresentacaoProjetos::before {
     content:"";
     position:absolute;
-
     inset:0;
-
-    padding: 3px;
-
-    background:linear-gradient(56deg, var(--destaques), #cafcff, var(--destaques));
-
-    border-radius: 15px 0px;
-
+    padding: 4px 0;
+    background:linear-gradient(56deg, var(--destaques), #cafcffbf, var(--destaques));
+    border-radius: 15px 4px;
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
 
     -webkit-mask-composite: xor;
-
      z-index:-1;
+     transition: 1s;
 }
 
 .apresentacaoProjetos:hover {
@@ -109,19 +109,60 @@ h5 {
         0 0 10px var(--destaques),
         inset 0 0 5px var(--destaques),
         inset 0 0 10px var(--destaques);
+}
 
-
+.apresentacaoProjetos:hover::before {
+    padding: 4px 2px;
 }
 
 .apresentacaoProjetos em {
     color: #818181;
 }
 
+.projetos {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 327px;
+}
+
+.projetoPrincipal {
+    box-shadow:
+        0 0 2px var(--destaques),
+        0 0 7px var(--destaques),
+        inset 0 0 2px var(--destaques),
+        inset 0 0 7px var(--destaques);
+    position: relative;
+}
+
+/* .apresentacaoProjetos::before {
+    content: "⭐ Projeto Principal";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px 0;
+
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    color: #111;
+    background: var(--destaques);
+
+    letter-spacing: 1px;
+} */
 
 .infoProjeto {
-    margin-bottom: 50px;
-    height: 168px;
+    max-height: 147px;
     text-shadow: 2px 3px 4px #0000003d;
+}
+
+.aviso {
+    color: #b18535;
+    font-size: .8em;
+    font-weight: 600;
+    margin-bottom: 21px;
 }
 
 #meusProjetos h5 {
@@ -247,7 +288,7 @@ h5 {
 
 .interface {
     position: absolute;
-    bottom: 80px;
+    bottom: 62px;
     right: 16px;
     width: 145px;
     border: 1px solid var(--corBorda);
@@ -508,8 +549,16 @@ i.fecharTextos {
         height: 426px;
     }
 
+    .projetos {
+        height: 380px;
+    }
+
     .infoProjeto {
-        height: 215px;
+        font-size: 1.1em;
+    }
+
+    .aviso {
+        margin-bottom: 61px;
     }
 
     .acessoProjeto {

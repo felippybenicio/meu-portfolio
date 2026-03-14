@@ -246,7 +246,7 @@ img#eu:hover {
         top: 134%;
         width: 37%;
         height: 160%;
-        z-index: 10;
+        z-index: 0;
     }
 
     #eu {
@@ -265,11 +265,11 @@ img#eu:hover {
     }
 
     .containerFoto::after {
-        left: 134px;
+        left: 125px;
         top: 106%;
         width: 110%;
         height: 111%;
-        z-index: 10;
+        z-index: 0;
     }
 
     #eu {
