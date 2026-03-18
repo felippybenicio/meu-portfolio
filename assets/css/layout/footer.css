@@ -5,6 +5,7 @@ footer {
     margin: auto;
     display: flex;
     flex-flow: column nowrap;
+    z-index: 0;
 }
 
 .linhaDivisorio {

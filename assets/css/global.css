@@ -36,6 +36,21 @@ html, body {
     display: none;
 }
 
+.overlay {
+    background-color: #8ab6e93f;
+    backdrop-filter: blur(1.5px);
+    border-radius: 15px 0px;
+    width: 98%;
+    height: 98%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    z-index: 1;
+}
+
 strong {
     color: var(--destaques);
 }
